@@ -1,11 +1,14 @@
-Topics in Advanced General Relativity, by Sergei Winitzki
+## Topics in Advanced General Relativity, by Sergei Winitzki
 
+Last change was in December 2010.
 
 This is the set of source files for the lecture notes. The text is distributed
 under the GNU Free Documentation License (www.gnu.org/copyleft/fdl.html).
 
 The source is maintained using the LyX editor (www.lyx.org).
 The LyX source file and the resulting TeX file are provided.
+
+[Link to PDF file](build/GR_course.pdf)
 
 The commands used to create the PDF file are:
 
