@@ -1,0 +1,8862 @@
+#LyX 1.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 221
+\textclass slides
+\begin_preamble
+% Uncomment to print out only slides and overlays
+%
+%\onlyslides{\slides}
+
+% Uncomment to print out only notes
+%
+%\onlynotes{\notes}
+\usepackage{psfrag}
+\usepackage[dvips,a4paper,bookmarks,bookmarksopen=true,bookmarksnumbered=false,pdfauthor={Winitzki},
+pdftitle={Lecture Slides: Advanced General Relativity and Cosmology, Wintersemester 2007},pdfsubject={Advanced General Relativity and Cosmology},
+pdfkeywords={theoretical physics, general relativity, cosmology},plainpages=false,pdfpagelabels,hypertexnames=false,citebordercolor=000,
+linkbordercolor=000,colorlinks=true]{hyperref}
+\end_preamble
+\language english
+\inputencoding default
+\fontscheme default
+\graphics dvips
+\paperfontsize default
+\spacing single 
+\papersize a4paper
+\paperpackage a4
+\use_geometry 1
+\use_amsmath 1
+\use_natbib 0
+\use_numerical_citations 0
+\paperorientation portrait
+\leftmargin 0.9in
+\topmargin 0.9in
+\rightmargin 0.9in
+\bottommargin 0.9in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Slide
+
+General information
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 1. Course outline}{2007-10-17}
+\end_inset 
+
+Lecture 1, 2007-10-17.
+ General information
+\layout Standard
+
+Advanced General Relativity and Cosmology
+\layout Standard
+
+Instructor: Dr.
+ Sergei Winitzki
+\layout Standard
+
+Office: Philosophenweg 19, Room 014
+\layout Standard
+
+Office hours: Thursdays 14:00-16:00
+\layout Standard
+
+Home page: 
+\family typewriter 
+\size tiny 
+http://www.tphys.uni-heidelberg.de/~winitzki/AGRC/
+\layout Standard
+
+Lectures: Wednesday and Friday, 11:15-13:00, Philosophenweg 19, Seminarraum
+\layout Standard
+
+
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+
+\size footnotesize 
+\color green
+Material in green was omitted from presentation
+\end_inset 
+
+
+\layout Slide
+
+Course outline
+\layout Standard
+
+
+\series bold 
+Course outline
+\layout Standard
+
+Problem of the year: inflation and dark energy
+\layout Standard
+
+Tensor calculus explained without indices
+\layout Standard
+
+Cosmological evolution in 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ gravity
+\layout Standard
+
+Birrell-Davies demystified: Basics of quantum field theory in curved spacetime
+\layout Standard
+
+Classical and quantum theory of cosmological perturbations 
+\layout Standard
+
+Geometry of null surfaces, causal structure, chronology protection, time
+ machines in GR 
+\layout Standard
+
+Thermodynamics of horizons, entropy of black holes, "holographic principle"
+ 
+\layout Standard
+
+Pseudotensors demystified: Energy in asymptotically flat spaces; EMT of
+ gravitational waves 
+\layout Standard
+
+Hawking-Ellis demystified: Classical singularity theorems 
+\layout Slide
+
+Problem 1
+\layout Standard
+
+
+\series bold 
+Problem of the year
+\layout Standard
+
+Cosmological observations yield: 
+\layout Standard
+
+- primordial inflation
+\layout Standard
+
+- late-time inflation
+\layout Standard
+
+Early work on inflation:
+\layout Standard
+
+A.
+ Starobinsky, Phys.
+ Lett.
+ B91, p.99, 1980
+\layout Standard
+
+de Sitter stage in cosmological evolution 
+\layout Standard
+
+Mechanism: modification of gravity due to quantum backreaction, for example:
+\layout Standard
+
+
+\begin_inset Formula \[
+S[g]=\int d^{4}x\sqrt{-g}\left(\frac{R}{16\pi G}+\alpha R^{2}\right)\]
+
+\end_inset 
+
+
+\layout Standard
+
+Inflationary spacetime: de Sitter with flat spatial sections, Hubble rate
+ 
+\begin_inset Formula $H$
+\end_inset 
+
+:
+\begin_inset Formula \[
+g_{\mu\nu}dx^{\mu}dx^{\nu}=dt^{2}-e^{2Ht}\left(dx^{2}+dy^{2}+dz^{2}\right)\]
+
+\end_inset 
+
+
+\layout Slide
+
+Problem 2
+\layout Standard
+
+
+\series bold 
+Problem of the year
+\layout Standard
+
+To explain dark energy and primordial inflation within a single model of
+ modified gravity, and to remain in agreement with other tests of GR.
+\layout Standard
+
+A model of modified gravity is 
+\begin_inset Formula $\mathbf{f(R)}$
+\end_inset 
+
+ 
+\series bold 
+gravity
+\series default 
+:
+\begin_inset Formula \[
+S=\frac{1}{16\pi G}\int d^{4}x\sqrt{-g}\left(R+f(R)\right)+S_{\text{matter}}\]
+
+\end_inset 
+
+Recent proposals: 
+\begin_inset Formula $f(R)=c_{1}\left(1+c_{2}R^{-n}\right)^{-1}$
+\end_inset 
+
+
+\layout Standard
+
+How to describe consequences of 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ gravity?
+\layout Standard
+
+- Need equations of motion for 
+\begin_inset Formula $g$
+\end_inset 
+
+ 
+\layout Standard
+
+- Solutions for Solar system tests
+\layout Standard
+
+- Homogeneous cosmological solutions: have inflation and/or dark energy?
+\layout Standard
+
+- Primordial cosmological perturbations
+\layout Standard
+
+There are > 50 papers on aspects of 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ gravity in 2006-2007
+\layout Slide
+
+transformal conformation
+\layout Standard
+
+
+\series bold 
+Deriving the EOM for 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ gravity
+\layout Standard
+
+Note: 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ is 
+\emph on 
+nonlinear
+\emph default 
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset 
+
+ EOM are 4th order.
+ Equations for 
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset 
+
+ are complicated
+\layout Standard
+
+Use the method of Lagrange multipliers! Then we can reduce the Lagrangian
+ to one that is 
+\emph on 
+linear
+\emph default 
+ in 
+\begin_inset Formula $R$
+\end_inset 
+
+ and then EOM will be 2nd order
+\layout Standard
+
+Analogy with mechanics:
+\begin_inset Formula \[
+S=\int dt\left[\frac{1}{2}\dot{x}^{2}+f(x,\ddot{x})\right]\text{ -- nonlinear in }\ddot{x}\]
+
+\end_inset 
+
+EOM would be 2nd order if 
+\begin_inset Formula $S$
+\end_inset 
+
+ were 
+\emph on 
+linear
+\emph default 
+ in 
+\begin_inset Formula $\ddot{x}$
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Trick:
+\series default 
+ Introduce new variable 
+\begin_inset Formula $y$
+\end_inset 
+
+ and Lagrange multiplier 
+\begin_inset Formula $\lambda$
+\end_inset 
+
+ that enforces 
+\begin_inset Formula $y=\ddot{x}$
+\end_inset 
+
+:
+\begin_inset Formula \[
+S=\int dt\left[\frac{1}{2}\dot{x}^{2}+f(x,y)+\lambda\left(\ddot{x}-y\right)\right]\]
+
+\end_inset 
+
+ EOM for 
+\begin_inset Formula $y$
+\end_inset 
+
+ is 
+\begin_inset Formula $f_{,y}(x,y)-\lambda=0$
+\end_inset 
+
+.
+\layout Standard
+
+Since 
+\begin_inset Formula $f_{,yy}\neq0$
+\end_inset 
+
+, we can solve for 
+\begin_inset Formula $y$
+\end_inset 
+
+ through 
+\begin_inset Formula $x,\lambda$
+\end_inset 
+
+: 
+\begin_inset Formula $y=Y(x,\lambda)$
+\end_inset 
+
+.
+ Also replace 
+\begin_inset Formula $\lambda\ddot{x}\rightarrow-\dot{\lambda}\dot{x}$
+\end_inset 
+
+.
+ Finally:
+\begin_inset Formula \[
+S=\int dt\left[\frac{1}{2}\dot{x}^{2}-\dot{\lambda}\dot{x}+f(x,Y(x,\lambda))-\lambda Y(x,\lambda)\right]\]
+
+\end_inset 
+
+Obtained a first-order Lagrangian with extra d.o.f.\SpecialChar ~
+
+\begin_inset Formula $\lambda$
+\end_inset 
+
+ and potential energy 
+\begin_inset Formula $V(x,\lambda)=f-\lambda f'$
+\end_inset 
+
+
+\layout Slide
+
+Lagrangian mechanics
+\layout Standard
+
+
+\series bold 
+Whether one can/cannot substitute into Lagrangians
+\layout Standard
+
+Suppose we have 
+\begin_inset Formula $L(x,\dot{x},y,\dot{y},...)$
+\end_inset 
+
+; we can change variables 
+\begin_inset Formula $\left\{ x,y\right\} \rightarrow\left\{ A(x,y),B(x,y),...\right\} $
+\end_inset 
+
+
+\layout Standard
+
+
+\color green
+We 
+\series bold 
+cannot
+\series default 
+ change variables to new variables involving derivatives, 
+\begin_inset Formula $x\rightarrow A(y,\dot{y},...)$
+\end_inset 
+
+ 
+\layout Standard
+
+
+\color green
+Example: 
+\begin_inset Formula $L=\dot{x}^{2}$
+\end_inset 
+
+, substitute 
+\begin_inset Formula $x=y+\dot{y}$
+\end_inset 
+
+, get wrong EOM: 
+\begin_inset Formula $y^{(4)}-\ddot{y}=0$
+\end_inset 
+
+
+\layout Standard
+
+Suppose we have 
+\begin_inset Formula $L(x,\dot{x},y,\dot{y},...)$
+\end_inset 
+
+ and 
+\emph on 
+one of the EOM
+\emph default 
+ is 
+\begin_inset Formula $x=f(y,\dot{y},...)$
+\end_inset 
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset 
+
+ We can eliminate 
+\begin_inset Formula $x$
+\end_inset 
+
+.
+\layout Standard
+
+
+\color green
+Suppose we have constraints: 
+\begin_inset Formula $L+\lambda F$
+\end_inset 
+
+.
+ We can substitute 
+\begin_inset Formula $F$
+\end_inset 
+
+ into 
+\begin_inset Formula $L$
+\end_inset 
+
+ as long as 
+\begin_inset Formula $L+\lambda F$
+\end_inset 
+
+ remains.
+ This works even if 
+\begin_inset Formula $F$
+\end_inset 
+
+ involves derivatives!
+\layout Standard
+
+
+\color green
+But: we 
+\series bold 
+cannot
+\series default 
+ substitute EOM into 
+\begin_inset Formula $L$
+\end_inset 
+
+ if EOM is 
+\begin_inset Formula $x=f(x,\dot{x},...)$
+\end_inset 
+
+ or 
+\begin_inset Formula $x=f(\dot{y},\dot{z})$
+\end_inset 
+
+ (change the number of relevant initial conditions).
+ Also cannot substitute 
+\emph on 
+arbitrary
+\emph default 
+ relationships, e.g.\SpecialChar ~
+specific solutions 
+\begin_inset Formula $x=f(y,\dot{y},\textrm{const})$
+\end_inset 
+
+, unless they are enforced by constraints.
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+Example: 
+\begin_inset Formula \[
+L=\frac{\dot{x}^{2}}{2}+xy\dot{y}+x-\frac{1}{2}y^{2}\]
+
+\end_inset 
+
+The EOM are
+\begin_inset Formula \begin{align*}
+\ddot{x} & =y\dot{y}+1\\
+\frac{d}{dt}\left(xy\right) & =x\dot{y}-y\end{align*}
+
+\end_inset 
+
+Second EOM gives 
+\begin_inset Formula $\dot{x}=\frac{1}{y}$
+\end_inset 
+
+, then first EOM gives 
+\begin_inset Formula $-\dot{y}y^{-2}=y\dot{y}+1$
+\end_inset 
+
+, solution is 
+\begin_inset Formula $\frac{y^{2}}{2}-\frac{1}{y}=\textrm{const}-t$
+\end_inset 
+
+
+\layout Standard
+
+Now let's substitute 
+\begin_inset Formula $\dot{x}=1/y$
+\end_inset 
+
+ into Lagrangian, get
+\begin_inset Formula \[
+\tilde{L}=\frac{1}{2y^{2}}+\]
+
+\end_inset 
+
+,....
+ well not sure what I'm getting.
+ Let's drop this for now...
+\end_inset 
+
+
+\layout Slide
+
+Example
+\layout Standard
+
+
+\series bold 
+Practice problems: 
+\series default 
+
+\newline 
+1.
+ Show that 
+\begin_inset Formula $L=\ddot{x}f(x,\dot{x})$
+\end_inset 
+
+ can be reduced to 1st order by adding a total derivative 
+\begin_inset Formula $\frac{d}{dt}M(x,\dot{x})$
+\end_inset 
+
+.
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+Answer: 
+\begin_inset Formula $L\rightarrow L+\frac{d}{dt}M(x,\dot{x})$
+\end_inset 
+
+, 
+\begin_inset Formula $M_{,\dot{x}}=-f$
+\end_inset 
+
+, 
+\begin_inset Formula $M=-\int fd\dot{x}$
+\end_inset 
+
+
+\end_inset 
+
+
+\newline 
+2.
+ Reduce 
+\begin_inset Formula $L=f(x,\dot{x},\ddot{x},\dddot{x})$
+\end_inset 
+
+ to 1st order by introducing appropriate new variables.
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+It suffices to introduce 
+\begin_inset Formula $y=\ddot{x}$
+\end_inset 
+
+, but then both 
+\begin_inset Formula $y$
+\end_inset 
+
+ and the Lagrange multiplier 
+\begin_inset Formula $\lambda$
+\end_inset 
+
+ will be dynamical variables.
+\end_inset 
+
+
+\newline 
+3.
+ Reduce 
+\begin_inset Formula $L=\dddot{x}f(x,\dot{x},\ddot{x})$
+\end_inset 
+
+ to 1st order (first reduce to 2nd order, i.e.\SpecialChar ~
+remove 
+\begin_inset Formula $\dddot{x}$
+\end_inset 
+
+).
+\layout Standard
+
+
+\series bold 
+\color green
+Incorrect substitution of EOM into Lagrangian
+\layout Standard
+
+
+\color green
+Example: 
+\begin_inset Formula $L=\frac{1}{2}\dot{x}^{2}+\frac{1}{2}x\dot{y}^{2}$
+\end_inset 
+
+
+\newline 
+Equations of motion:
+\begin_inset Formula \begin{align*}
+\ddot{x} & =\frac{1}{2}\dot{y}^{2}\\
+\frac{d}{dt}\left(x\dot{y}\right) & =0\end{align*}
+
+\end_inset 
+
+Solve 
+\begin_inset Formula $\dot{y}=C_{1}x^{-1}$
+\end_inset 
+
+, substitute into EOM for 
+\begin_inset Formula $x$
+\end_inset 
+
+:
+\begin_inset Formula \[
+\ddot{x}=\frac{C_{1}^{2}}{2x}\]
+
+\end_inset 
+
+But: what if we substitute 
+\begin_inset Formula $\dot{y}=C_{1}x^{-1}$
+\end_inset 
+
+ into 
+\begin_inset Formula $L$
+\end_inset 
+
+?
+\begin_inset Formula \[
+\tilde{L}=\frac{1}{2}\dot{x}^{2}+\frac{C_{1}^{2}}{2}\frac{1}{x}\]
+
+\end_inset 
+
+Equation of motion for 
+\begin_inset Formula $x$
+\end_inset 
+
+ now is wrong:
+\begin_inset Formula \[
+\ddot{x}=-\frac{C_{1}^{2}}{2x^{2}}\]
+
+\end_inset 
+
+
+\layout Slide
+
+EOM 2
+\layout Standard
+
+
+\series bold 
+Want to derive EOM for 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ gravity!
+\layout Standard
+
+Apply this technique to 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ gravity:
+\begin_inset Formula \[
+S[g]=\frac{1}{16\pi G}\int d^{4}x\sqrt{-g}\left(r+f(r)+\lambda\left(R-r\right)\right)\]
+
+\end_inset 
+
+EOM for 
+\begin_inset Formula $r$
+\end_inset 
+
+ is 
+\begin_inset Formula $1+f'(r)-\lambda=0$
+\end_inset 
+
+.
+ Solve 
+\begin_inset Formula $r=r(\lambda)$
+\end_inset 
+
+ and substitute back:
+\begin_inset Formula \[
+S[g]=\frac{1}{16\pi G}\int d^{4}x\sqrt{-g}\left(f-rf'+\lambda R\right)\]
+
+\end_inset 
+
+Now 
+\series bold 
+apply a trick
+\series default 
+: conformal transformation:
+\begin_inset Formula \[
+g\rightarrow\tilde{g}\equiv e^{2\Omega}g\]
+
+\end_inset 
+
+ Choose 
+\begin_inset Formula $\Omega$
+\end_inset 
+
+ such that 
+\begin_inset Formula $\lambda R\sqrt{-g}$
+\end_inset 
+
+ becomes 
+\begin_inset Formula $\tilde{R}\sqrt{-\tilde{g}}$
+\end_inset 
+
+ plus some terms --- need a formula for 
+\begin_inset Formula $\tilde{R}$
+\end_inset 
+
+!
+\layout Standard
+
+
+\emph on 
+Result
+\emph default 
+: GR with scalar field 
+\begin_inset Formula $\Omega$
+\end_inset 
+
+ and metric 
+\begin_inset Formula $\tilde{g}$
+\end_inset 
+
+ 
+\layout Standard
+
+
+\begin_inset Quotes eld
+\end_inset 
+
+Einstein frame
+\begin_inset Quotes erd
+\end_inset 
+
+ vs.\SpecialChar ~
+
+\begin_inset Quotes eld
+\end_inset 
+
+Jordan frame
+\begin_inset Quotes erd
+\end_inset 
+
+ -- these are 
+\emph on 
+different variables
+\emph default 
+,
+\emph on 
+ 
+\emph default 
+not reference frames
+\layout Standard
+
+Note: coupling to matter is through 
+\begin_inset Formula $g$
+\end_inset 
+
+, not through 
+\begin_inset Formula $\tilde{g}$
+\end_inset 
+
+ --- matter feels 
+\begin_inset Formula $\Omega$
+\end_inset 
+
+ and 
+\begin_inset Formula $\tilde{g}$
+\end_inset 
+
+
+\layout Slide
+
+Tensor 
+\layout Standard
+
+
+\series bold 
+Tensor calculus without indices
+\layout Standard
+
+Geometric view: manifolds, topology
+\layout Standard
+
+Geometric operations on vector and tensor fields
+\layout Standard
+
+Lie derivative, metric, curvature
+\layout Standard
+
+Index-free notation: instead of 
+\begin_inset Formula \[
+u^{\nu}u_{;\nu}^{\mu}=0\quad\Rightarrow u^{\nu}\partial_{\nu}\left(g_{\alpha\beta}u^{\alpha}u^{\beta}\right)=0\]
+
+\end_inset 
+
+
+\layout Standard
+
+write
+\begin_inset Formula \[
+\nabla_{\mathbf{u}}\mathbf{u}=0\quad\Rightarrow\quad\nabla_{\mathbf{u}}g(\mathbf{u},\mathbf{u})=2g(\nabla_{\mathbf{u}}\mathbf{u},\mathbf{u})=0\]
+
+\end_inset 
+
+
+\layout Standard
+
+Practical tools for calculations without indices
+\layout Standard
+
+Vielbein formalism; curvature and Einstein eqs.
+ 
+\layout Slide
+
+qftcs
+\layout Standard
+
+
+\series bold 
+Quantum field theory in curved spacetime
+\layout Standard
+
+Key applications in cosmology: 
+\newline 
+* Prediction of the primordial fluctuations
+\newline 
+*
+\color green
+ Dynamics of chaotic inflation
+\layout Standard
+
+
+\color green
+Key applications in black hole physics: 
+\newline 
+* Hawking radiation
+\newline 
+* Black hole entropy
+\newline 
+* Thermodynamics of horizons
+\layout Standard
+
+
+\color green
+Many calculations do not require 
+\begin_inset Quotes eld
+\end_inset 
+
+hard
+\begin_inset Quotes erd
+\end_inset 
+
+ QFT!
+\layout Slide
+
+Causality and horizons
+\layout Standard
+
+
+\series bold 
+Causality and horizons
+\layout Standard
+
+In GR, matter determines the causal structure
+\layout Standard
+
+Time machines? Chronology protection?
+\layout Standard
+
+
+\series bold 
+\color green
+Horizons
+\series default 
+ are boundaries of causal regions
+\layout Standard
+
+
+\color green
+Horizons have thermodynamical properties!
+\layout Standard
+
+
+\color green
+Black holes have temperature and entropy
+\layout Standard
+
+
+\color green
+
+\begin_inset Quotes eld
+\end_inset 
+
+Holographic principle
+\begin_inset Quotes erd
+\end_inset 
+
+: a bound on entropy due to quantum effects and nonlinear coupling to gravity
+ (
+\series bold 
+not
+\series default 
+ due to quantum gravity)
+\layout Standard
+
+
+\color green
+Can study BHs without quantum gravity!
+\layout Slide
+
+Energy
+\layout Standard
+
+
+\series bold 
+Energy and conservation laws in GR
+\layout Standard
+
+Ill-defined local energy density; 
+\begin_inset Quotes eld
+\end_inset 
+
+pseudotensors
+\begin_inset Quotes erd
+\end_inset 
+
+
+\layout Standard
+
+
+\color green
+Energy in asymptotically flat spaces
+\layout Standard
+
+
+\color green
+Energy of matter + gravity is conserved!
+\layout Standard
+
+
+\color green
+Energy-momentum tensor of gravitational waves
+\layout Slide
+
+Singularity
+\layout Standard
+
+
+\series bold 
+Classical singularity theorems
+\layout Standard
+
+GR predicts singularity in many cases
+\layout Standard
+
+Limit of applicability of classical GR!
+\layout Standard
+
+Proofs of singularity theorems have 3 parts:
+\newline 
+* Geodesic focusing theorem
+\newline 
+* Energy conditions -- guarantee focusing
+\newline 
+* Topological argument 
+\emph on 
+ad absurdum
+\layout Standard
+
+Applications: 
+\newline 
+* Gravitational collapse of stars
+\newline 
+* Past cosmological singularity (Big Bang)
+\newline 
+* Future cosmological singularity (Big Crunch)
+\layout Slide
+
+Manifolds
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 2. Manifolds, tangent vectors}{2007-10-19}
+\end_inset 
+
+Lecture 2, 2007-10-19.
+ Manifolds
+\layout Standard
+
+Gravity in GR 
+\emph on 
+curved geometry
+\emph default 
+, not a force
+\layout Standard
+
+Observations: Small scales 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset 
+
+, large scales --?
+\layout Standard
+
+
+\series bold 
+Manifold
+\series default 
+ 
+\begin_inset Formula $\mathcal{M}$
+\end_inset 
+
+ is a generalized 
+\begin_inset Quotes eld
+\end_inset 
+
+curved space
+\begin_inset Quotes erd
+\end_inset 
+
+
+\layout Standard
+
+Visualize manifolds as embedded surfaces
+\layout Standard
+
+Examples: sphere 
+\begin_inset Formula $x^{2}+y^{2}+z^{2}=R^{2}$
+\end_inset 
+
+.
+\layout Standard
+
+Torus:
+\begin_inset Formula \[
+\left(\sqrt{x^{2}+y^{2}}-A\right)^{2}+z^{2}=R^{2},\quad A>R\]
+
+\end_inset 
+
+
+\layout Standard
+\align center 
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+psfrag{0}{0} 
+\backslash 
+psfrag{z}{$z$} 
+\backslash 
+psfrag{a}{$A$} 
+\backslash 
+psfrag{b}{$R$} 
+\backslash 
+psfrag{r}{$
+\backslash 
+rho$} 
+\end_inset 
+
+
+\begin_inset Graphics
+	filename torus-coords.eps
+	display none
+	width 65col%
+
+\end_inset 
+
+
+\layout Slide
+
+Local coordinates
+\layout Standard
+
+
+\series bold 
+Local coordinates
+\layout Standard
+
+Locally like 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset 
+
+ means 
+\emph on 
+local coordinate system 
+\emph default 
+which is a map 
+\begin_inset Formula $\mathcal{U}\rightarrow\mathbb{R}^{n}$
+\end_inset 
+
+, where 
+\begin_inset Formula $\mathcal{U}\subset\mathcal{M}$
+\end_inset 
+
+ is a patch; all of 
+\begin_inset Formula $\mathcal{M}$
+\end_inset 
+
+ must be covered by patches
+\layout Standard
+
+Local coordinates on torus: 
+\begin_inset Formula $0<\left(\phi\,\,,\,\theta\right)<2\pi$
+\end_inset 
+
+, 
+\begin_inset Formula $x=\rho\cos\phi$
+\end_inset 
+
+, 
+\begin_inset Formula $y=\rho\sin\phi$
+\end_inset 
+
+, 
+\begin_inset Formula $z=R\cos\theta$
+\end_inset 
+
+, 
+\newline 
+
+\begin_inset Formula $\rho=A+R\sin\theta$
+\end_inset 
+
+
+\layout Standard
+
+Another choice of coordinates: 
+\begin_inset Formula $\rho=\frac{a}{b-\sin\theta}$
+\end_inset 
+
+, 
+\begin_inset Formula $z=\frac{c\cos\theta}{b-\sin\theta}$
+\end_inset 
+
+, for appropriately chosen 
+\begin_inset Formula $a,b,c$
+\end_inset 
+
+.
+ 
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+
+\begin_inset Formula $\rho=\frac{A^{2}-R^{2}}{A-R\sin\theta}$
+\end_inset 
+
+, 
+\begin_inset Formula $z=\frac{R\sqrt{A^{2}-R^{2}}\cos\theta}{A-R\sin\theta}$
+\end_inset 
+
+.
+ Note that the formula 
+\begin_inset Formula $\left(\sqrt{x^{2}+y^{2}}-\sqrt{2}\right)^{2}+z^{2}-1=0$
+\end_inset 
+
+ in the solution to problem 1C(a) is incorrect!
+\end_inset 
+
+The coordinate change map 
+\begin_inset Formula $\mathbb{R}^{n}\rightarrow\mathbb{R}^{n}$
+\end_inset 
+
+ is smooth
+\layout Standard
+
+Intrinsic description: no embedding needed! Coordinates are scalar functions
+ on 
+\begin_inset Formula $\mathcal{M}$
+\end_inset 
+
+
+\layout Standard
+
+Functions on manifold = functions on patches = functions on subsets of 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset 
+
+
+\layout Standard
+
+Intrinsic definition of smoothness: smooth functions on subsets of 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset 
+
+ + smooth coordinate change maps
+\layout Slide
+
+Tangent spaces
+\layout Standard
+
+
+\series bold 
+Tangent spaces
+\layout Standard
+
+Vectors in physics mean velocities / directions
+\layout Standard
+
+Visualize a vector as velocity of a point moving within 
+\begin_inset Formula $\mathcal{M}$
+\end_inset 
+
+.
+ Path 
+\begin_inset Formula $\gamma(t)$
+\end_inset 
+
+ given in local coord's
+\layout Standard
+
+In embedding picture: vector is in tangent plane
+\layout Standard
+
+E.g.: hypersurface 
+\begin_inset Formula $f(\mathbf{x})=0$
+\end_inset 
+
+, normal vector 
+\begin_inset Formula $n_{j}=\partial_{x^{j}}f(\mathbf{x}_{0})$
+\end_inset 
+
+, tangent plane is 
+\begin_inset Formula $\mathbf{n}\cdot\left(\mathbf{x}-\mathbf{x}_{0}\right)=0$
+\end_inset 
+
+
+\layout Standard
+
+Tangent plane
+\begin_inset Formula $\rightarrow$
+\end_inset 
+
+tangent space 
+\begin_inset Formula $T_{p}\mathcal{M}$
+\end_inset 
+
+ at point 
+\begin_inset Formula $p$
+\end_inset 
+
+
+\layout Standard
+
+Intrinsic picture: 
+\emph on 
+velocity means change
+\emph default 
+; tangent vector 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ = derivative operator on 
+\emph on 
+scalar functions
+\emph default 
+ 
+\begin_inset Formula $f:\mathcal{M}\rightarrow\mathbb{R}$
+\end_inset 
+
+; this derivative is with respect to the 
+\begin_inset Quotes eld
+\end_inset 
+
+time
+\begin_inset Quotes erd
+\end_inset 
+
+ of the moving point
+\begin_inset Formula \[
+D_{\gamma}f=\frac{d}{dt}f(\gamma(t))=\sum_{j}\left.\frac{\partial f}{\partial x^{j}}\right|_{\mathbf{x}=\gamma(t_{0})}\left.\frac{d\gamma^{j}}{dt}\right|_{t=t_{0}}\]
+
+\end_inset 
+
+The derivative operator is 
+\begin_inset Formula $\mathbf{v}\equiv\sum_{j}\frac{d\gamma^{j}}{dt}\frac{\partial}{\partial x^{j}}$
+\end_inset 
+
+.
+ Write 
+\begin_inset Formula $\mathbf{v}\circ f$
+\end_inset 
+
+ instead of 
+\begin_inset Formula $D_{\gamma}f$
+\end_inset 
+
+.
+ 
+\newline 
+Tangent vectors 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ form a vector space; basis tangent vectors are 
+\begin_inset Formula $\partial_{x^{j}}\equiv\partial_{j}.$
+\end_inset 
+
+
+\layout Slide
+
+Calculations
+\layout Standard
+
+
+\series bold 
+Calculations with tangent vectors
+\layout Standard
+
+Chain rule: 
+\begin_inset Formula $\mathbf{v}\circ\left[f(g)\right]=f'(g)\mathbf{v}\circ g$
+\end_inset 
+
+
+\newline 
+Consequence: components of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ in a coordinate system 
+\begin_inset Formula $\left\{ x^{\mu}\right\} $
+\end_inset 
+
+ are computed as 
+\begin_inset Formula $\mathbf{v}\circ x^{\mu}$
+\end_inset 
+
+, and then 
+\begin_inset Formula $\mathbf{v}=\sum_{\mu}\left(\mathbf{v}\circ x^{\mu}\right)\partial_{x^{\mu}}$
+\end_inset 
+
+.
+\layout Standard
+
+
+\series bold 
+Practice problems
+\series default 
+: 1.
+ Find components of 
+\begin_inset Formula $x\partial_{x}+y\partial_{y}$
+\end_inset 
+
+ in coordinates 
+\begin_inset Formula $\left\{ a=x+y,b=3xy\right\} $
+\end_inset 
+
+
+\newline 
+2.
+ In 2D, find tangent vector 
+\begin_inset Formula $\dot{\gamma}$
+\end_inset 
+
+ to the curve 
+\begin_inset Formula $\gamma(t)=\left\{ x=\cos t,y=2\sin t\right\} $
+\end_inset 
+
+ in coord's 
+\begin_inset Formula $\left\{ x,y\right\} $
+\end_inset 
+
+
+\newline 
+3.
+ Given 
+\begin_inset Formula $\mathbf{u}=\partial_{x}+x\partial_{y}$
+\end_inset 
+
+, find coord's 
+\begin_inset Formula $\left\{ X,Y\right\} $
+\end_inset 
+
+ such that 
+\begin_inset Formula $\mathbf{u}=\partial_{Y}$
+\end_inset 
+
+.
+\layout Standard
+
+Other properties: 
+\begin_inset Formula $\mathbf{v}\circ(fg)=f\mathbf{v}\circ g+g\mathbf{v}\circ f$
+\end_inset 
+
+, linearity 
+\begin_inset Formula $\mathbf{v}\circ(f+g)=\mathbf{v}\circ f+\mathbf{v}\circ g$
+\end_inset 
+
+ -- as a 1st derivative.
+
+\emph on 
+ All
+\emph default 
+ 1st derivatives are equivalent to tangent vectors.
+\layout Standard
+
+Tangent vectors as 
+\series bold 
+short curve segments
+\series default 
+:
+\begin_inset Formula \[
+\dot{\boldsymbol{\gamma}}\circ f\approx\frac{f(\gamma(t_{0}+\sigma)-\gamma(t_{0}))}{\sigma},\; f(p')-f(p)\approx\left(\sigma\dot{\boldsymbol{\gamma}}\right)\circ f\]
+
+\end_inset 
+
+Local vector field = choice of tangent vector 
+\begin_inset Formula $\left.\mathbf{v}\right|_{p}\in T_{p}\mathcal{M}$
+\end_inset 
+
+ at each point 
+\begin_inset Formula $p\in\mathcal{U}\subset\mathcal{M}$
+\end_inset 
+
+
+\newline 
+
+\series bold 
+Flow
+\series default 
+ of vector field; show that 
+\begin_inset Formula $\mathbf{v}\circ t=1$
+\end_inset 
+
+
+\layout Slide
+
+Commutator
+\layout Standard
+
+
+\series bold 
+Commutator of vector fields
+\layout Standard
+
+Consider 
+\begin_inset Formula $\left[\mathbf{u},\mathbf{v}\right]\circ f=\mathbf{u}\circ(\mathbf{v}\circ f)-\mathbf{v}\circ(\mathbf{u}\circ f)$
+\end_inset 
+
+
+\newline 
+This is a 
+\emph on 
+1st derivative
+\emph default 
+ operator, thus 
+\begin_inset Formula $\left[\mathbf{u},\mathbf{v}\right]$
+\end_inset 
+
+ is a new tangent vector 
+\newline 
+Example: 
+\begin_inset Formula $\left[x\partial_{x},\partial_{x}+\partial_{y}\right]$
+\end_inset 
+
+ has no 2nd derivatives
+\newline 
+Proof: show that 
+\begin_inset Formula $\left[\mathbf{u},\mathbf{v}\right]\circ\left(fg\right)=...$
+\end_inset 
+
+ [Derivation]
+\newline 
+
+\series bold 
+Practice problem
+\series default 
+: compute commutators 
+\begin_inset Formula $\left[\mathbf{a},\mathbf{b}\right]$
+\end_inset 
+
+, 
+\begin_inset Formula $\left[\mathbf{a},\mathbf{c}\right]$
+\end_inset 
+
+, 
+\begin_inset Formula $\left[\mathbf{b},\mathbf{c}\right]$
+\end_inset 
+
+ for 
+\begin_inset Formula \[
+\mathbf{a}=x\partial_{x}+y\partial_{y}+z\partial_{z},\:\mathbf{b}=x\partial_{y}-y\partial_{x},\:\mathbf{c}=\partial_{z}\]
+
+\end_inset 
+
+
+\layout Standard
+
+Geometric view: 
+\begin_inset Formula $\left[\mathbf{a},\mathbf{b}\right]$
+\end_inset 
+
+ is the arrow 
+\begin_inset Formula $p'\rightarrow p$
+\end_inset 
+
+ here:
+\layout Standard
+\align center 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+psfrag{a}[Bl][Bl][1][0]{$
+\backslash 
+mathbf{a}$} 
+\backslash 
+psfrag{b}{$
+\backslash 
+mathbf{b}$} 
+\backslash 
+psfrag{[xab]}{ $[
+\backslash 
+mathbf{a},
+\backslash 
+mathbf{b}]$} 
+\backslash 
+psfrag{pp}{$p'$} 
+\backslash 
+psfrag{p0}{$p_0$} 
+\backslash 
+psfrag{p}{$p$} 
+\backslash 
+psfrag{[ab]}{} 
+\backslash 
+psfrag{p1}{$p_1$}
+\backslash 
+psfrag{p2}{$p_2$}
+\end_inset 
+
+
+\begin_inset Graphics
+	filename GR_course/vector_commutator.eps
+	display none
+	width 50col%
+
+\end_inset 
+
+
+\layout Standard
+
+Approximately 
+\begin_inset Formula $f(p)-f(p')\approx\left(\delta t\right)^{2}\left.\left[\mathbf{a},\mathbf{b}\right]\circ f\right|_{p_{0}}$
+\end_inset 
+
+
+\layout Slide
+
+Connecting vector fields
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 3. Connecting vectors, differential forms, Frobenius theorem}{2007-10-24}
+\end_inset 
+
+Lecture 3, 2007-10-24.
+ Connecting vector fields
+\layout Standard
+
+Vector field 
+\begin_inset Formula $\mathbf{c}$
+\end_inset 
+
+ is connecting for 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ if 
+\begin_inset Formula $\left[\mathbf{c},\mathbf{v}\right]=0$
+\end_inset 
+
+ (these vector fields commute)
+\layout Standard
+
+Connecting vector 
+\begin_inset Formula $\mathbf{c}\neq\mathbf{v}$
+\end_inset 
+
+ points 
+\emph on 
+across
+\emph default 
+ 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ and along lines of equal 
+\begin_inset Quotes eld
+\end_inset 
+
+time
+\begin_inset Quotes erd
+\end_inset 
+
+, for 
+\emph on 
+some
+\emph default 
+ choice of 
+\begin_inset Quotes eld
+\end_inset 
+
+time
+\begin_inset Quotes erd
+\end_inset 
+
+ across the flow
+\layout Standard
+\align center 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+psfrag{s=3}{$
+\backslash 
+tau=3$} 
+\backslash 
+psfrag{s=2}{$
+\backslash 
+tau=2$} 
+\backslash 
+psfrag{s=1}{$
+\backslash 
+tau=1$} 
+\backslash 
+psfrag{s =0}{$
+\backslash 
+tau=0$} 
+\backslash 
+psfrag{v}{$
+\backslash 
+mathbf{v}$} 
+\backslash 
+psfrag{c}{$
+\backslash 
+mathbf{c}$}
+\end_inset 
+
+
+\begin_inset Graphics
+	filename GR_course/connecting_vectors.eps
+	display none
+	width 50col%
+
+\end_inset 
+
+
+\layout Standard
+
+Note: coordinate vector fields 
+\begin_inset Formula $\partial_{x^{\mu}}$
+\end_inset 
+
+ always commute (no discrepancy when following coord.\SpecialChar ~
+lines)
+\layout Standard
+
+Question: Given a vector field 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+, can we find coord's 
+\begin_inset Formula $\left\{ x^{\mu}\right\} $
+\end_inset 
+
+ s.t.\SpecialChar ~
+
+\begin_inset Formula $\mathbf{v}=\partial_{x^{1}}$
+\end_inset 
+
+? (Yes.
+ Need a basis of connecting vector fields for 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+.
+ But 
+\begin_inset Formula $\left[\mathbf{c},\mathbf{v}\right]=0$
+\end_inset 
+
+ is an ODE for 
+\begin_inset Formula $\mathbf{c}$
+\end_inset 
+
+ along flow of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+.)
+\layout Standard
+
+
+\series bold 
+Practice problems:
+\series default 
+ 1.
+ A vector 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ is tangent to a surface 
+\begin_inset Formula $f(p)=\textrm{const}$
+\end_inset 
+
+ iff 
+\begin_inset Formula $\mathbf{v}\circ f=0$
+\end_inset 
+
+.
+ If 
+\begin_inset Formula $\mathbf{u},\mathbf{v}$
+\end_inset 
+
+ are tangent to the surface, show that 
+\begin_inset Formula $\left[\mathbf{u},\mathbf{v}\right]$
+\end_inset 
+
+ is also tangent to the same surface.
+\newline 
+2.
+ A flow is given explicitly by the equations
+\begin_inset Formula \[
+\left\{ x,y,z\right\} \mapsto\left\{ x+\tau y,y,z-\tau x\right\} \]
+
+\end_inset 
+
+Compute the vector field 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ that generates this flow.
+ Find two examples of connecting vector fields for 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+.
+ 
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+
+\begin_inset Formula $\mathbf{v}=y\partial_{x}-x\partial_{z}$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathbf{c}_{1}=\partial_{y}$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathbf{c}_{2}$
+\end_inset 
+
+=
+\begin_inset Formula $\partial_{z}$
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Slide
+
+1-forms
+\layout Standard
+
+
+\series bold 
+Differential forms
+\layout Standard
+
+1-form is a linear function chosen in each tangent space (element of cotangent
+ space 
+\begin_inset Formula $T_{p}^{*}\mathcal{M}$
+\end_inset 
+
+)
+\layout Standard
+
+Example: 
+\begin_inset Formula $\mathbf{v}\mapsto\mathbf{v}\circ f$
+\end_inset 
+
+ for fixed 
+\begin_inset Formula $f$
+\end_inset 
+
+; this 1-form is denoted 
+\begin_inset Formula $\textrm{d}f$
+\end_inset 
+
+, so 
+\begin_inset Formula $\left(\textrm{d}f\right)\circ\mathbf{v}\equiv\mathbf{v}\circ f$
+\end_inset 
+
+.
+ The 1-form 
+\begin_inset Formula $\textrm{d}f$
+\end_inset 
+
+ is called the 
+\series bold 
+gradient
+\series default 
+ of 
+\begin_inset Formula $f$
+\end_inset 
+
+
+\layout Standard
+
+Interpretation: 
+\begin_inset Formula $\left(\textrm{d}f\right)\circ\mathbf{v}$
+\end_inset 
+
+ is the change of 
+\begin_inset Formula $f$
+\end_inset 
+
+ over a short curve segment represented by 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+
+\layout Standard
+
+Coordinate 1-forms: 
+\begin_inset Formula $\textrm{d}x$
+\end_inset 
+
+, 
+\begin_inset Formula $\textrm{d}y$
+\end_inset 
+
+, 
+\begin_inset Formula $\textrm{d}z$
+\end_inset 
+
+ are gradients of coordinate functions 
+\begin_inset Formula $x,y,z$
+\end_inset 
+
+
+\begin_inset Formula \[
+\left(\textrm{d}x\right)\circ\partial_{x}=1,\quad\left(\textrm{d}x\right)\circ\partial_{y}=0,\quad\textrm{etc.}\]
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Practice problems
+\series default 
+: 1.
+ For 
+\begin_inset Formula $\boldsymbol{\omega}=\textrm{d}(x^{2}y^{3})$
+\end_inset 
+
+ and 
+\begin_inset Formula $\mathbf{v}=y^{2}\partial_{x}$
+\end_inset 
+
+, compute 
+\begin_inset Formula $\boldsymbol{\omega}\circ\mathbf{v}$
+\end_inset 
+
+
+\newline 
+2.
+ Let 
+\begin_inset Formula $\boldsymbol{\omega}\circ\mathbf{a}\equiv y\left(\mathbf{a}\circ x\right)y^{2}-2\mathbf{a}\circ y$
+\end_inset 
+
+; express 
+\begin_inset Formula $\boldsymbol{\omega}$
+\end_inset 
+
+ through 
+\begin_inset Formula $\textrm{d}x$
+\end_inset 
+
+, 
+\begin_inset Formula $\textrm{d}y$
+\end_inset 
+
+
+\newline 
+3.
+ Find all 1-forms 
+\begin_inset Formula $\boldsymbol{\omega}=a\textrm{d}x+b\textrm{d}y$
+\end_inset 
+
+ such that 
+\begin_inset Formula $\boldsymbol{\omega}\circ\left(\partial_{x}+x\partial_{y}\right)=0$
+\end_inset 
+
+
+\newline 
+4.
+ Find all vectors 
+\begin_inset Formula $\mathbf{v}=a\partial_{x}+b\partial_{y}$
+\end_inset 
+
+ such that 
+\begin_inset Formula $\left(x\textrm{d}y+y\textrm{d}x\right)\circ\mathbf{v}=0$
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Tensor fields
+\series default 
+ = tensor product of vector fields and 1-forms
+\layout Slide
+
+Calculus
+\layout Standard
+
+
+\series bold 
+Calculus of 
+\begin_inset Formula $n$
+\end_inset 
+
+-forms
+\layout Standard
+
+Antisymmetric tensor product of 
+\begin_inset Formula $1$
+\end_inset 
+
+-forms:
+\begin_inset Formula \[
+\left(\boldsymbol{\psi}\wedge\boldsymbol{\omega}\right)\circ\left(\mathbf{a},\mathbf{b}\right)=\boldsymbol{\psi}(\mathbf{a})\boldsymbol{\omega}(\mathbf{b})-\boldsymbol{\psi}(\mathbf{b})\boldsymbol{\omega}(\mathbf{a})\]
+
+\end_inset 
+
+Exterior differential:
+\begin_inset Formula \begin{align*}
+\textrm{d}\left(\lambda\boldsymbol{\omega}\right) & =\left(\textrm{d}\lambda\right)\wedge\boldsymbol{\omega}+\lambda\wedge\textrm{d}\boldsymbol{\omega}\\
+\textrm{d}(\boldsymbol{\psi}\wedge\boldsymbol{\omega}) & =\left(\textrm{d}\boldsymbol{\psi}\right)\wedge\boldsymbol{\omega}+\left(-\right)^{\left|\boldsymbol{\psi}\right|}\boldsymbol{\psi}\wedge\textrm{d}\boldsymbol{\omega}\\
+\textrm{d}\left(\textrm{d}\boldsymbol{\omega}\right) & =0\end{align*}
+
+\end_inset 
+
+Examples: 
+\begin_inset Formula $\textrm{d}\left(x\textrm{d}x\right)=0$
+\end_inset 
+
+; 
+\begin_inset Formula $\textrm{d}(x\textrm{d}y-y\textrm{d}x)=2\textrm{d}x\wedge\textrm{d}y$
+\end_inset 
+
+
+\newline 
+General formulas: (
+\begin_inset Formula $\boldsymbol{\theta}$
+\end_inset 
+
+ is 1-form, 
+\begin_inset Formula $\boldsymbol{\omega}$
+\end_inset 
+
+ is 
+\begin_inset Formula $n$
+\end_inset 
+
+-form)
+\begin_inset Formula \begin{align*}
+\left(\textrm{d}\boldsymbol{\theta}\right)\circ\left(\mathbf{x},\mathbf{y}\right) & =\mathbf{x}\circ\boldsymbol{\theta}(\mathbf{y})-\mathbf{y}\circ\boldsymbol{\theta}(\mathbf{x})-\boldsymbol{\theta}\left(\left[\mathbf{x},\mathbf{y}\right]\right)\\
+\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\left(\textrm{d}\boldsymbol{\omega}\right)\circ(\mathbf{v}_{1},...,\mathbf{v}_{n+1}) & =\sum_{s=1}^{n+1}\left(-\right)^{s-1}\mathbf{v}_{s}\circ\boldsymbol{\omega}(\mathbf{v}_{1},...\hat{\mathbf{v}}_{s}...,\mathbf{v}_{n+1})\\
+\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace+\sum_{1\leq r<s\leq n+1}(- & )^{r+s-1}\,\boldsymbol{\omega}\left(\left[\mathbf{v}_{r},\mathbf{v}_{s}\right],\mathbf{v}_{1},...\hat{\mathbf{v}}_{r}\hat{\mathbf{v}}_{s}...,\mathbf{v}_{n+1}\right)\end{align*}
+
+\end_inset 
+
+Insertion operator: 
+\begin_inset Formula $\left(\iota_{\mathbf{x}}\boldsymbol{\omega}\right)\circ\left(\mathbf{a},\mathbf{b},...\right)=\boldsymbol{\omega}(\mathbf{x},\mathbf{a},\mathbf{b},...)$
+\end_inset 
+
+
+\layout Standard
+
+
+\size normal 
+\color green
+Integration of 
+\begin_inset Formula $\boldsymbol{\omega}$
+\end_inset 
+
+ over a domain 
+\begin_inset Formula $\mathcal{U}$
+\end_inset 
+
+: 
+\begin_inset Formula $\int_{\mathcal{U}}\boldsymbol{\omega}$
+\end_inset 
+
+ 
+\newline 
+Stokes theorem: 
+\begin_inset Formula $\int_{\mathcal{U}}\textrm{d}\boldsymbol{\omega}=\int_{\partial\mathcal{U}}\boldsymbol{\omega}$
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Practice problem:
+\series default 
+ show that 
+\begin_inset Formula $\textrm{d}\boldsymbol{\theta}(\mathbf{x},\mathbf{y})$
+\end_inset 
+
+ does not depend on derivatives of 
+\begin_inset Formula $\mathbf{x},\mathbf{y}$
+\end_inset 
+
+
+\layout Slide
+
+Theorema Frobenii minore
+\layout Standard
+
+
+\series bold 
+Frobenius theorem for 1-forms
+\layout Standard
+
+1-form 
+\begin_inset Formula $\boldsymbol{\omega}$
+\end_inset 
+
+ is exact iff 
+\begin_inset Formula $\boldsymbol{\omega}=\textrm{d}f$
+\end_inset 
+
+; then 
+\begin_inset Formula $\boldsymbol{\omega}(\mathbf{v})=0$
+\end_inset 
+
+ means 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ is tangent to the surface 
+\begin_inset Formula $f=\textrm{const}$
+\end_inset 
+
+
+\newline 
+Given a 1-form 
+\begin_inset Formula $\boldsymbol{\omega}$
+\end_inset 
+
+, how to find whether 
+\begin_inset Formula $\boldsymbol{\omega}(\mathbf{v})=0$
+\end_inset 
+
+ is 
+\emph on 
+surface-forming
+\emph default 
+?
+\newline 
+Example: 
+\begin_inset Formula $\boldsymbol{\omega}=x\textrm{d}y$
+\end_inset 
+
+ is surface-forming, but not 
+\begin_inset Formula $x\textrm{d}y-y\textrm{d}x+\textrm{d}z$
+\end_inset 
+
+ (it's a spiral-shaped field!)
+\layout Standard
+
+
+\series bold 
+Theorem
+\series default 
+: 
+\begin_inset Formula $\boldsymbol{\omega}$
+\end_inset 
+
+ is surface-forming iff 
+\begin_inset Formula $\boldsymbol{\omega}\wedge\textrm{d}\boldsymbol{\omega}=0$
+\end_inset 
+
+
+\layout Standard
+
+Proof: 1.
+ If 
+\begin_inset Formula $\boldsymbol{\omega}$
+\end_inset 
+
+ is surface-forming, then 
+\begin_inset Formula $\exists f$
+\end_inset 
+
+: 
+\begin_inset Formula $\forall\mathbf{v}$
+\end_inset 
+
+, 
+\begin_inset Formula $\left(\boldsymbol{\omega}(\mathbf{v})=0\right)\Leftrightarrow\left(\mathbf{v}\circ f=0\right)$
+\end_inset 
+
+.
+ Choosing a basis 
+\begin_inset Formula $\left\{ \textrm{d}f,\boldsymbol{\theta}_{1},\boldsymbol{\theta}_{2},...\right\} $
+\end_inset 
+
+ in 
+\begin_inset Formula $T_{p}^{*}\mathcal{M}$
+\end_inset 
+
+ we find 
+\begin_inset Formula $\boldsymbol{\omega}=\lambda\textrm{d}f$
+\end_inset 
+
+ (else 
+\begin_inset Formula $\exists\,\mathbf{v}:\mathbf{v}\circ f\neq0,\,\boldsymbol{\omega}(\mathbf{v})=0$
+\end_inset 
+
+) 
+\begin_inset Formula $\Rightarrow\boldsymbol{\omega}\wedge\textrm{d}\boldsymbol{\omega}=0$
+\end_inset 
+
+.
+\newline 
+2.
+ From 
+\begin_inset Formula $\boldsymbol{\omega}\wedge\textrm{d}\boldsymbol{\omega}=0$
+\end_inset 
+
+, need to show that flows of 
+\begin_inset Formula $\forall\mathbf{v}:\boldsymbol{\omega}(\mathbf{v})=0$
+\end_inset 
+
+ lie within a single surface.
+ Commutator of 
+\begin_inset Formula $\mathbf{u},\mathbf{v}$
+\end_inset 
+
+ should remain within the surface! Need to show 
+\begin_inset Formula $\forall\,\mathbf{u},\mathbf{v}:\boldsymbol{\omega}(\mathbf{u})=0$
+\end_inset 
+
+, 
+\begin_inset Formula $\boldsymbol{\omega}(\mathbf{v})=0\Rightarrow\boldsymbol{\omega}([\mathbf{u},\mathbf{v}])=0$
+\end_inset 
+
+.
+ Choose a vector 
+\begin_inset Formula $\mathbf{t}$
+\end_inset 
+
+ such that 
+\begin_inset Formula $\boldsymbol{\omega}(\mathbf{t})=1$
+\end_inset 
+
+ (
+\begin_inset Quotes eld
+\end_inset 
+
+transverse
+\begin_inset Quotes erd
+\end_inset 
+
+).
+ Compute: 
+\begin_inset Formula $0=\left(\boldsymbol{\omega}\wedge\textrm{d}\boldsymbol{\omega}\right)\circ(\mathbf{t},\mathbf{u},\mathbf{v})=\boldsymbol{\omega}(\mathbf{t})\textrm{d}\boldsymbol{\omega}\left(\mathbf{u},\mathbf{v}\right)=$
+\end_inset 
+
+ 
+\begin_inset Formula $\textrm{d}\boldsymbol{\omega}(\mathbf{u},\mathbf{v})=\mathbf{u}\circ\boldsymbol{\omega}(\mathbf{v})-\mathbf{v}\circ\boldsymbol{\omega}(\mathbf{u})-\boldsymbol{\omega}([\mathbf{u},\mathbf{v}])$
+\end_inset 
+
+, thus 
+\begin_inset Formula $\boldsymbol{\omega}([\mathbf{u},\mathbf{v}])=0$
+\end_inset 
+
+.
+\hfill 
+
+\begin_inset Formula $\blacksquare$
+\end_inset 
+
+
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+
+\hfill 
+
+\begin_inset Formula $\blacksquare$
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Practice problem*:
+\series default 
+ If 
+\begin_inset Formula $\boldsymbol{F}\wedge\boldsymbol{\omega}=0$
+\end_inset 
+
+, where 
+\begin_inset Formula $\boldsymbol{F}$
+\end_inset 
+
+ is 
+\begin_inset Formula $n$
+\end_inset 
+
+-form and 
+\begin_inset Formula $\boldsymbol{\omega}$
+\end_inset 
+
+ is 1-form, show that 
+\begin_inset Formula $\exists\,\boldsymbol{\theta}:\boldsymbol{F}=\boldsymbol{\theta}\wedge\boldsymbol{\omega}$
+\end_inset 
+
+ where 
+\begin_inset Formula $\boldsymbol{\theta}$
+\end_inset 
+
+ is a suitable 
+\begin_inset Formula $(n-1)$
+\end_inset 
+
+-form.
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+Solution: Choose a vector 
+\begin_inset Formula $\mathbf{t}$
+\end_inset 
+
+ such that 
+\begin_inset Formula $\boldsymbol{\omega}(\mathbf{t})=1$
+\end_inset 
+
+, then 
+\begin_inset Formula $\boldsymbol{\theta}:=\iota_{\mathbf{t}}\boldsymbol{F}$
+\end_inset 
+
+.
+ For proof that 
+\begin_inset Formula $\boldsymbol{F}=\boldsymbol{\theta}\wedge\boldsymbol{\omega}$
+\end_inset 
+
+, use a basis 
+\begin_inset Formula $\left\{ \mathbf{t},\mathbf{e}_{1},\mathbf{e}_{2},...\right\} $
+\end_inset 
+
+ such that 
+\begin_inset Formula $\boldsymbol{\omega}(\mathbf{t})=1$
+\end_inset 
+
+, 
+\begin_inset Formula $\boldsymbol{\omega}(\mathbf{e}_{j})=0$
+\end_inset 
+
+.
+\end_inset 
+
+
+\layout Slide
+
+Lie derivative
+\layout Standard
+
+
+\series bold 
+Lie derivative
+\layout Standard
+
+Need derivative of vectors in direction 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ but...
+\newline 
+Cannot add tangent vectors at different points!
+\layout Standard
+
+Solution: transport vectors by the flow of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+
+\layout Standard
+\align center 
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+psfrag{v}{$
+\backslash 
+mathbf{v}$} 
+\backslash 
+psfrag{a}{$
+\backslash 
+mathbf{a}$}
+\backslash 
+psfrag{p1}{$p$} 
+\backslash 
+psfrag{b}{$
+\backslash 
+mathbf{b}$} 
+\backslash 
+psfrag{p2}{$p^
+\backslash 
+prime$} 
+\backslash 
+psfrag{a2}{$
+\backslash 
+mathbf{a}^
+\backslash 
+prime$} 
+\backslash 
+psfrag{b2}{$
+\backslash 
+mathbf{b}^
+\backslash 
+prime$}
+\end_inset 
+
+
+\begin_inset Graphics
+	filename GR_course/Lie-1.eps
+	display none
+	width 40col%
+
+\end_inset 
+
+
+\begin_inset Formula $\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\negmedspace\mathcal{L}_{\mathbf{v}}\mathbf{a}={\displaystyle \lim_{\delta t\rightarrow0}\frac{T_{\mathbf{v}}^{-1}\left[\mathbf{a}(p')\right]-\mathbf{a}(p)}{\delta t}}$
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}X$
+\end_inset 
+
+ measures how much 
+\begin_inset Formula $X$
+\end_inset 
+
+ differs from 
+\begin_inset Formula $T_{\mathbf{v}}X$
+\end_inset 
+
+ (i.e.\SpecialChar ~
+
+\begin_inset Formula $X$
+\end_inset 
+
+ transported by the flow of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+)
+\newline 
+Properties that follow from this picture: 
+\newline 
+* 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}f=\mathbf{v}\circ f$
+\end_inset 
+
+ on scalar functions 
+\begin_inset Formula $f$
+\end_inset 
+
+
+\newline 
+* 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}\mathbf{a}=\left[\mathbf{v},\mathbf{a}\right]$
+\end_inset 
+
+ on vectors 
+\begin_inset Formula $\mathbf{a}$
+\end_inset 
+
+
+\newline 
+(Note: connecting vector is exactly transported.)
+\newline 
+* 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}\left(X+\lambda Y\right)=\mathcal{L}_{\mathbf{v}}X+\lambda\mathcal{L}_{\mathbf{v}}Y+\left(\mathcal{L}_{\mathbf{v}}\lambda\right)Y$
+\end_inset 
+
+
+\newline 
+* 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}\left(\omega\circ\mathbf{a}\right)=\left(\mathcal{L}_{\mathbf{v}}\omega\right)\circ\mathbf{a}+\omega\circ\mathcal{L}_{\mathbf{v}}\mathbf{a}$
+\end_inset 
+
+ on 1-forms 
+\begin_inset Formula $\omega$
+\end_inset 
+
+
+\newline 
+Note: 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}X$
+\end_inset 
+
+ depends on the 
+\emph on 
+flow
+\emph default 
+ of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+, not only on the value of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ at a point!
+\layout Standard
+
+Lie derivative of tensors: 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}(X\otimes Y)=\left(\mathcal{L}_{\mathbf{v}}X\right)\otimes Y+X\otimes\mathcal{L}_{\mathbf{v}}Y$
+\end_inset 
+
+ ; same for wedge product 
+\begin_inset Formula $\omega\wedge\psi$
+\end_inset 
+
+
+\layout Slide
+
+calculations
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 4. Lie derivative, metric, affine connection, Killing vectors}{2007-10-26}
+\end_inset 
+
+Lecture 4, 2007-10-26.
+ Calculations with Lie derivatives
+\layout Standard
+
+
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}X$
+\end_inset 
+
+ depends on 
+\emph on 
+derivatives
+\emph default 
+ of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ as well as on derivatives of 
+\begin_inset Formula $X$
+\end_inset 
+
+: 
+\begin_inset Formula \[
+\mathcal{L}_{\lambda v}\mathbf{a}=\lambda\mathcal{L}_{\mathbf{v}}\mathbf{a}-\left(\mathbf{a}\circ\lambda\right)\mathbf{v}\neq\lambda\mathcal{L}_{\mathbf{v}}\mathbf{a}\]
+
+\end_inset 
+
+
+\layout Standard
+
+Lie derivative of 1-form: 
+\begin_inset Formula \[
+\left(\mathcal{L}_{\mathbf{v}}\omega\right)\circ\mathbf{u}=\mathbf{v}\circ\left(\omega\circ\mathbf{u}\right)-\omega\circ\left[\mathbf{v},\mathbf{u}\right]\]
+
+\end_inset 
+
+Compute 
+\begin_inset Formula $\mathcal{L}_{\partial_{x}}\left(\textrm{d}y\right)$
+\end_inset 
+
+: 
+\begin_inset Formula $\left(\mathcal{L}_{\partial_{x}}\textrm{d}y\right)\circ\mathbf{v}=\mathcal{L}_{\partial_{x}}\left(\mathbf{v}\circ y\right)-\textrm{d}y\circ\left[\partial_{x},\mathbf{v}\right]=\mathbf{v}\circ\left(\textrm{d}y\circ\partial_{x}\right)=0$
+\end_inset 
+
+.
+\layout Standard
+
+Lie derivative of a bilinear form: 
+\begin_inset Formula $\left(\mathcal{L}_{\mathbf{v}}A\right)\circ(\mathbf{x},\mathbf{y})=\mathbf{v}\circ\left[A(\mathbf{x},\mathbf{y})\right]-A(\left[\mathbf{v},\mathbf{x}\right],\mathbf{y})-A(\mathbf{x},\left[\mathbf{v},\mathbf{y}\right])$
+\end_inset 
+
+
+\layout Standard
+
+
+\size normal 
+\color green
+Cartan homotopy formula: 
+\begin_inset Formula $\mathcal{L}_{\mathbf{x}}\omega=\iota_{\mathbf{x}}\textrm{d}\omega+\textrm{d}\iota_{\mathbf{x}}\omega$
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Practice problems:
+\series default 
+ 1.
+ Compute 
+\begin_inset Formula $\mathcal{L}_{\partial_{x}}\textrm{d}x$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathcal{L}_{x\partial_{x}}\left(x\partial_{y}\right)$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathcal{L}_{x\partial_{y}}\left(xy\textrm{d}x\right)$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathcal{L}_{x\partial_{y}+xy\partial_{x}}\left(2z^{2}\textrm{d}z\right)$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathcal{L}_{x\partial_{x}}\left(x\textrm{d}x\wedge\textrm{d}y\right)$
+\end_inset 
+
+.
+\newline 
+2.
+ Let 
+\begin_inset Formula $A(\mathbf{a},\mathbf{b})\equiv\left(\mathbf{a}\circ x\right)\left(\mathbf{b}\circ y\right)z-\left(\mathbf{a}\circ y\right)\left(\mathbf{b}\circ z\right)x$
+\end_inset 
+
+; compute 
+\begin_inset Formula $\mathcal{L}_{x\partial_{y}}A$
+\end_inset 
+
+.
+ (
+\begin_inset Formula $A$
+\end_inset 
+
+ is a 2nd rank tensor)
+\newline 
+3.
+ Let 
+\begin_inset Formula $\hat{T}(\mathbf{a})\mathbf{b}=\left(\mathbf{b}\circ x\right)y\mathbf{a}-\left(\mathbf{a}\circ y\right)x\mathbf{b}$
+\end_inset 
+
+; compute 
+\begin_inset Formula $\mathcal{L}_{\partial_{x}}\hat{T}$
+\end_inset 
+
+.
+ (
+\begin_inset Formula $\hat{T}$
+\end_inset 
+
+ is a 3rd rank tensor)
+\newline 
+4.
+ Show that 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}\textrm{d}\lambda=\textrm{d}\mathcal{L}_{\mathbf{v}}\lambda$
+\end_inset 
+
+ for scalar 
+\begin_inset Formula $\lambda$
+\end_inset 
+
+
+\newline 
+5.
+ Show that 
+\begin_inset Formula $\mathcal{L}_{\lambda\mathbf{v}}\omega=\lambda\mathcal{L}_{\mathbf{v}}\omega+\left(\omega\circ\mathbf{v}\right)\textrm{d}\lambda$
+\end_inset 
+
+
+\layout Slide
+
+Lie property
+\layout Standard
+
+
+\series bold 
+Important property of Lie derivative
+\layout Standard
+
+Statement: If 
+\begin_inset Formula $\mathcal{L}_{\partial_{1}}T=0$
+\end_inset 
+
+ for a tensor 
+\begin_inset Formula $T=\sum_{\alpha,\beta,...}T_{\alpha\beta...}\textrm{d}x^{\alpha}\otimes\textrm{d}x^{\beta}\otimes...$
+\end_inset 
+
+ then the components 
+\begin_inset Formula $T_{\alpha\beta...}$
+\end_inset 
+
+ do not depend on 
+\begin_inset Formula $x^{1}$
+\end_inset 
+
+
+\layout Standard
+
+Proof: use Leibnitz rule and 
+\begin_inset Formula $\mathcal{L}_{\partial_{1}}\textrm{d}x^{\alpha}=0$
+\end_inset 
+
+ and 
+\begin_inset Formula $\mathcal{L}_{\partial_{1}}\partial_{\alpha}=0$
+\end_inset 
+
+
+\layout Standard
+
+Interpretation: if 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}T=0$
+\end_inset 
+
+ then components of 
+\begin_inset Formula $T$
+\end_inset 
+
+ are constant along the flow of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+
+\newline 
+Which components? -- In a basis of connecting vectors for 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+
+\layout Standard
+
+The property 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}T=0$
+\end_inset 
+
+ does not depend on other basis vectors, only on 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+!
+\layout Standard
+
+Note: 
+\begin_inset Formula $x$
+\end_inset 
+
+-component of a tensor depends on the function 
+\begin_inset Formula $x(p)$
+\end_inset 
+
+ and on the vector field 
+\begin_inset Formula $\partial_{x}$
+\end_inset 
+
+.
+ But 
+\begin_inset Formula $\partial_{x}$
+\end_inset 
+
+ depends not only on the function 
+\begin_inset Formula $x(p)$
+\end_inset 
+
+, but also on the choice of every other coordinate.
+\layout Slide
+
+Metric
+\layout Standard
+
+
+\series bold 
+Metric
+\layout Standard
+
+Need to compute distances along paths
+\newline 
+Visualize using the embedding picture:
+\layout Standard
+\align center 
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+psfrag{z}{$z$} 
+\backslash 
+psfrag{a}{$
+\backslash 
+mathbf{a}$} 
+\backslash 
+psfrag{y}{$y$} 
+\backslash 
+psfrag{x}{$x$} 
+\backslash 
+psfrag{b}{$
+\backslash 
+mathbf{b}$}
+\end_inset 
+
+
+\begin_inset Graphics
+	filename metric-length.eps
+	width 45col%
+
+\end_inset 
+
+
+\layout Standard
+
+Distance between 
+\begin_inset Formula $\mathbf{a}$
+\end_inset 
+
+ and 
+\begin_inset Formula $\mathbf{b}$
+\end_inset 
+
+ 
+\emph on 
+along
+\emph default 
+ 
+\begin_inset Formula $\mathcal{M}$
+\end_inset 
+
+ is 
+\begin_inset Formula \[
+D(\mathbf{a},\mathbf{b})\approx\sqrt{\left(a_{x}-b_{x}\right)^{2}+\left(a_{y}-b_{y}\right)^{2}+\left(a_{z}-b_{z}\right)^{2}}\]
+
+\end_inset 
+
+For infinitesimal lengths along 
+\begin_inset Formula $\left\{ x(\tau),y(\tau),z(\tau)\right\} $
+\end_inset 
+
+:
+\begin_inset Formula \[
+\delta L=\delta\tau\sqrt{\left(\frac{dx}{d\tau}\right)^{2}+\left(\frac{dy}{d\tau}\right)^{2}+\left(\frac{dz}{d\tau}\right)^{2}}\]
+
+\end_inset 
+
+ Use intrinsic coordinates 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset 
+
+: 
+\begin_inset Formula $\delta L=$
+\end_inset 
+
+ 
+\newline 
+
+\begin_inset Formula $=\delta\tau\sqrt{\left(x_{,u}\dot{u}+x_{,v}\dot{v}\right)^{2}+...}=\delta\tau\sqrt{A\dot{u}^{2}+2B\dot{u}\dot{v}+C\dot{v}^{2}}$
+\end_inset 
+
+
+\newline 
+Need to know only 
+\begin_inset Formula $A,B,C$
+\end_inset 
+
+ to compute length!
+\layout Standard
+
+The length in larger space gives the 
+\emph on 
+induced
+\emph default 
+ 
+\emph on 
+metric
+\emph default 
+.
+ Intrinsically,
+\series bold 
+ metric
+\series default 
+ is a quadratic form describing the length of infinitesimal curve segments
+ 
+\begin_inset Formula $\dot{\boldsymbol{\gamma}}\delta\tau$
+\end_inset 
+
+: 
+\begin_inset Formula $\delta L\approx\sqrt{g(\dot{\boldsymbol{\gamma}}\delta\tau,\dot{\boldsymbol{\gamma}}\delta\tau)}$
+\end_inset 
+
+
+\newline 
+Note: in GR the metric has signature 
+\begin_inset Formula $+--\,-$
+\end_inset 
+
+
+\layout Slide
+
+properties
+\layout Standard
+
+
+\series bold 
+Applications of metric structure
+\layout Standard
+
+Example: if 
+\begin_inset Formula $g(\dot{\gamma},\dot{\gamma})=A\dot{u}^{2}+2B\dot{u}\dot{v}+C\dot{v}^{2}$
+\end_inset 
+
+ in coords.\SpecialChar ~
+
+\begin_inset Formula $\left(u,v\right)$
+\end_inset 
+
+, then 
+\newline 
+
+\begin_inset Formula $g=A\textrm{d}u\otimes\textrm{d}u+B\left(\textrm{d}u\otimes\textrm{d}v+\textrm{d}v\otimes\textrm{d}u\right)+C\textrm{d}v\otimes\textrm{d}v$
+\end_inset 
+
+
+\newline 
+Shorthand notation: 
+\begin_inset Formula $g=A\, du^{2}+2B\, du\, dv+C\, dv^{2}$
+\end_inset 
+
+
+\newline 
+
+\series bold 
+Practice problem
+\series default 
+: compute the metric for the surface 
+\begin_inset Formula $z=x^{2}+y^{2}$
+\end_inset 
+
+ in coords.\SpecialChar ~
+
+\begin_inset Formula $\left\{ x,y\right\} $
+\end_inset 
+
+
+\layout Standard
+
+* Metric maps vectors into 1-forms and back
+\begin_inset Formula \begin{align*}
+\mathbf{v}\mapsto\hat{g}\mathbf{v}:\:\left(\hat{g}\mathbf{v}\right)\circ\mathbf{x} & \equiv g(\mathbf{v},\mathbf{x})\\
+\boldsymbol{\omega}\mapsto\hat{g}^{-1}\boldsymbol{\omega}:\: g(\left(\hat{g}^{-1}\boldsymbol{\omega}\right),\mathbf{x}) & \equiv\boldsymbol{\omega}\circ\mathbf{x}\end{align*}
+
+\end_inset 
+
+* Orthonormal frame: 
+\begin_inset Formula $\left\{ \mathbf{e}_{a}\right\} $
+\end_inset 
+
+; 
+\begin_inset Formula $g(\mathbf{e}_{a},\mathbf{e}_{b})=\eta_{ab}$
+\end_inset 
+
+ 
+\newline 
+* Dual basis of 1-forms 
+\begin_inset Formula $\left\{ \boldsymbol{\theta}^{a}\right\} $
+\end_inset 
+
+; 
+\begin_inset Formula $\boldsymbol{\theta}^{a}\circ\mathbf{e}_{b}=\delta_{b}^{a}$
+\end_inset 
+
+ 
+\layout Standard
+
+Levi-Civita tensor 
+\begin_inset Formula $\boldsymbol{\varepsilon}\equiv\boldsymbol{\theta}^{0}\wedge\boldsymbol{\theta}^{1}\wedge\boldsymbol{\theta}^{2}\wedge\boldsymbol{\theta}^{3}$
+\end_inset 
+
+ 
+\newline 
+-- independent of basis, up to orientation
+\newline 
+
+\begin_inset Formula $\boldsymbol{\epsilon}(\mathbf{a},\mathbf{b},\mathbf{c},\mathbf{d})$
+\end_inset 
+
+ = the 4-volume of a parallelepiped
+\layout Standard
+
+Components in a coordinate basis: 
+\begin_inset Formula $g_{\mu\nu}\equiv g(\partial_{\mu},\partial_{\nu})$
+\end_inset 
+
+
+\newline 
+All 4-forms are proportional to 
+\begin_inset Formula $\boldsymbol{\varepsilon}$
+\end_inset 
+
+.
+ Formula: 
+\begin_inset Formula \begin{eqnarray*}
+\boldsymbol{\varepsilon} & = & \left|\det g_{\mu\nu}\right|^{1/2}\textrm{d}x^{0}\wedge\textrm{d}x^{1}\wedge\textrm{d}x^{2}\wedge\textrm{d}x^{3}\end{eqnarray*}
+
+\end_inset 
+
+
+\layout Standard
+
+Proof: volume spanned by 
+\begin_inset Formula $\left\{ \partial_{\mu}\right\} $
+\end_inset 
+
+ equals 
+\begin_inset Formula $\boldsymbol{\varepsilon}(\partial_{0},...)$
+\end_inset 
+
+ and also equals 
+\begin_inset Formula $\left|\det g(\partial_{\mu},\partial_{\nu})\right|^{1/2}$
+\end_inset 
+
+ 
+\newline 
+(introduce transition matrix 
+\begin_inset Formula $\partial_{\alpha}=M_{\alpha}^{\beta}\mathbf{e}_{\beta}$
+\end_inset 
+
+, then the volume spanned by 
+\begin_inset Formula $\left\{ \partial_{\mu}\right\} $
+\end_inset 
+
+ equals 
+\begin_inset Formula $\det\hat{M}$
+\end_inset 
+
+)
+\layout Slide
+
+Covariant derivative
+\layout Standard
+
+
+\series bold 
+Affine connection (covariant derivative)
+\layout Standard
+
+Want to have directional derivative of vectors: 
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{x}$
+\end_inset 
+
+ that depends 
+\emph on 
+only
+\emph default 
+ on the value 
+\begin_inset Formula $\left.\mathbf{v}\right|_{p}$
+\end_inset 
+
+ (Lie derivative 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}\mathbf{x}$
+\end_inset 
+
+ contains derivatives of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ at 
+\begin_inset Formula $p$
+\end_inset 
+
+)
+\layout Standard
+
+Problem: need to subtract vectors in different tangent spaces; need a transport
+ operator 
+\begin_inset Formula $\hat{T}$
+\end_inset 
+
+:
+\begin_inset Formula \[
+\nabla_{\mathbf{v}}\mathbf{x}=\lim_{\sigma\rightarrow0}\frac{\hat{T}_{p'\rightarrow p}\left.\mathbf{x}\right|_{p'}-\left.\mathbf{x}\right|_{p}}{\sigma}\]
+
+\end_inset 
+
+Motivation: consider surface embedded in flat space; 
+\begin_inset Quotes eld
+\end_inset 
+
+roll
+\begin_inset Quotes erd
+\end_inset 
+
+ the tangent plane along the vector 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ from 
+\begin_inset Formula $p'$
+\end_inset 
+
+ to 
+\begin_inset Formula $p$
+\end_inset 
+
+
+\layout Standard
+\align center 
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+psfrag{aformula}{$
+\backslash 
+hat T  
+\backslash 
+mathbf{x} = 
+\backslash 
+mathbf{x} + 
+\backslash 
+lambda
+\backslash 
+mathbf{n}$} 
+\backslash 
+psfrag{bformula}{$
+\backslash 
+hat{T}_{p' 
+\backslash 
+to p}$} 
+\backslash 
+psfrag{n}{$
+\backslash 
+mathbf{n}$}  
+\backslash 
+psfrag{n}{$
+\backslash 
+mathbf{n}$} 
+\backslash 
+psfrag{a1}{$
+\backslash 
+mathbf{x}|_p$} 
+\backslash 
+psfrag{p1}{$p$} 
+\backslash 
+psfrag{p2}{$p'$} 
+\backslash 
+psfrag{a2}{$
+\backslash 
+mathbf{x}|_{p'}$} 
+\end_inset 
+
+
+\begin_inset Graphics
+	filename LC-connection-roll-1.eps
+	width 45col%
+
+\end_inset 
+
+
+\layout Standard
+
+Note: 
+\begin_inset Formula $n$
+\end_inset 
+
+-dimensional 
+\begin_inset Quotes eld
+\end_inset 
+
+rolling
+\begin_inset Quotes erd
+\end_inset 
+
+ is 2-dim.\SpecialChar ~
+rotation in the 
+\begin_inset Formula $\left\{ \mathbf{v},\mathbf{n}\right\} $
+\end_inset 
+
+ plane -- to 1st order this is equivalent to adding a multiple of 
+\begin_inset Formula $\mathbf{n}$
+\end_inset 
+
+ to vectors in larger space; to 2nd order -- a multiple of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+
+\layout Slide
+
+Properties
+\layout Standard
+
+
+\series bold 
+Properties of the induced connection
+\layout Standard
+
+Denote by 
+\begin_inset Formula $\tilde{g}$
+\end_inset 
+
+ and by 
+\begin_inset Formula $\partial$
+\end_inset 
+
+ the metric and the aff.\SpecialChar ~
+connection in large space, and by 
+\begin_inset Formula $g$
+\end_inset 
+
+ the induced metric on the surface
+\newline 
+Since 
+\begin_inset Formula $\hat{T}\mathbf{x}=\mathbf{x}+\lambda\mathbf{n}$
+\end_inset 
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset 
+
+ 
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{x}=\partial_{\mathbf{v}}\mathbf{x}+\lambda(\mathbf{v},\mathbf{x})\mathbf{n}$
+\end_inset 
+
+
+\newline 
+Since 
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{x}\in T_{p}\mathcal{M}$
+\end_inset 
+
+, we have 
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{x}=\mbox{Proj}_{(\mathbf{n})}\partial_{\mathbf{v}}\mathbf{x}$
+\end_inset 
+
+ (orthogonal projection w.r.t.\SpecialChar ~
+
+\begin_inset Formula $\tilde{g}$
+\end_inset 
+
+ onto 
+\begin_inset Formula $T_{p}\mathcal{M}$
+\end_inset 
+
+)
+\begin_inset Formula \[
+\mbox{Proj}_{(\mathbf{n})}\mathbf{x}\equiv\mathbf{x}-\mathbf{n}\frac{\tilde{g}(\mathbf{n},\mathbf{x})}{\tilde{g}(\mathbf{n},\mathbf{n})}\]
+
+\end_inset 
+
+
+\layout Standard
+
+Need a formula for 
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{x}$
+\end_inset 
+
+ without embedding
+\newline 
+Note properties: 
+\begin_inset Formula $\partial_{\mathbf{u}}\mathbf{v}-\partial_{\mathbf{v}}\mathbf{u}=\left[\mathbf{u},\mathbf{v}\right]$
+\end_inset 
+
+; 
+\begin_inset Formula $\partial_{\mathbf{u}}\tilde{g}=0$
+\end_inset 
+
+
+\layout Standard
+
+Define 
+\begin_inset Formula $\mbox{Tors}\left(\mathbf{a},\mathbf{b}\right)\equiv\nabla_{\mathbf{a}}\mathbf{b}-\nabla_{\mathbf{b}}\mathbf{a}-\left[\mathbf{a},\mathbf{b}\right]$
+\end_inset 
+
+; verify that 
+\begin_inset Formula $\mbox{Tors}\left(\mathbf{a},\mathbf{b}\right)$
+\end_inset 
+
+ is dependent of derivatives; then 
+\begin_inset Formula $\mbox{Tors}\left(\mathbf{a},\mathbf{b}\right)=\mbox{Proj}_{(\mathbf{n})}\tilde{\mbox{Tors}}\left(\mathbf{a},\mathbf{b}\right)=0$
+\end_inset 
+
+
+\layout Standard
+
+Verify 
+\begin_inset Formula $\nabla_{\mathbf{v}}g=0$
+\end_inset 
+
+ for tangent vectors 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+:
+\begin_inset Formula \begin{align*}
+\left(\nabla_{\mathbf{v}}g\right)\circ(\mathbf{a},\mathbf{b}) & =\mathbf{v}\circ g(\mathbf{a},\mathbf{b})-g(\nabla_{\mathbf{v}}\mathbf{a},\mathbf{b})-g(\mathbf{a},\nabla_{\mathbf{v}}\mathbf{b})\\
+=\mathbf{v} & \circ\tilde{g}(\mathbf{a},\mathbf{b})-\tilde{g}(\partial_{\mathbf{v}}\mathbf{a},\mathbf{b})-\tilde{g}(\mathbf{a},\partial_{\mathbf{v}}\mathbf{b})=0\end{align*}
+
+\end_inset 
+
+
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{x}$
+\end_inset 
+
+ has the properties of 1st order derivative.
+\newline 
+Verify: 
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{x}$
+\end_inset 
+
+ is independent of derivatives of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+: 
+\begin_inset Formula $\nabla_{\lambda\mathbf{v}}\mathbf{x}=\mbox{Proj}_{(\mathbf{n})}\partial_{\lambda\mathbf{v}}\mathbf{x}=\lambda\mbox{Proj}_{(\mathbf{n})}\partial_{\lambda\mathbf{v}}\mathbf{x}=\lambda\nabla_{\mathbf{v}}\mathbf{x}$
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Formula $\rightarrow$
+\end_inset 
+
+ Express 
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{x}$
+\end_inset 
+
+ through the intrinsic metric 
+\begin_inset Formula $g$
+\end_inset 
+
+!
+\layout Slide
+
+LC connection
+\layout Standard
+
+
+\series bold 
+Levi-Civit
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+`a
+\end_inset 
+
+ (LC) connection 
+\layout Standard
+
+Properties: the connection is torsion-free:
+\begin_inset Formula \[
+\left[\mathbf{x},\mathbf{y}\right]=\nabla_{\mathbf{x}}\mathbf{y}-\nabla_{\mathbf{y}}\mathbf{x}\]
+
+\end_inset 
+
+Compatible with the metric:
+\begin_inset Formula \[
+\nabla_{\mathbf{x}}g(\mathbf{a},\mathbf{b})=g(\nabla_{\mathbf{x}}\mathbf{a},\mathbf{b})+g(\mathbf{a},\nabla_{\mathbf{x}}\mathbf{b})\]
+
+\end_inset 
+
+Will now derive an explicit formula for 
+\begin_inset Formula $\nabla_{\mathbf{y}}\mathbf{x}$
+\end_inset 
+
+.
+\layout Standard
+
+Define 
+\emph on 
+derivative
+\emph default 
+ 
+\emph on 
+tensor
+\emph default 
+ 
+\begin_inset Formula $B_{(\mathbf{x})}(\mathbf{a},\mathbf{b})\equiv g(\nabla_{\mathbf{a}}\mathbf{x},\mathbf{b})$
+\end_inset 
+
+.
+ 
+\size normal 
+Consider first the antisymmetric part of 
+\begin_inset Formula $B_{(\mathbf{x})}$
+\end_inset 
+
+: 
+\begin_inset Formula $B_{(\mathbf{x})}(\mathbf{a},\mathbf{b})-B_{(\mathbf{x})}(\mathbf{b},\mathbf{a})=g(\nabla_{\mathbf{a}}\mathbf{x},\mathbf{b})-g(\nabla_{\mathbf{b}}\mathbf{x},\mathbf{a})=\nabla_{\mathbf{a}}g(\mathbf{x},\mathbf{b})-\nabla_{\mathbf{b}}g(\mathbf{x},\mathbf{b})-g(\mathbf{x},[\mathbf{a},\mathbf{b}])=\left(\textrm{d}\hat{g}\mathbf{x}\right)\circ(\mathbf{a},\mathbf{b})$
+\end_inset 
+
+.
+ 
+\newline 
+Symmetric part: 
+\begin_inset Formula $B_{(\mathbf{x})}(\mathbf{a},\mathbf{b})+B_{(\mathbf{x})}(\mathbf{b},\mathbf{a})=g(\nabla_{\mathbf{x}}\mathbf{a}-\mathcal{L}_{\mathbf{x}}\mathbf{a},\mathbf{b})+g(\mathbf{a},\nabla_{\mathbf{x}}\mathbf{b}-\mathcal{L}_{\mathbf{x}}\mathbf{b})=\nabla_{\mathbf{x}}g(\mathbf{a},\mathbf{b})-g(\mathcal{L}_{\mathbf{x}}\mathbf{a},\mathbf{b})-g(\mathbf{a},\mathcal{L}_{\mathbf{x}}\mathbf{b})=\left(\mathcal{L}_{\mathbf{x}}g\right)\circ(\mathbf{a},\mathbf{b})$
+\end_inset 
+
+.
+ 
+\newline 
+
+\size default 
+Hence 
+\begin_inset Formula \[
+g(\nabla_{\mathbf{a}}\mathbf{x},\mathbf{b})=\frac{1}{2}\left(\textrm{d}\left(\hat{g}\mathbf{x}\right)+\mathcal{L}_{\mathbf{x}}g\right)\circ\left(\mathbf{a},\mathbf{b}\right)\]
+
+\end_inset 
+
+
+\color green
+Fully explicit formula (Koszul): 
+\begin_inset Formula $2g(\nabla_{\mathbf{a}}\mathbf{x},\mathbf{b})=\mathbf{a}\circ g(\mathbf{x},\mathbf{b})-\mathbf{b}\circ g(\mathbf{x},\mathbf{a})-g(\mathbf{x},\left[\mathbf{a},\mathbf{b}\right])+\mathbf{x}\circ g(\mathbf{a},\mathbf{b})-g(\left[\mathbf{x},\mathbf{a}\right],\mathbf{b})-g(\mathbf{a},\left[\mathbf{x},\mathbf{b}\right])$
+\end_inset 
+
+
+\layout Slide
+
+Geodesics
+\layout Standard
+
+
+\series bold 
+Geodesic vector fields and curves
+\layout Standard
+
+A vector field 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ is 
+\emph on 
+geodesic
+\emph default 
+ if 
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{v}=0$
+\end_inset 
+
+.
+\newline 
+A curve 
+\begin_inset Formula $\gamma(\tau)$
+\end_inset 
+
+ is 
+\emph on 
+geodesic
+\emph default 
+ 
+\emph on 
+with
+\emph default 
+ 
+\emph on 
+affine
+\emph default 
+ 
+\emph on 
+parameter
+\emph default 
+ 
+\begin_inset Formula $\tau$
+\end_inset 
+
+ if 
+\begin_inset Formula $\nabla_{\mathbf{v}}\mathbf{v}=0$
+\end_inset 
+
+, where 
+\begin_inset Formula $\mathbf{v}=\dot{\boldsymbol{\gamma}}$
+\end_inset 
+
+ is the velocity.
+\layout Standard
+
+Can change 
+\begin_inset Formula $\tau\rightarrow A\tau+B$
+\end_inset 
+
+ if 
+\begin_inset Formula $A,B=\textrm{const}$
+\end_inset 
+
+
+\newline 
+Normalization property: 
+\begin_inset Formula $\nabla_{\mathbf{v}}g(\mathbf{v},\mathbf{v})=0$
+\end_inset 
+
+, so we can choose 
+\begin_inset Formula $\tau$
+\end_inset 
+
+ such that 
+\begin_inset Formula $g(\mathbf{v},\mathbf{v})=0,\pm1$
+\end_inset 
+
+
+\newline 
+Null geodesic: 
+\begin_inset Formula $g(\mathbf{n},\mathbf{n})=0$
+\end_inset 
+
+.
+ If observed in a reference frame with 4-velocity 
+\begin_inset Formula $\mathbf{u}$
+\end_inset 
+
+, the 
+\emph on 
+frequency of the photon
+\emph default 
+ is 
+\begin_inset Formula $\nu=g(\mathbf{u},\mathbf{n})$
+\end_inset 
+
+.
+\layout Slide
+
+Killing vectors
+\layout Standard
+
+
+\series bold 
+Killing vectors
+\layout Standard
+
+Motivation: geometry does not change in the direction of a symmetry 
+\newline 
+Example: 
+\begin_inset Formula $g=dt^{2}-e^{2N(t)}\left(dx^{2}+dy^{2}+dz^{2}\right)$
+\end_inset 
+
+ does not change in directions 
+\begin_inset Formula $x,y,z$
+\end_inset 
+
+
+\newline 
+Generalize: components of 
+\begin_inset Formula $g$
+\end_inset 
+
+ are constant along the flow of 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+
+\layout Standard
+
+A vector field 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ is a 
+\emph on 
+Killing vector
+\emph default 
+ if 
+\begin_inset Formula $\mathcal{L}_{\mathbf{v}}g=0$
+\end_inset 
+
+.
+\newline 
+Example: 
+\begin_inset Formula $g=f(r)dt^{2}-g(r)dr^{2}-r^{2}d\Omega^{2}$
+\end_inset 
+
+ has Killing vectors 
+\begin_inset Formula $\partial_{t}$
+\end_inset 
+
+, 
+\begin_inset Formula $\partial_{\phi}$
+\end_inset 
+
+ (and others!)
+\layout Standard
+
+Formula: 
+\begin_inset Formula $\left(\mathcal{L}_{\mathbf{x}}g\right)\circ\left(\mathbf{a},\mathbf{b}\right)=g(\nabla_{\mathbf{a}}\mathbf{x},\mathbf{b})+g(\mathbf{a},\nabla_{\mathbf{b}}\mathbf{x})$
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula $\Rightarrow$
+\end_inset 
+
+ 
+\emph on 
+Killing equation
+\emph default 
+:
+\begin_inset Formula \[
+\mathbf{k}:\: g(\nabla_{\mathbf{a}}\mathbf{k},\mathbf{b})+g(\mathbf{a},\nabla_{\mathbf{b}}\mathbf{k})=0\textrm{ for }\forall\mathbf{a},\mathbf{b}\]
+
+\end_inset 
+
+Note: for a Killing vector 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+, the symmetric part of 
+\begin_inset Formula $B_{(\mathbf{k})}$
+\end_inset 
+
+ vanishes 
+\begin_inset Formula $\Rightarrow$
+\end_inset 
+
+ 
+\begin_inset Formula $B_{(\mathbf{k})}=\frac{1}{2}\textrm{d}\hat{g}\mathbf{k}$
+\end_inset 
+
+ is a 2-form
+\layout Standard
+
+Conformal Killing vector: 
+\begin_inset Formula $\mathcal{L}_{\mathbf{k}}g=2\lambda g$
+\end_inset 
+
+ for some scalar 
+\begin_inset Formula $\lambda$
+\end_inset 
+
+.
+ 
+\begin_inset Formula $\leftarrow$
+\end_inset 
+
+ Geometry is conformally rescaled under the flow of 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+.
+\newline 
+Example: FRW universe, 
+\begin_inset Formula $g=dt^{2}-a^{2}(t)\gamma$
+\end_inset 
+
+.
+ Expect conformal Killing vector 
+\begin_inset Formula $\mathbf{k}=f(t)\partial_{t}$
+\end_inset 
+
+ with some 
+\begin_inset Formula $f(t)$
+\end_inset 
+
+.
+ Calculation: assume 
+\begin_inset Formula $\mathbf{a}=a_{t}\partial_{t}+a_{x}\partial_{x}$
+\end_inset 
+
+ such that 
+\begin_inset Formula $\partial_{t}a_{t,x}=0$
+\end_inset 
+
+, then 
+\begin_inset Formula $\left(\mathcal{L}_{\mathbf{k}}g\right)\circ(\mathbf{a},\mathbf{b})=-f\partial_{t}\left(a^{2}\right)\gamma(\mathbf{a},\mathbf{b})+2f'a_{t}b_{t}$
+\end_inset 
+
+.
+ Thus we must have 
+\begin_inset Formula $2f'=2\frac{a'}{a}f$
+\end_inset 
+
+, hence 
+\begin_inset Formula $f(t)=a(t)\cdot\mbox{const}$
+\end_inset 
+
+.
+ 
+\layout Slide
+
+Redshift
+\layout Standard
+
+
+\series bold 
+Redshift factor and gravitational potential 
+\layout Standard
+
+Metric 
+\begin_inset Formula $g$
+\end_inset 
+
+ is 
+\emph on 
+stationary
+\emph default 
+ if there exists a timelike Killing vector 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ : 
+\begin_inset Formula $g(\mathbf{k},\mathbf{k})>0$
+\end_inset 
+
+, 
+\begin_inset Formula $\mathcal{L}_{\mathbf{k}}g=0$
+\end_inset 
+
+.
+\newline 
+Note: metric 
+\begin_inset Formula $g$
+\end_inset 
+
+ is 
+\emph on 
+static
+\emph default 
+ if 
+\begin_inset Formula $g(\mathbf{k},\mathbf{k})>0$
+\end_inset 
+
+, 
+\begin_inset Formula $\mathcal{L}_{\mathbf{k}}g=0$
+\end_inset 
+
+, and 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ is everywhere orthogonal to a surface.
+\layout Standard
+
+
+\emph on 
+Stationary observers
+\emph default 
+ move with 4-velocity 
+\begin_inset Formula $\frac{\mathbf{k}}{\sqrt{g(\mathbf{k},\mathbf{k})}}$
+\end_inset 
+
+
+\newline 
+Consider a photon along null geodesic 
+\begin_inset Formula $\gamma(\tau)$
+\end_inset 
+
+; locally observed frequency (energy) is 
+\begin_inset Formula $\nu=\frac{g(\mathbf{k},\dot{\boldsymbol{\gamma}})}{\sqrt{g(\mathbf{k},\mathbf{k})}}$
+\end_inset 
+
+.
+\layout Standard
+
+Statement: 
+\begin_inset Formula $g(\mathbf{k},\dot{\boldsymbol{\gamma}})=\textrm{const}$
+\end_inset 
+
+ along geodesic 
+\begin_inset Formula $\gamma$
+\end_inset 
+
+.
+\newline 
+Proof: Let 
+\begin_inset Formula $\mathbf{v}=\dot{\boldsymbol{\gamma}}$
+\end_inset 
+
+, then 
+\begin_inset Formula $\nabla_{\mathbf{v}}g(\mathbf{k},\mathbf{v})=g(\nabla_{\mathbf{v}}\mathbf{k},\mathbf{v})=\frac{1}{2}\left(\textrm{d}\hat{g}\mathbf{k}+\mathcal{L}_{\mathbf{k}}g\right)\circ(\mathbf{v},\mathbf{v})=0$
+\end_inset 
+
+.
+\layout Standard
+
+Hence 
+\begin_inset Formula $\nu=\nu_{0}\left[g(\mathbf{k},\mathbf{k})\right]^{-1/2}$
+\end_inset 
+
+.
+ Define 
+\emph on 
+redshift
+\emph default 
+ 
+\begin_inset Formula $z=\sqrt{g(\mathbf{k},\mathbf{k})}$
+\end_inset 
+
+.
+ 
+\layout Standard
+
+Photons are redshifted by factor 
+\begin_inset Formula $z$
+\end_inset 
+
+
+\layout Slide
+
+Geodesics extremize proper length
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 5. Geodesics, redshift, surface gravity}{2007-10-31}
+\end_inset 
+
+Lecture 5, 2007-10-31.
+ Geodesics extremize proper length
+\layout Standard
+
+Statement: Geodesic curves 
+\begin_inset Formula $\gamma(\tau)$
+\end_inset 
+
+ extremize proper length 
+\begin_inset Formula $\int\sqrt{g(\dot{\boldsymbol{\gamma}},\dot{\boldsymbol{\gamma}})}d\tau$
+\end_inset 
+
+
+\layout Standard
+
+Proof (for 
+\emph on 
+timelike
+\emph default 
+ curves): Deform 
+\begin_inset Formula $\gamma(\tau)$
+\end_inset 
+
+ by transverse vector field 
+\begin_inset Formula $\mathbf{t}$
+\end_inset 
+
+; obtain connecting field 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+; compute: 
+\begin_inset Formula $\mathcal{L}_{\mathbf{t}}\int\sqrt{g(\mathbf{v},\mathbf{v})}d\tau=\int\frac{g(\nabla_{\mathbf{t}}\mathbf{v},\mathbf{v})}{\sqrt{g(\mathbf{v},\mathbf{v})}}d\tau=\int\frac{g(\nabla_{\mathbf{v}}\mathbf{t},\mathbf{v})}{\sqrt{g(\mathbf{v},\mathbf{v})}}d\tau=\int\nabla_{\mathbf{v}}\left(...\right)d\tau-\int g(\mathbf{t},\nabla_{\mathbf{v}}\frac{\mathbf{v}}{\sqrt{g(\mathbf{v},\mathbf{v})}})d\tau$
+\end_inset 
+
+.
+ Hence, 
+\begin_inset Formula $\nabla_{\mathbf{v}}\frac{\mathbf{v}}{\sqrt{g(\mathbf{v},\mathbf{v})}}=0$
+\end_inset 
+
+.
+ Reparameterize 
+\begin_inset Formula $\tau\rightarrow\int^{\tau}\sqrt{g(\mathbf{v},\mathbf{v})}d\tau$
+\end_inset 
+
+ to achieve 
+\begin_inset Formula $g(\dot{\boldsymbol{\gamma}},\dot{\boldsymbol{\gamma}})=1$
+\end_inset 
+
+.
+\hfill 
+
+\begin_inset Formula $\blacksquare$
+\end_inset 
+
+
+\newline 
+
+\layout Standard
+
+Note: for spacelike curves need 
+\begin_inset Formula $\sqrt{-g(\mathbf{v},\mathbf{v})}$
+\end_inset 
+
+; for null curves need 
+\begin_inset Formula $\int Ng(\mathbf{v},\mathbf{v})d\tau$
+\end_inset 
+
+.
+\layout Standard
+
+Universal variational principle:
+\begin_inset Formula \[
+\delta\int\left[\frac{g(\dot{\boldsymbol{\gamma}},\dot{\boldsymbol{\gamma}})}{N}+KN\right]d\tau=0\quad\textrm{where }N\equiv N(\tau)\]
+
+\end_inset 
+
+EOM: 
+\begin_inset Formula $g(\dot{\boldsymbol{\gamma}},\dot{\boldsymbol{\gamma}})=KN^{2}$
+\end_inset 
+
+; 
+\begin_inset Formula $\nabla_{\mathbf{v}}\left(N^{-1}\mathbf{v}\right)=0$
+\end_inset 
+
+
+\newline 
+For null geodesics: choose 
+\begin_inset Formula $K=0$
+\end_inset 
+
+ (but 
+\begin_inset Formula $N\neq0$
+\end_inset 
+
+!)
+\layout Slide
+
+Killing vectors II
+\layout Standard
+
+
+\series bold 
+Killing vectors II
+\layout Standard
+
+
+\color green
+Compute: 
+\newline 
+
+\begin_inset Formula $\left(\mathcal{L}_{\lambda\mathbf{k}}g\right)\circ(\mathbf{a},\mathbf{a})=2g(\nabla_{\mathbf{a}}\lambda\mathbf{k},\mathbf{a})=2\left(\mathbf{a}\circ\lambda\right)g(\mathbf{k},\mathbf{a})+\left(\mathcal{L}_{\mathbf{k}}g\right)\circ(\mathbf{a},\mathbf{a})$
+\end_inset 
+
+, so 
+\begin_inset Formula $\mathcal{L}_{\lambda\mathbf{k}}g=\lambda\mathcal{L}_{\mathbf{k}}g+\textrm{d}\lambda\otimes\hat{g}\mathbf{k}+\hat{g}\mathbf{k}\otimes\textrm{d}\lambda$
+\end_inset 
+
+ or 
+\begin_inset Formula $\left(\mathcal{L}_{\lambda\mathbf{k}}g\right)_{\alpha\beta}=\lambda\left(\mathcal{L}_{\mathbf{k}}g\right)_{\alpha\beta}+\lambda_{,\alpha}k_{,\beta}+\lambda_{,\beta}k_{,\alpha}$
+\end_inset 
+
+
+\layout Standard
+
+
+\color green
+
+\begin_inset Formula $\mathcal{L}_{\mathbf{k}}\left(\lambda g\right)=\left(\mathbf{k}\circ\lambda\right)g+\lambda\mathcal{L}_{\mathbf{k}}g$
+\end_inset 
+
+
+\layout Standard
+
+
+\color green
+Example: FRW metric 
+\begin_inset Formula $g=dt^{2}-a^{2}d\mathbf{x}^{2}$
+\end_inset 
+
+, let us determine conformal Killing vector 
+\begin_inset Formula $\mathbf{k}=f\partial_{t}$
+\end_inset 
+
+: 
+\newline 
+
+\begin_inset Formula $\mathcal{L}_{f\partial_{t}}g=f\mathcal{L}_{\partial_{t}}\left(dt^{2}-a^{2}d\mathbf{x}^{2}\right)+\textrm{d}f\otimes\hat{g}\partial_{t}+\hat{g}\partial_{t}\otimes\textrm{d}f=-2fa\dot{a}\, d\mathbf{x}^{2}+2\dot{f}\textrm{d}t\otimes\textrm{d}t$
+\end_inset 
+
+
+\newline 
+If 
+\begin_inset Formula $f=a$
+\end_inset 
+
+ then 
+\begin_inset Formula $\mathcal{L}_{f\partial_{t}}g=2\dot{a}g$
+\end_inset 
+
+.
+\layout Standard
+
+
+\color green
+For timelike conformal Killing vectors: redshift 
+\begin_inset Formula $z=\sqrt{g(\mathbf{k},\mathbf{k})}$
+\end_inset 
+
+ still meaningful since 
+\begin_inset Formula $\nabla_{\dot{\boldsymbol{\gamma}}}g(\dot{\boldsymbol{\gamma}},\mathbf{k})=\frac{1}{2}\left(\textrm{d}\hat{g}\mathbf{k}+\mathcal{L}_{\mathbf{k}}g\right)\circ\left(\dot{\boldsymbol{\gamma}},\dot{\boldsymbol{\gamma}}\right)=0$
+\end_inset 
+
+ for 
+\emph on 
+null
+\emph default 
+ geodesics 
+\begin_inset Formula $\dot{\boldsymbol{\gamma}}$
+\end_inset 
+
+ 
+\layout Standard
+
+
+\color green
+Note: 
+\begin_inset Formula $\left(\mathcal{L}_{\mathbf{k}}g\right)\circ\left(\mathbf{k},\mathbf{k}\right)=2g(\nabla_{\mathbf{k}}\mathbf{k},\mathbf{k})=2\lambda g(\mathbf{k},\mathbf{k})$
+\end_inset 
+
+, so 
+\begin_inset Formula $\lambda=\frac{g(\nabla_{\mathbf{k}}\mathbf{k},\mathbf{k})}{g(\mathbf{k},\mathbf{k})}=\nabla_{\mathbf{k}}\ln z$
+\end_inset 
+
+ 
+\layout Standard
+
+Also compute 
+\begin_inset Formula $g(\nabla_{\mathbf{k}}\mathbf{k},\mathbf{x})=2\lambda g(\mathbf{k},\mathbf{x})-g(\nabla_{\mathbf{x}}\mathbf{k},\mathbf{k})=2\lambda g(\mathbf{k},\mathbf{x})-\frac{1}{2}\nabla_{\mathbf{x}}g(\mathbf{k},\mathbf{k})$
+\end_inset 
+
+, thus 
+\begin_inset Formula \[
+\nabla_{\mathbf{k}}\mathbf{k}=-z\hat{g}^{-1}\textrm{d}z+2\lambda\mathbf{k}\]
+
+\end_inset 
+
+
+\series bold 
+\color green
+Practice problem
+\series default 
+: Can one always choose a vector field 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ such that 
+\emph on 
+all
+\emph default 
+ covariant derivatives vanish at a point? (
+\begin_inset Formula $\forall\mathbf{a}:\nabla_{\mathbf{a}}\mathbf{v}=0$
+\end_inset 
+
+)
+\layout Slide
+
+Redshift and gravitational potential II
+\layout Standard
+
+
+\series bold 
+Redshift and gravitational potential 
+\layout Standard
+
+Consider a stationary spacetime with a Killing vector 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+; redshift 
+\begin_inset Formula $z=\sqrt{g(\mathbf{k},\mathbf{k})}$
+\end_inset 
+
+
+\layout Standard
+
+Redshift is time-independent: 
+\begin_inset Formula $\nabla_{\mathbf{k}}z=0$
+\end_inset 
+
+ (since 
+\begin_inset Formula $\nabla_{\mathbf{k}}\ln z=\lambda=0$
+\end_inset 
+
+ for a Killing vector)
+\newline 
+Is 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ geodesic? No: 
+\begin_inset Formula $\nabla_{\mathbf{k}}\mathbf{k}=-z\hat{g}^{-1}\textrm{d}z\neq0$
+\end_inset 
+
+ unless 
+\begin_inset Formula $z=\textrm{const}$
+\end_inset 
+
+.
+\newline 
+Stationary observers move along 
+\begin_inset Formula $\mathbf{u}=\frac{1}{z}\mathbf{k}$
+\end_inset 
+
+.
+\layout Standard
+
+Acceleration of stationary observers, 
+\begin_inset Formula $\mathbf{a}=\nabla_{\mathbf{u}}\mathbf{u}=-\hat{g}^{-1}\textrm{d}\Phi$
+\end_inset 
+
+ where 
+\begin_inset Formula $\Phi$
+\end_inset 
+
+ is the 
+\emph on 
+gravitational potential
+\emph default 
+.
+\newline 
+Proof: with 
+\begin_inset Formula $\mathbf{u}=z^{-1}\mathbf{k}$
+\end_inset 
+
+ we have 
+\begin_inset Formula $\nabla_{\mathbf{u}}\mathbf{u}=\frac{1}{z}\nabla_{\mathbf{k}}\frac{\mathbf{k}}{z}=\frac{1}{z^{2}}\nabla_{\mathbf{k}}\mathbf{k}=-\frac{1}{z}\hat{g}^{-1}\textrm{d}z=-\hat{g}^{-1}\textrm{d}\Phi$
+\end_inset 
+
+ where 
+\begin_inset Formula $\Phi\equiv\ln z$
+\end_inset 
+
+.
+\layout Standard
+
+Example 1: Schwarzschild spacetime, 
+\begin_inset Formula $\mathbf{k}=\partial_{t}$
+\end_inset 
+
+,
+\begin_inset Formula \[
+g=\left(1-\frac{2M}{r}\right)dt^{2}-\left(1-\frac{2M}{r}\right)^{-1}dr^{2}-r^{2}d\Omega^{2}\]
+
+\end_inset 
+
+
+\begin_inset Formula $z=\left(1-\frac{2M}{r}\right)^{1/2}$
+\end_inset 
+
+; 
+\begin_inset Formula $\Phi=\frac{1}{2}\ln\left(1-\frac{2M}{r}\right)\approx-\frac{M}{r}$
+\end_inset 
+
+ 
+\layout Standard
+
+Example 2: FRW spacetime, 
+\begin_inset Formula $\mathbf{k}=a(t)\partial_{t}$
+\end_inset 
+
+,
+\begin_inset Formula \[
+g=dt^{2}-a^{2}d\mathbf{x}^{2},\quad\mathcal{L}_{\mathbf{k}}g=2\lambda g\]
+
+\end_inset 
+
+
+\begin_inset Formula $z=a(t)$
+\end_inset 
+
+, 
+\begin_inset Formula $\lambda=\dot{a}(t)$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathbf{u}=\partial_{t}$
+\end_inset 
+
+; but 
+\begin_inset Formula $\nabla_{\mathbf{u}}\mathbf{u}=0$
+\end_inset 
+
+:
+\begin_inset Formula \[
+2g(\nabla_{\mathbf{u}}\mathbf{u},\mathbf{x})=\left(\textrm{d}\hat{g}\mathbf{u}+\mathcal{L}_{\mathbf{u}}g\right)\circ\left(\mathbf{u},\mathbf{x}\right)=0\]
+
+\end_inset 
+
+
+\layout Slide
+
+Surface gravity
+\layout Standard
+
+
+\series bold 
+Force at a distance.
+ Surface gravity
+\layout Standard
+
+Consider stationary spacetime; 
+\begin_inset Formula $\mathcal{L}_{\mathbf{k}}g=0$
+\end_inset 
+
+
+\newline 
+Energy transfer and conservation: 
+\begin_inset Formula $zE=zg(\mathbf{u},\dot{\boldsymbol{\gamma}})$
+\end_inset 
+
+ is conserved in local processes
+\newline 
+Stationary observers feel acceleration in transverse direction, 
+\begin_inset Formula $\mathbf{a}=-\hat{g}^{-1}\mbox{d}\ln z$
+\end_inset 
+
+
+\layout Standard
+
+Transferring rope tension: 1) If rope moves by 
+\begin_inset Formula $\Delta r$
+\end_inset 
+
+ and transfers energy 
+\begin_inset Formula $\Delta E$
+\end_inset 
+
+, then 
+\begin_inset Formula $F\Delta r=\Delta E$
+\end_inset 
+
+.
+ 2) If energy 
+\begin_inset Formula $\Delta E$
+\end_inset 
+
+ is sent back by a particle, then 
+\begin_inset Formula $z\Delta E=\mbox{const}$
+\end_inset 
+
+.
+ Hence 
+\begin_inset Formula $zF=\mbox{const}$
+\end_inset 
+
+
+\layout Standard
+
+Force needed locally to held a unit mass stationary: 
+\begin_inset Formula $\mathbf{F}_{0}=\hat{g}^{-1}\mbox{d}\ln z$
+\end_inset 
+
+
+\layout Standard
+
+Force at infinity (
+\begin_inset Formula $z=1$
+\end_inset 
+
+): 
+\begin_inset Formula $\mathbf{F}_{\infty}=z\mathbf{F}_{0}=\hat{g}^{-1}\mbox{d}z$
+\end_inset 
+
+; 
+\begin_inset Formula $\left|\mathbf{F}_{\infty}\right|=\sqrt{g^{-1}\left(\mbox{d}z,\mbox{d}z\right)}$
+\end_inset 
+
+
+\layout Standard
+
+Example: Schwarzschild spacetime; 
+\begin_inset Formula $\mathbf{k}=\partial_{t}$
+\end_inset 
+
+; 
+\begin_inset Formula $z=\sqrt{1-\frac{2M}{r}}$
+\end_inset 
+
+; 
+\begin_inset Formula $\mbox{d}z=\frac{M}{r^{2}}\frac{\mbox{d}r}{\sqrt{1-\frac{2M}{r}}}$
+\end_inset 
+
+; 
+\begin_inset Formula $\hat{g}^{-1}\mbox{d}z=\frac{M}{r^{2}}\sqrt{1-\frac{2M}{r}}\partial_{r}$
+\end_inset 
+
+; 
+\begin_inset Formula $\left|\mathbf{F}_{\infty}\right|=\frac{M}{r^{2}}$
+\end_inset 
+
+.
+ This is 
+\emph on 
+still finite
+\emph default 
+ at horizon, 
+\begin_inset Formula $r=2M$
+\end_inset 
+
+, 
+\begin_inset Formula $\left|\mathbf{F}_{\infty}\right|=\frac{1}{4M}\equiv\kappa$
+\end_inset 
+
+ - 
+\emph on 
+surface gravity
+\layout Standard
+
+Note: at horizon 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ is 
+\emph on 
+null 
+\emph default 
+so the formula for 
+\begin_inset Formula $\nabla_{\mathbf{k}}\mathbf{k}=-z\hat{g}^{-1}\mbox{d}z$
+\end_inset 
+
+ does not apply.
+ 
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+and 
+\begin_inset Formula $\nabla_{\mathbf{k}}\mathbf{k}=\kappa\mathbf{k}$
+\end_inset 
+
+.
+ (This is not easy to see in Schwarzschild coordinates!) Proof: 
+\begin_inset Formula $g(\nabla_{\mathbf{k}}\mathbf{k},\mathbf{x})=-g(\nabla_{\mathbf{x}}\mathbf{k},\mathbf{k})=-\frac{1}{2}\mathbf{x}\circ g(\mathbf{k},\mathbf{k})=0$
+\end_inset 
+
+ for any 
+\begin_inset Formula $\mathbf{x}$
+\end_inset 
+
+ tangent to 
+\begin_inset Formula $g(\mathbf{k},\mathbf{k})=0$
+\end_inset 
+
+; thus 
+\begin_inset Formula $\nabla_{\mathbf{k}}\mathbf{k}$
+\end_inset 
+
+ is parallel to 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+.
+ 
+\end_inset 
+
+
+\layout Slide
+
+Transformal conformation
+\layout Standard
+
+
+\series bold 
+Change of LC connection under conformal transformation
+\layout Standard
+
+Consider 
+\begin_inset Formula $\tilde{g}=e^{2\Omega}g$
+\end_inset 
+
+.
+ What is the relationship between 
+\begin_inset Formula $\tilde{\nabla}$
+\end_inset 
+
+ and 
+\begin_inset Formula $\nabla$
+\end_inset 
+
+?
+\layout Standard
+
+
+\size normal 
+Compute: 
+\begin_inset Formula $2\tilde{g}(\tilde{\nabla}_{\bullet}\mathbf{a},\bullet)=\mbox{d}\hat{\tilde{g}}\mathbf{a}+\mathcal{L}_{\mathbf{a}}\tilde{g}=\mbox{d}e^{2\Omega}\hat{g}\mathbf{a}+\mathcal{L}_{\mathbf{a}}e^{2\Omega}g=e^{2\Omega}(\mbox{d}\hat{g}\mathbf{a}+\mathcal{L}_{\mathbf{a}}g)+2\left(\mbox{d}\Omega\right)\wedge\hat{\tilde{g}}\mathbf{a}+2\left(\mathbf{a}\circ\Omega\right)\tilde{g}$
+\end_inset 
+
+, hence 
+\size default 
+
+\begin_inset Formula $\tilde{g}(\tilde{\nabla}_{\mathbf{x}}\mathbf{a},\mathbf{y})=\tilde{g}(\nabla_{\mathbf{x}}\mathbf{a},\mathbf{y})+\left(\mathbf{x}\circ\Omega\right)\tilde{g}(\mathbf{a},\mathbf{y})-\left(\mathbf{y}\circ\Omega\right)\tilde{g}(\mathbf{a},\mathbf{x})+\left(\mathbf{a}\circ\Omega\right)\tilde{g}(\mathbf{x},\mathbf{y})$
+\end_inset 
+
+ or, without 
+\begin_inset Formula $\mathbf{y}$
+\end_inset 
+
+, 
+\begin_inset Formula \[
+\tilde{\nabla}_{\mathbf{x}}\mathbf{a}=\nabla_{\mathbf{x}}\mathbf{a}+\left(\mathbf{x}\circ\Omega\right)\mathbf{a}+\left(\mathbf{a}\circ\Omega\right)\mathbf{x}-g(\mathbf{a},\mathbf{x})g^{-1}\left(\mbox{d}\Omega\right)\]
+
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Practice exercises:
+\series default 
+ 1.
+ If 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ is a Killing vector for 
+\begin_inset Formula $g$
+\end_inset 
+
+, show that 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ is a conformal Killing vector for 
+\begin_inset Formula $e^{2\Omega}g$
+\end_inset 
+
+, for any 
+\begin_inset Formula $\Omega$
+\end_inset 
+
+.
+\newline 
+2.
+ If 
+\begin_inset Formula $\gamma(\tau)$
+\end_inset 
+
+ is a null geodesic for metric 
+\begin_inset Formula $g$
+\end_inset 
+
+, show that a reparameterization 
+\begin_inset Formula $\tau\rightarrow\tilde{\tau}$
+\end_inset 
+
+ is possible such that 
+\begin_inset Formula $\gamma(\tilde{\tau})$
+\end_inset 
+
+ is a null geodesic for 
+\begin_inset Formula $\tilde{g}=e^{2\Omega}g$
+\end_inset 
+
+.
+\newline 
+3.
+ Let 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ be a Killing vector for 
+\begin_inset Formula $g$
+\end_inset 
+
+ and 
+\begin_inset Formula $\gamma(\tau)$
+\end_inset 
+
+ be a geodesic.
+ Show that 
+\begin_inset Formula $\gamma$
+\end_inset 
+
+ is transported by the flow of 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ to another geodesic.
+ (If 
+\begin_inset Formula $\left[\mathbf{v},\mathbf{k}\right]=0$
+\end_inset 
+
+ then 
+\begin_inset Formula $\mathcal{L}_{\mathbf{k}}\nabla_{\mathbf{v}}\mathbf{v}=0$
+\end_inset 
+
+.) 
+\newline 
+4.
+ In a stationary spacetime, 
+\begin_inset Formula $n$
+\end_inset 
+
+ photons are sent each second from point 
+\begin_inset Formula $a$
+\end_inset 
+
+ to point 
+\begin_inset Formula $b$
+\end_inset 
+
+.
+ How many photons per second arrive at 
+\begin_inset Formula $b$
+\end_inset 
+
+? (Express the answer through the redshift function 
+\begin_inset Formula $z$
+\end_inset 
+
+.)
+\layout Slide
+
+Energy
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 6. Energy extraction from horizon. Curvature}{2007-11-02}
+\end_inset 
+
+Lecture 6, 2007-11-02.
+ Energy extraction from horizons
+\layout Standard
+
+Consider a stationary spacetime, 
+\begin_inset Formula $\mathcal{L}_{\mathbf{k}}g=0$
+\end_inset 
+
+, with a Killing horizon 
+\begin_inset Formula $g(\mathbf{k},\mathbf{k})=0$
+\end_inset 
+
+
+\layout Standard
+
+Lower a mass 
+\begin_inset Formula $m$
+\end_inset 
+
+ very slowly (adiabatically) on a strong rope from an initial point 
+\begin_inset Formula $p_{0}$
+\end_inset 
+
+ to point 
+\begin_inset Formula $p_{1}$
+\end_inset 
+
+ near horizon.
+ How much energy can be extracted at point 
+\begin_inset Formula $p_{0}$
+\end_inset 
+
+?
+\layout Standard
+
+Force needed to hold 
+\begin_inset Formula $m$
+\end_inset 
+
+ at 
+\begin_inset Formula $p_{1}$
+\end_inset 
+
+ is 
+\begin_inset Formula $\mathbf{F}_{1}=m\hat{g}^{-1}\left.\textrm{d}\ln z\right|_{p_{1}}$
+\end_inset 
+
+
+\layout Standard
+
+Due to redshift, force at 
+\begin_inset Formula $p_{0}$
+\end_inset 
+
+ is 
+\begin_inset Formula $\mathbf{F}_{0}=-\frac{z_{1}}{z_{0}}\mathbf{F}_{1}=-\frac{m}{z_{0}}\hat{g}^{-1}\left.\textrm{d}z\right|_{p_{1}}$
+\end_inset 
+
+
+\layout Standard
+
+To describe movement, introduce vector field 
+\begin_inset Formula $\mathbf{s}=\frac{-\hat{g}^{-1}\textrm{d}z}{\sqrt{g^{-1}(\textrm{d}z,\textrm{d}z)}}$
+\end_inset 
+
+.
+ After a shift 
+\begin_inset Formula $\Delta L$
+\end_inset 
+
+ along 
+\begin_inset Formula $\mathbf{s}$
+\end_inset 
+
+, energy gained at 
+\begin_inset Formula $p_{0}$
+\end_inset 
+
+ is 
+\begin_inset Formula $\Delta E=g(\mathbf{F}_{0},\mathbf{s}\Delta L)=-\left(\frac{m}{z_{0}}\mathbf{s}\Delta L\right)\circ z$
+\end_inset 
+
+.
+ Shifting slowly from 
+\begin_inset Formula $p_{0}$
+\end_inset 
+
+ to 
+\begin_inset Formula $p_{1}$
+\end_inset 
+
+ yields 
+\begin_inset Formula $\Delta E=-\int_{p_{0}}^{p_{1}}\frac{m}{z_{0}}\textrm{d}z=\frac{z_{0}-z_{1}}{z_{0}}m$
+\end_inset 
+
+ 
+\layout Standard
+
+Move to horizon, 
+\begin_inset Formula $z_{1}\approx0$
+\end_inset 
+
+ so 
+\begin_inset Formula $\Delta E\approx m$
+\end_inset 
+
+, extracted the entire energy (
+\begin_inset Formula $mc^{2}$
+\end_inset 
+
+)!
+\layout Slide
+
+Energy 2
+\layout Standard
+
+
+\series bold 
+Energy extraction: finite rope strength
+\layout Standard
+
+If rope has finite max.\SpecialChar ~
+tension 
+\begin_inset Formula $F_{\max}$
+\end_inset 
+
+, then move only up to 
+\begin_inset Formula $z_{\min}\neq0$
+\end_inset 
+
+: 
+\begin_inset Formula $z_{\min}F_{\max}\approx z_{0}m\kappa$
+\end_inset 
+
+, hence 
+\begin_inset Formula $\Delta E_{\max}\approx\left(1-\frac{m\kappa}{F_{\max}}\right)m<m$
+\end_inset 
+
+.
+ 
+\layout Standard
+
+Optimum choice of mass: 
+\begin_inset Formula $m_{\text{opt}}=\frac{1}{2}\frac{F_{\max}}{\kappa}$
+\end_inset 
+
+, then extract only 50% of 
+\begin_inset Formula $mc^{2}$
+\end_inset 
+
+
+\layout Standard
+
+Note: the formula for 
+\begin_inset Formula $\Delta E$
+\end_inset 
+
+ works only for 
+\begin_inset Formula $m\lesssim m_{\text{opt}}$
+\end_inset 
+
+ because of the near-horizon approximation 
+\begin_inset Formula $g^{-1}(\textrm{d}z,\textrm{d}z)\approx\kappa^{2}$
+\end_inset 
+
+
+\layout Standard
+
+Note: 
+\begin_inset Formula $\Delta E$
+\end_inset 
+
+ is independent of 
+\begin_inset Formula $z_{0}$
+\end_inset 
+
+, but energy is redshifted, so more 
+\begin_inset Quotes eld
+\end_inset 
+
+absolute
+\begin_inset Quotes erd
+\end_inset 
+
+ energy is gained if 
+\begin_inset Formula $p_{0}$
+\end_inset 
+
+ is further from the horizon
+\layout Standard
+
+
+\series bold 
+Practice problem
+\series default 
+: For the metric 
+\begin_inset Formula $g=f(r)dt^{2}-\frac{dr^{2}}{f(r)}-r^{2}\left(d\theta^{2}+\sin^{2}\theta\, d\phi^{2}\right)$
+\end_inset 
+
+, assume 
+\begin_inset Formula $f(r_{0})=0$
+\end_inset 
+
+, 
+\begin_inset Formula $f'(r_{0})\neq0$
+\end_inset 
+
+, so that 
+\begin_inset Formula $r=r_{0}$
+\end_inset 
+
+ is a horizon.
+ Compute the surface gravity 
+\begin_inset Formula $\kappa$
+\end_inset 
+
+ for that horizon.
+\layout Slide
+
+Expansion
+\layout Standard
+
+
+\series bold 
+Expansion (divergence) of a vector field
+\layout Standard
+
+The rate of change of volume under flow of 
+\begin_inset Formula $\mathbf{t}$
+\end_inset 
+
+:
+\newline 
+Volume spanned by 
+\begin_inset Formula $\left\{ \mathbf{t},\mathbf{a},\mathbf{b},\mathbf{c}\right\} $
+\end_inset 
+
+ is 
+\begin_inset Formula $\boldsymbol{\varepsilon}(\mathbf{t},\mathbf{a},\mathbf{b},\mathbf{c})$
+\end_inset 
+
+
+\newline 
+Choose 
+\begin_inset Formula $\mathbf{a},\mathbf{b},\mathbf{c}$
+\end_inset 
+
+ connecting for 
+\begin_inset Formula $\mathbf{t}$
+\end_inset 
+
+:
+\begin_inset Formula \[
+\mathbf{t}\circ\boldsymbol{\varepsilon}(\mathbf{t},\mathbf{a},\mathbf{b},\mathbf{c})=\mathcal{L}_{\mathbf{t}}\boldsymbol{\varepsilon}(\mathbf{t},\mathbf{a},\mathbf{b},\mathbf{c})=\left(\mathcal{L}_{\mathbf{t}}\boldsymbol{\varepsilon}\right)\circ(\mathbf{t},\mathbf{a},\mathbf{b},\mathbf{c})\]
+
+\end_inset 
+
+Due to antisymmetry, must have 
+\begin_inset Formula $\mathcal{L}_{\mathbf{t}}\boldsymbol{\varepsilon}=f\boldsymbol{\varepsilon}$
+\end_inset 
+
+ where 
+\begin_inset Formula $f\equiv\textrm{div}\,\mathbf{t}$
+\end_inset 
+
+ is the 
+\emph on 
+divergence
+\emph default 
+ or 
+\emph on 
+expansion
+\emph default 
+ of the vector field 
+\begin_inset Formula $\mathbf{t}$
+\end_inset 
+
+
+\layout Standard
+
+A better formula for computing 
+\begin_inset Formula $\textrm{div}\,\mathbf{t}$
+\end_inset 
+
+: 
+\newline 
+Choose 
+\emph on 
+orthonormal
+\emph default 
+ frame 
+\begin_inset Formula $\left\{ \mathbf{e}_{a}\right\} $
+\end_inset 
+
+, 
+\begin_inset Formula $g(\mathbf{e}_{a},\mathbf{e}_{b})=\eta_{ab}$
+\end_inset 
+
+; then
+\begin_inset Formula \begin{align*}
+\textrm{div}\,\mathbf{t} & =\sum_{a}\eta_{aa}g(\mathbf{e}_{a},\nabla_{\mathbf{e}_{a}}\mathbf{t})\\
+ & =\sum_{a}\eta_{aa}B_{(\mathbf{t})}(\mathbf{e}_{a},\mathbf{e}_{a})\equiv\textrm{Tr}_{\mathbf{x}}B_{(\mathbf{t})}(\mathbf{x},\mathbf{x})\end{align*}
+
+\end_inset 
+
+Proof: Consider the dual basis 
+\begin_inset Formula $\left\{ \boldsymbol{\theta}^{a}\right\} $
+\end_inset 
+
+ and compute 
+\begin_inset Formula $\mathcal{L}_{\mathbf{t}}\boldsymbol{\varepsilon}\equiv\mathcal{L}_{\mathbf{t}}\left(\boldsymbol{\theta}^{0}\wedge\boldsymbol{\theta}^{1}\wedge...\right)=\left(\mathcal{L}_{\mathbf{t}}\boldsymbol{\theta}^{0}\right)\wedge\boldsymbol{\theta}^{1}\wedge...+...$
+\end_inset 
+
+ Now 
+\begin_inset Formula $\mathcal{L}_{\mathbf{t}}\boldsymbol{\theta}^{0}=\sum_{a}\boldsymbol{\theta}^{a}\iota_{\mathbf{e}_{a}}\left(\mathcal{L}_{\mathbf{t}}\boldsymbol{\theta}^{0}\right)$
+\end_inset 
+
+, but only the term with 
+\begin_inset Formula $\boldsymbol{\theta}^{0}$
+\end_inset 
+
+ survives.
+ So 
+\begin_inset Formula $\mathcal{L}_{\mathbf{t}}\boldsymbol{\varepsilon}=(\iota_{\mathbf{e}_{0}}\mathcal{L}_{\mathbf{t}}\boldsymbol{\theta}^{0}+...)\boldsymbol{\varepsilon}$
+\end_inset 
+
+.
+ Simplify one term: 
+\begin_inset Formula $\left(\mathcal{L}_{\mathbf{t}}\boldsymbol{\theta}^{0}\right)\circ\mathbf{e}_{0}=-\boldsymbol{\theta}^{0}\circ\left[\mathbf{t},\mathbf{e}_{0}\right]=-\eta_{00}g(\mathbf{e}_{0},\left[\mathbf{t},\mathbf{e}_{0}\right])=\eta_{00}g(\mathbf{e}_{0},\nabla_{\mathbf{e}_{0}}\mathbf{t})$
+\end_inset 
+
+; we used 
+\begin_inset Formula $g(\mathbf{e}_{0},\nabla_{\mathbf{t}}\mathbf{e}_{0})=\frac{1}{2}\nabla_{\mathbf{t}}g(\mathbf{e}_{0},\mathbf{e}_{0})=0$
+\end_inset 
+
+.
+\hfill 
+
+\begin_inset Formula $\blacksquare$
+\end_inset 
+
+
+\layout Slide
+
+index-free
+\layout Standard
+
+
+\series bold 
+Calculations without indices
+\layout Standard
+
+From index to index-free notation:
+\newline 
+Introduce appropriate vector & tensor objects 
+\newline 
+Contract each free index with arbitrary vector
+\newline 
+Subtract terms coming from nested derivatives
+\newline 
+Traces: lower both indices, introduce 
+\begin_inset Formula $g^{\alpha\beta}$
+\end_inset 
+
+, then replace 
+\begin_inset Formula $g^{\alpha\beta}A_{\alpha\beta\gamma...}x^{\gamma}...$
+\end_inset 
+
+ by 
+\begin_inset Formula $\textrm{Tr}_{\mathbf{a}}\boldsymbol{A}(\mathbf{a},\mathbf{a},\mathbf{x},...)$
+\end_inset 
+
+
+\newline 
+Substitute 
+\begin_inset Formula $\mathbf{a}\otimes\mathbf{a}\rightarrow g^{-1}$
+\end_inset 
+
+ into 
+\begin_inset Formula $\boldsymbol{A}(\mathbf{a}\otimes\mathbf{a},\mathbf{x},...)$
+\end_inset 
+
+
+\newline 
+Tricks to simplify calculations:
+\newline 
+assume zero 1st derivatives of dummy vectors
+\newline 
+use properties of 
+\begin_inset Formula $\textrm{d}$
+\end_inset 
+
+, 
+\begin_inset Formula $\mathcal{L}$
+\end_inset 
+
+, 
+\begin_inset Formula $\nabla$
+\end_inset 
+
+, 
+\begin_inset Formula $\textrm{Tr}$
+\end_inset 
+
+ where it helps
+\layout Standard
+
+Example: 
+\begin_inset Formula $u^{\alpha}u^{\beta}u^{\gamma}w_{\gamma;\alpha\beta}=X^{\lambda}{}_{\alpha\lambda\beta}v^{\alpha}v^{\beta}$
+\end_inset 
+
+ 
+\newline 
+Introduce vectors 
+\begin_inset Formula $\mathbf{u},\mathbf{v},\mathbf{w}$
+\end_inset 
+
+ and a transformation-valued function 
+\begin_inset Formula $\hat{X}$
+\end_inset 
+
+ : 
+\begin_inset Formula $\hat{X}(\mathbf{x},\mathbf{y})\mathbf{z}\rightarrow X^{\mu}{}_{\alpha\beta\gamma}x^{\alpha}y^{\beta}z^{\gamma}$
+\end_inset 
+
+
+\newline 
+Rewrite 
+\begin_inset Formula $X^{\lambda}{}_{\alpha\lambda\beta}=g^{\kappa\lambda}X_{\kappa\alpha\lambda\beta}$
+\end_inset 
+
+; introduce tensor 
+\begin_inset Formula $X(\mathbf{a},\mathbf{x},\mathbf{y},\mathbf{z}):=g(\mathbf{a},\hat{X}(\mathbf{x},\mathbf{y})\mathbf{z})$
+\end_inset 
+
+ 
+\newline 
+Result: 
+\begin_inset Formula $g(\mathbf{u},\nabla_{\mathbf{u}}\nabla_{\mathbf{u}}\mathbf{w}-\nabla_{\nabla_{\mathbf{u}}\mathbf{u}}\mathbf{w})=\textrm{Tr}_{\mathbf{a}}g(\mathbf{a},\hat{X}(\mathbf{v},\mathbf{a})\mathbf{v})$
+\end_inset 
+
+
+\layout Standard
+
+Properties of the trace operation:
+\newline 
+Linear: 
+\begin_inset Formula $\textrm{Tr}_{\mathbf{a}}\nabla_{\mathbf{x}}\boldsymbol{F}=\nabla_{\mathbf{x}}\textrm{Tr}_{\mathbf{a}}\boldsymbol{F}$
+\end_inset 
+
+; same for 
+\begin_inset Formula $\mathcal{L}_{\mathbf{x}}$
+\end_inset 
+
+, 
+\begin_inset Formula $\iota_{\mathbf{x}}$
+\end_inset 
+
+, d
+\newline 
+
+\begin_inset Formula $\textrm{Tr}_{\mathbf{a}}g(\mathbf{a},\mathbf{a})=4$
+\end_inset 
+
+; 
+\begin_inset Formula $\textrm{Tr}_{\mathbf{a}}g(\mathbf{a},\mathbf{x})F(\mathbf{a},\mathbf{y},...)=F(\mathbf{x},\mathbf{y},...)$
+\end_inset 
+
+;
+\newline 
+
+\begin_inset Formula $\textrm{Tr}_{\mathbf{a}}g(\mathbf{a},\nabla_{\mathbf{a}}\mathbf{b})=\textrm{div}\,\mathbf{b}$
+\end_inset 
+
+; 
+\begin_inset Formula $\textrm{Tr}_{\mathbf{a}}\nabla_{\mathbf{a}}\nabla_{\mathbf{a}}\mathbf{X}=\square\mathbf{X}$
+\end_inset 
+
+.
+\layout Standard
+
+Example: 
+\begin_inset Formula $\hat{P}\mathbf{x}=\mathbf{x}-2\mathbf{n}g(\mathbf{n},\mathbf{x})$
+\end_inset 
+
+; 
+\begin_inset Formula $\textrm{Tr}\,\hat{P}=?$
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula $P^{\alpha}{}_{\alpha}=g^{\alpha\beta}P_{\alpha\beta}$
+\end_inset 
+
+; 
+\begin_inset Formula $P_{\alpha\beta}x^{\alpha}y^{\beta}=g(\mathbf{x},\hat{P}\mathbf{y})$
+\end_inset 
+
+; substitute 
+\begin_inset Formula $x^{\alpha}y^{\beta}\rightarrow g^{\alpha\beta}$
+\end_inset 
+
+ and introduce dummy vector 
+\begin_inset Formula $\mathbf{a}$
+\end_inset 
+
+:
+\newline 
+
+\begin_inset Formula $\textrm{Tr}_{\mathbf{a}}g(\mathbf{a},\hat{P}\mathbf{a})=\textrm{Tr}_{\mathbf{a}}g(\mathbf{a},\mathbf{a}-2\mathbf{n}g(\mathbf{n},\mathbf{a}))$
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula $=4-2\textrm{Tr}_{\mathbf{a}}g(\mathbf{a},\mathbf{n})g(\mathbf{a},\mathbf{n})=4-2g(\mathbf{n},\mathbf{n})$
+\end_inset 
+
+.
+\layout Slide
+
+Curvature
+\layout Standard
+
+
+\series bold 
+Curvature tensor
+\layout Standard
+
+Define 
+\begin_inset Formula $\hat{R}(\mathbf{a},\mathbf{b})\mathbf{c}=\nabla_{\mathbf{a}}\nabla_{\mathbf{b}}\mathbf{c}-\nabla_{\mathbf{b}}\nabla_{\mathbf{a}}\mathbf{c}-\nabla_{\left[\mathbf{a},\mathbf{b}\right]}\mathbf{c}$
+\end_inset 
+
+
+\newline 
+ Verify that 
+\begin_inset Formula $\hat{R}(\mathbf{a},\mathbf{b})\mathbf{c}$
+\end_inset 
+
+ is independent of derivatives of 
+\begin_inset Formula $\mathbf{a},\mathbf{b},\mathbf{c}$
+\end_inset 
+
+
+\newline 
+Thus: 
+\begin_inset Formula $\hat{R}$
+\end_inset 
+
+ is a transformation-valued 2-form.
+\layout Standard
+
+
+\begin_inset Quotes eld
+\end_inset 
+
+Covariant
+\begin_inset Quotes erd
+\end_inset 
+
+ tensor: 
+\begin_inset Formula $R(\mathbf{a},\mathbf{b},\mathbf{c},\mathbf{d})=g(\hat{R}(\mathbf{a},\mathbf{b})\mathbf{c},\mathbf{d})$
+\end_inset 
+
+
+\layout Standard
+
+Properties: exchange 
+\begin_inset Formula $\mathbf{a}\leftrightarrow\mathbf{b}$
+\end_inset 
+
+, 
+\begin_inset Formula $\mathbf{c}\leftrightarrow\mathbf{d}$
+\end_inset 
+
+, 
+\begin_inset Formula $\mathbf{ab}\leftrightarrow\mathbf{cd}$
+\end_inset 
+
+, Bianchi identities (derive from Jacobi identity)
+\layout Standard
+
+Example: Show that 
+\begin_inset Formula $R(\mathbf{a},\mathbf{b},\mathbf{x},\mathbf{x})=0$
+\end_inset 
+
+, then set 
+\begin_inset Formula $\mathbf{x}=\mathbf{c}+\mathbf{d}$
+\end_inset 
+
+ and derive 
+\begin_inset Formula $\mathbf{c}\leftrightarrow\mathbf{d}$
+\end_inset 
+
+ antisymmetry.
+ 
+\newline 
+Start with 
+\begin_inset Formula $\left\{ \nabla_{\mathbf{a}}\mathbf{b}-\nabla_{\mathbf{b}}\mathbf{a}-\left[\mathbf{a},\mathbf{b}\right]\right\} \circ g(\mathbf{x},\mathbf{x})=0$
+\end_inset 
+
+; assume 
+\begin_inset Formula $\nabla_{\mathbf{a},\mathbf{b}}\mathbf{x}=\left[\mathbf{a},\mathbf{b}\right]=0$
+\end_inset 
+
+; get 
+\begin_inset Formula $0=\left[\nabla_{\mathbf{a}},\nabla_{\mathbf{b}}\right]g(\mathbf{x},\mathbf{x})$
+\end_inset 
+
+ 
+\begin_inset Formula $=2g(\left[\nabla_{\mathbf{a}},\nabla_{\mathbf{b}}\right]\mathbf{x},\mathbf{x})=2R(\mathbf{a},\mathbf{b},\mathbf{x},\mathbf{x})$
+\end_inset 
+
+.
+\hfill 
+
+\begin_inset Formula $\blacksquare$
+\end_inset 
+
+
+\layout Standard
+
+Ricci tensor: 
+\begin_inset Formula $\textrm{Ric}\left(\mathbf{a},\mathbf{b}\right)=\textrm{Tr}_{\mathbf{x}}R(\mathbf{a},\mathbf{x},\mathbf{b},\mathbf{x})=\textrm{Ric}\left(\mathbf{b},\mathbf{a}\right)$
+\end_inset 
+
+
+\layout Standard
+
+Ricci scalar: 
+\begin_inset Formula $R=\textrm{Tr}_{\mathbf{x}}\textrm{Ric}(\mathbf{x},\mathbf{x})$
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Einstein equation
+\series default 
+: 
+\begin_inset Formula $\textrm{Ric}-\frac{1}{2}Rg=-8\pi GT$
+\end_inset 
+
+, where 
+\begin_inset Formula $T$
+\end_inset 
+
+ is energy-momentum tensor of matter, 
+\begin_inset Formula \[
+T=\frac{2}{\sqrt{-g}}\frac{\delta}{\delta g^{-1}}S_{\text{matter}}\]
+
+\end_inset 
+
+ 
+\layout Slide
+
+transformal conformation
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 7. Curvature of FRW spacetime. Scalar field cosmology}{2007-11-07}
+\end_inset 
+
+Lecture 7, 2007-11-07.
+ FRW spacetime
+\layout Standard
+
+Metric 
+\begin_inset Formula $g=dt^{2}-a^{2}(t)\left(dx^{2}+dy^{2}+dz^{2}\right)$
+\end_inset 
+
+ 
+\newline 
+
+\begin_inset Formula $=\textrm{d}t\otimes\textrm{d}t-a^{2}(t)h$
+\end_inset 
+
+; 
+\begin_inset Formula $h$
+\end_inset 
+
+ is the flat 3-dim.\SpecialChar ~
+metric
+\newline 
+Need the Einstein tensor, 
+\begin_inset Formula $\textrm{Ric}-\frac{1}{2}Rg$
+\end_inset 
+
+
+\layout Standard
+
+Compute covariant derivatives: 
+\newline 
+
+\begin_inset Formula $g(\nabla_{\mathbf{u}}\partial_{t},\mathbf{v})=\frac{1}{2}\left(\mathcal{L}_{\partial_{t}}g\right)\circ(\mathbf{u},\mathbf{v})=-\dot{a}ah(\mathbf{u},\mathbf{v})$
+\end_inset 
+
+, so 
+\begin_inset Formula $\nabla_{\partial_{t}}\partial_{t}=0$
+\end_inset 
+
+ and 
+\begin_inset Formula $\nabla_{\partial_{x}}\partial_{t}=\frac{\dot{a}}{a}\partial_{x}=\nabla_{\partial_{t}}\partial_{x}$
+\end_inset 
+
+.
+\newline 
+
+\begin_inset Formula $\hat{g}\partial_{x}=-a^{2}\textrm{d}x$
+\end_inset 
+
+; so 
+\begin_inset Formula $g(\nabla_{\mathbf{u}}\partial_{x},\mathbf{v})=\frac{1}{2}\left(\textrm{d}\hat{g}\partial_{x}\right)\circ\left(\mathbf{u},\mathbf{v}\right)=\left(-\dot{a}a\textrm{d}t\wedge\textrm{d}x\right)\circ\left(\mathbf{u},\mathbf{v}\right)$
+\end_inset 
+
+; so 
+\begin_inset Formula $g(\nabla_{\partial_{y}}\partial_{x},\bullet)=0$
+\end_inset 
+
+ and 
+\begin_inset Formula $g(\nabla_{\partial_{x}}\partial_{x},\partial_{t})=\dot{a}a$
+\end_inset 
+
+, so 
+\begin_inset Formula $\nabla_{\partial_{x}}\partial_{x}=\dot{a}a\partial_{t}$
+\end_inset 
+
+.
+ (
+\begin_inset Formula $\partial_{y}$
+\end_inset 
+
+, 
+\begin_inset Formula $\partial_{z}$
+\end_inset 
+
+...)
+\newline 
+Need 
+\begin_inset Formula $\hat{\textrm{Ric}}\mathbf{v}\equiv\hat{R}(\partial_{t},\mathbf{v})\partial_{t}-\frac{1}{a^{2}}{\displaystyle \sum_{\mathbf{s}=\partial_{x},\partial_{y},\partial_{z}}}\hat{R}(\mathbf{s},\mathbf{v})\mathbf{s}$
+\end_inset 
+
+.
+\newline 
+For 
+\begin_inset Formula $\mathbf{v}=\partial_{t}$
+\end_inset 
+
+ need 
+\begin_inset Formula $\hat{R}(\mathbf{s},\partial_{t})\mathbf{s}=\nabla_{\mathbf{s}}\nabla_{\partial_{t}}\mathbf{s}-\nabla_{\partial_{t}}\nabla_{\mathbf{s}}\mathbf{s}=\dot{a}^{2}\partial_{t}-\left(\dot{a}a\right)^{\cdot}\partial_{t}=-\ddot{a}a\partial_{t}$
+\end_inset 
+
+, so 
+\begin_inset Formula $\hat{\textrm{Ric}}\partial_{t}=3\frac{\ddot{a}}{a}\partial_{t}$
+\end_inset 
+
+
+\newline 
+For 
+\begin_inset Formula $\mathbf{v}=\partial_{x}$
+\end_inset 
+
+ we have 
+\begin_inset Formula $\hat{\textrm{Ric}}\partial_{x}=\hat{R}(\partial_{t},\partial_{x})\partial_{t}-\frac{1}{a^{2}}\hat{R}(\partial_{y},\partial_{x})\partial_{y}-\frac{1}{a^{2}}\hat{R}\left(\partial_{z},\partial_{x}\right)\partial_{z}=\frac{1}{a^{2}}(\ddot{a}a+2\dot{a}^{2})\partial_{x}$
+\end_inset 
+
+.
+\newline 
+Therefore 
+\begin_inset Formula $\hat{\textrm{Ric}}\mathbf{v}=\left(\frac{\ddot{a}}{a}+\frac{2\dot{a}^{2}}{a^{2}}\right)\mathbf{v}+2\left(\frac{\ddot{a}}{a}-\frac{\dot{a}^{2}}{a^{2}}\right)g(\mathbf{v},\partial_{t})\partial_{t}$
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula $\textrm{Ric}(\mathbf{u},\mathbf{v})=\left(\frac{\ddot{a}}{a}+\frac{2\dot{a}^{2}}{a^{2}}\right)g(\mathbf{u},\mathbf{v})+2\left(\frac{\ddot{a}}{a}-\frac{\dot{a}^{2}}{a^{2}}\right)g(\mathbf{u},\partial_{t})g(\mathbf{v},\partial_{t})$
+\end_inset 
+
+
+\newline 
+Ricci scalar: 
+\begin_inset Formula $R=\textrm{Tr}_{\mathbf{v}}g(\hat{\textrm{Ric}}\mathbf{v},\mathbf{v})=6\left(\frac{\ddot{a}}{a}+\frac{\dot{a}^{2}}{a^{2}}\right)$
+\end_inset 
+
+
+\newline 
+Einstein tensor: 
+\begin_inset Formula \[
+\textrm{Ric}-\frac{1}{2}Rg=-\left(\frac{2\ddot{a}}{a}+\frac{\dot{a}^{2}}{a^{2}}\right)g+2\left(\frac{\ddot{a}}{a}-\frac{\dot{a}^{2}}{a^{2}}\right)\textrm{d}t\otimes\textrm{d}t\]
+
+\end_inset 
+
+
+\layout Slide
+
+Scalar field cosmology
+\layout Standard
+
+
+\series bold 
+Scalar field cosmology
+\layout Standard
+
+Lagrangian for scalar field:
+\begin_inset Formula \[
+S[\phi]=\int d^{4}x\sqrt{-g}\left(\frac{1}{2}g^{-1}\left(\textrm{d}\phi,\textrm{d}\phi\right)-V(\phi)\right)\]
+
+\end_inset 
+
+Energy-momentum tensor:
+\begin_inset Formula \[
+T\equiv\frac{2}{\sqrt{-g}}\frac{\delta S}{\delta g^{-1}}=\textrm{d}\phi\otimes\textrm{d}\phi-\left[\frac{1}{2}g^{-1}\left(\textrm{d}\phi,\textrm{d}\phi\right)-V(\phi)\right]g\]
+
+\end_inset 
+
+Cosmological solution: 
+\begin_inset Formula $\phi=\phi(t)$
+\end_inset 
+
+; 
+\begin_inset Formula $\textrm{d}\phi=\dot{\phi}\textrm{d}t$
+\end_inset 
+
+;
+\begin_inset Formula \[
+T=\dot{\phi}^{2}\textrm{d}t\otimes\textrm{d}t-\left(\frac{\dot{\phi}^{2}}{2}-V\right)g\]
+
+\end_inset 
+
+Einstein equations for FRW spacetime:
+\begin_inset Formula \begin{align*}
+\left(\frac{2\ddot{a}}{a}+\frac{\dot{a}^{2}}{a^{2}}\right) & =-8\pi G\left(\frac{\dot{\phi}^{2}}{2}-V\right)\\
+2\left(\frac{\ddot{a}}{a}-\frac{\dot{a}^{2}}{a^{2}}\right) & =-8\pi G\dot{\phi}^{2}\end{align*}
+
+\end_inset 
+
+Hence: 
+\emph on 
+Friedmann equation
+\emph default 
+
+\begin_inset Formula \[
+\left(\frac{\dot{a}}{a}\right)^{2}=\frac{8\pi G}{3}\left(\frac{\dot{\phi}^{2}}{2}+V\right)\equiv\frac{8\pi G}{3}\rho(\phi,\dot{\phi})\]
+
+\end_inset 
+
+EOM for 
+\begin_inset Formula $\phi$
+\end_inset 
+
+:
+\begin_inset Note
+collapsed true
+
+\layout Standard
+
+Vary the Lagrangian in the form
+\begin_inset Formula \[
+\int\left(\textrm{Tr}_{\mathbf{x}}(\nabla_{\mathbf{x}}\phi)(\nabla_{\mathbf{x}}\phi)-V(\phi)\right)\textrm{Vol}\]
+
+\end_inset 
+
+
+\end_inset 
+
+ 
+\begin_inset Formula $\ddot{\phi}+3H\dot{\phi}+V'(\phi)=0$
+\end_inset 
+
+, 
+\begin_inset Formula $H\equiv\frac{\dot{a}}{a}$
+\end_inset 
+
+
+\newline 
+Expanding universe: 
+\begin_inset Formula $\dot{a}>0$
+\end_inset 
+
+, then 
+\begin_inset Formula $H=\sqrt{\frac{8\pi G}{3}\rho(\phi,\dot{\phi})}$
+\end_inset 
+
+, then assume 
+\begin_inset Formula $\dot{\phi}\equiv v>0,$
+\end_inset 
+
+ so 
+\begin_inset Formula $v=v(\phi)$
+\end_inset 
+
+, get 
+\begin_inset Formula $\frac{dv(\phi)}{d\phi}=f(\phi,v)$
+\end_inset 
+
+ 
+\begin_inset Formula $\leftarrow$
+\end_inset 
+
+ autonomous dynamics
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+Check: 
+\begin_inset Formula $\left(-8\pi G\dot{\phi}^{2}\right)\frac{\dot{a}}{a}=2\left(\frac{\ddot{a}}{a}-\frac{\dot{a}^{2}}{a^{2}}\right)\frac{\dot{a}}{a}=\frac{d}{dt}\frac{\dot{a}^{2}}{a^{2}}=\frac{8\pi G}{3}\left(\ddot{\phi}\dot{\phi}+V'(\phi)\dot{\phi}\right)$
+\end_inset 
+
+
+\layout Standard
+
+Also: variation of 
+\begin_inset Formula $\boldsymbol{\varepsilon}$
+\end_inset 
+
+ under variation of the metric, 
+\begin_inset Formula $\delta\boldsymbol{\varepsilon}=\left(...\right)\circ\delta g^{-1}$
+\end_inset 
+
+, can be computed like this.
+ Consider a variation 
+\begin_inset Formula $g\rightarrow\tilde{g}\equiv g+\delta g$
+\end_inset 
+
+ and a corresponding variation of the orthonormal frame 
+\begin_inset Formula $\boldsymbol{\theta}^{a}\rightarrow\tilde{\boldsymbol{\theta}}^{a}\equiv\boldsymbol{\theta}^{a}+\delta\boldsymbol{\theta}^{a}$
+\end_inset 
+
+.
+ The orthonormality condition becomes 
+\begin_inset Formula $g^{-1}(\delta\boldsymbol{\theta}^{a},\boldsymbol{\theta}^{b})+g^{-1}(\delta\boldsymbol{\theta}^{b},\boldsymbol{\theta}^{a})+\left(\delta g^{-1}\right)\circ(\boldsymbol{\theta}^{a},\boldsymbol{\theta}^{b})=0$
+\end_inset 
+
+.
+ Decomposing 
+\begin_inset Formula $\delta\boldsymbol{\theta}^{a}=\chi^{ab}\boldsymbol{\theta}_{b}$
+\end_inset 
+
+, we note that only the symmetric part of the matrix 
+\begin_inset Formula $\chi^{ab}$
+\end_inset 
+
+ is determined; thus any antisymmetric part is pure gauge.
+ The gauge condition 
+\begin_inset Formula $\delta\boldsymbol{\theta}^{a}\wedge\boldsymbol{\theta}_{a}=0$
+\end_inset 
+
+ will eliminate the antisymmetric part of 
+\begin_inset Formula $\chi^{ab}$
+\end_inset 
+
+, and then an explicit formula is 
+\begin_inset Formula $\chi^{ab}=-\frac{1}{2}\left(\delta g^{-1}\right)\circ(\boldsymbol{\theta}^{a},\boldsymbol{\theta}^{b})$
+\end_inset 
+
+.
+ Thus we have 
+\begin_inset Formula $\delta\boldsymbol{\theta}^{0}=-\frac{1}{2}\left(\delta g^{-1}\right)\circ\left(\boldsymbol{\theta}^{0},\boldsymbol{\theta}^{a}\right)\boldsymbol{\theta}_{a}$
+\end_inset 
+
+.
+ Inserting this into the formula 
+\begin_inset Formula $\boldsymbol{\varepsilon}=\boldsymbol{\theta}^{0}\wedge\boldsymbol{\theta}^{1}\wedge\boldsymbol{\theta}^{2}\wedge\boldsymbol{\theta}^{3}$
+\end_inset 
+
+, we find 4 terms, 
+\begin_inset Formula \[
+\delta\boldsymbol{\varepsilon}=-\frac{1}{2}\left(\delta g^{-1}\right)\circ\left(\boldsymbol{\theta}^{0},\boldsymbol{\theta}_{a}\right)\boldsymbol{\theta}^{a}\wedge\boldsymbol{\theta}^{1}\wedge\boldsymbol{\theta}^{2}\wedge\boldsymbol{\theta}^{3}+...\]
+
+\end_inset 
+
+Simplifying these term, we get 
+\begin_inset Formula \[
+\delta\boldsymbol{\varepsilon}=-\frac{1}{2}\left[\sum_{a}\eta_{aa}\left(\delta g^{-1}\right)\circ\left(\boldsymbol{\theta}^{a},\boldsymbol{\theta}^{a}\right)\right]\boldsymbol{\varepsilon}=-\frac{1}{2}\left(\delta g^{-1}\circ g^{-1}\right)\boldsymbol{\varepsilon}.\]
+
+\end_inset 
+
+Thus the desired variational derivative is equal to 
+\begin_inset Formula \[
+-\frac{1}{2}\boldsymbol{\varepsilon}\otimes g^{-1}.\]
+
+\end_inset 
+
+
+\layout Standard
+
+A second relevant consideration is integration by parts.
+ Suppose 
+\begin_inset Formula $\boldsymbol{A}$
+\end_inset 
+
+ is a vector-valued function; we would like to reduce the integral 
+\begin_inset Formula $\int d^{n}x\sqrt{-g}\textrm{div}\boldsymbol{A}$
+\end_inset 
+
+ to a boundary term.
+ First rewrite 
+\begin_inset Formula \[
+\textrm{div}\boldsymbol{A}=\textrm{Tr}_{\mathbf{x}}g(\nabla_{\mathbf{x}}\boldsymbol{A},\mathbf{x})\equiv\textrm{Tr}_{\mathbf{x}}\left(\iota_{\mathbf{x}}\nabla_{\mathbf{x}}\hat{g}\boldsymbol{A}\right).\]
+
+\end_inset 
+
+Then consider the (
+\begin_inset Formula $n-1$
+\end_inset 
+
+)-form 
+\begin_inset Formula $\alpha\equiv*\hat{g}\boldsymbol{A}$
+\end_inset 
+
+.
+ Statement: 
+\begin_inset Formula $\textrm{d}\alpha=\boldsymbol{\varepsilon}\textrm{div}\boldsymbol{A}$
+\end_inset 
+
+.
+ Proof: on the one hand, 
+\begin_inset Formula $*\hat{g}\boldsymbol{A}=\iota_{\boldsymbol{A}}\boldsymbol{\varepsilon}$
+\end_inset 
+
+; on the other hand,
+\begin_inset Formula $\boldsymbol{\varepsilon}\textrm{div}\boldsymbol{A}=\mathcal{L}_{\boldsymbol{A}}\boldsymbol{\varepsilon}=\textrm{d}\iota_{\boldsymbol{A}}\boldsymbol{\varepsilon}$
+\end_inset 
+
+ since 
+\begin_inset Formula $\textrm{d}\boldsymbol{\varepsilon}=0$
+\end_inset 
+
+.
+ 
+\begin_inset Formula $\blacksquare$
+\end_inset 
+
+ Hence the integral reduces to the integral of 
+\begin_inset Formula $*\hat{g}\boldsymbol{A}$
+\end_inset 
+
+ over the boundary.
+\layout Standard
+
+Finally: how to derive the EMT as a 3-form by variation of the action wrt.
+ 
+\begin_inset Formula $\boldsymbol{\theta}^{a}$
+\end_inset 
+
+
+\layout Standard
+
+Consider the scalar field action as an example,
+\begin_inset Formula \[
+S=\int\left(\frac{1}{2}\iota_{\mathbf{e}_{b}}\textrm{d}\phi\iota_{\mathbf{e}^{b}}\textrm{d}\phi-V(\phi)\right)\textrm{Vol}.\]
+
+\end_inset 
+
+The variation of this action w.r.t.
+ the 
+\begin_inset Formula $\boldsymbol{\theta}^{a}$
+\end_inset 
+
+ gives a 3-form.
+ Variation of 
+\begin_inset Formula $\textrm{Vol}$
+\end_inset 
+
+ is easy,
+\begin_inset Formula \[
+\delta\left(\boldsymbol{\theta}^{0}\wedge\boldsymbol{\theta}^{1}\wedge\boldsymbol{\theta}^{2}\wedge\boldsymbol{\theta}^{3}\right)=\delta\boldsymbol{\theta}^{a}\wedge*\boldsymbol{\theta}_{a}\]
+
+\end_inset 
+
+ Variation of the kinetic term:
+\begin_inset Formula \[
+\delta\left(\iota_{\mathbf{e}_{b}}\textrm{d}\phi\right)\textrm{Vol}=\left(\iota_{\delta\mathbf{e}_{b}}\textrm{d}\phi\right)\textrm{Vol}=\textrm{d}\phi\wedge*\hat{g}\delta\mathbf{e}_{b}=-\textrm{d}\phi\wedge*\boldsymbol{\theta}_{a}\left(\iota_{\mathbf{e}_{b}}\delta\boldsymbol{\theta}^{a}\right)\]
+
+\end_inset 
+
+ because 
+\begin_inset Formula $\iota_{\delta\mathbf{e}_{b}}\boldsymbol{\theta}^{a}+\iota_{\mathbf{e}_{b}}\delta\boldsymbol{\theta}^{a}=0$
+\end_inset 
+
+ and so 
+\begin_inset Formula $\hat{g}\delta\mathbf{e}_{b}=-\left(\iota_{\mathbf{e}_{b}}\delta\boldsymbol{\theta}^{a}\right)\boldsymbol{\theta}_{a}$
+\end_inset 
+
+.
+ Finally,
+\begin_inset Formula \[
+\delta\left(\iota_{\mathbf{e}_{b}}\textrm{d}\phi\right)\textrm{Vol}=\delta\boldsymbol{\theta}^{a}\wedge*\boldsymbol{\theta}^{b}\left(\iota_{\mathbf{e}_{a}}\textrm{d}\phi\right)\left(\iota_{\mathbf{e}_{b}}\textrm{d}\phi\right)\]
+
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Slide
+
+Slow roll
+\layout Standard
+
+
+\series bold 
+Attractors and the slow-roll approximation
+\begin_inset LatexCommand \label{lyx:Slow-roll}
+
+\end_inset 
+
+
+\series default 
+ 
+\layout Standard
+
+Consider the auxiliary variable 
+\begin_inset Formula $u(\phi)$
+\end_inset 
+
+ defined by 
+\begin_inset Formula $\frac{d\phi}{dt}\equiv-u(\phi)\frac{d\sqrt{V}}{d\phi}\equiv-u(\phi)F(\phi)$
+\end_inset 
+
+.
+ Then we have 
+\begin_inset Formula $\ddot{\phi}=\left(u'F+uF'\right)uF$
+\end_inset 
+
+; the EOM for 
+\begin_inset Formula $\phi$
+\end_inset 
+
+ becomes
+\begin_inset Formula \[
+2+uu'\frac{F}{\sqrt{V}}+u^{2}\frac{F'}{\sqrt{V}}=u\sqrt{24\pi G\left(1+\frac{1}{2}u^{2}\frac{F^{2}}{V}\right)}\]
+
+\end_inset 
+
+If 
+\begin_inset Formula $V(\phi)$
+\end_inset 
+
+ satisfies the 
+\emph on 
+slow-roll conditions
+\emph default 
+,
+\begin_inset Formula \[
+\frac{Fu^{2}}{\sqrt{V}}\ll1,\;\frac{F'u^{2}}{\sqrt{V}}\ll1,\:\Rightarrow\:\frac{V^{\prime}}{\sqrt{48\pi G}}\ll V,\:\frac{V^{\prime\prime}}{48\pi G}\ll V,\]
+
+\end_inset 
+
+the EOM becomes 
+\begin_inset Formula $u\approx u_{0}\equiv\frac{1}{\sqrt{12\pi G}}=\textrm{const}$
+\end_inset 
+
+
+\newline 
+--- the 
+\emph on 
+slow-roll approximation
+\emph default 
+ is 
+\begin_inset Formula $\dot{\phi}\approx-\frac{\left(\sqrt{V}\right)^{\prime}}{\sqrt{12\pi G}}$
+\end_inset 
+
+
+\newline 
+Note: need to verify 
+\begin_inset Formula $u_{0}^{2}F^{2}\ll V$
+\end_inset 
+
+, 
+\begin_inset Formula $u_{0}^{2}F'\ll\sqrt{V}$
+\end_inset 
+
+.
+\layout Standard
+
+Generically, there exists a 
+\emph on 
+single
+\emph default 
+ solution with 
+\begin_inset Formula $u_{0}(\phi)\rightarrow\textrm{const}$
+\end_inset 
+
+ at 
+\begin_inset Formula $\phi\rightarrow\infty$
+\end_inset 
+
+.
+ This 
+\begin_inset Formula $u_{0}(\phi)$
+\end_inset 
+
+ is 
+\emph on 
+approximated
+\emph default 
+ by the slow-roll formula.
+ This is an 
+\emph on 
+attractor
+\emph default 
+ under the slow-roll assumptions: 
+\begin_inset Formula $u(\phi)=u_{0}(\phi)+\delta u$
+\end_inset 
+
+,
+\begin_inset Formula \[
+\frac{d}{d\phi}\delta u=C(u,\phi)\delta u,\quad C>0\]
+
+\end_inset 
+
+
+\color green
+Further approximations: use perturbative expansion, 
+\begin_inset Formula $u=u_{0}(\phi)+\delta u(\phi)$
+\end_inset 
+
+; or substitute 
+\begin_inset Formula $u_{0}(\phi)$
+\end_inset 
+
+ into the l.h.s.\SpecialChar ~
+of the equation, 
+\begin_inset Formula $u(\phi)=\frac{F\left(u,u',\phi\right)}{\sqrt{24\pi G}}$
+\end_inset 
+
+
+\layout Slide
+
+transformal conformation
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 8. Conformal transformation of curvature}{2007-11-09}
+\end_inset 
+
+Lecture 8, 2007-11-09.
+ Conformal transformation of curvature
+\layout Standard
+
+How do 
+\begin_inset Formula $\textrm{Ric}$
+\end_inset 
+
+ and 
+\begin_inset Formula $R$
+\end_inset 
+
+ change under 
+\begin_inset Formula $g\rightarrow\tilde{g}=e^{2\Omega}g$
+\end_inset 
+
+?
+\newline 
+LC connection: 
+\begin_inset Formula $\tilde{\nabla}_{\mathbf{x}}\mathbf{y}=\nabla_{\mathbf{x}}\mathbf{y}+\boldsymbol{\Gamma}(\mathbf{x},\mathbf{y})$
+\end_inset 
+
+ where
+\begin_inset Formula \[
+\boldsymbol{\Gamma}(\mathbf{x},\mathbf{y})\equiv g(\mathbf{w},\mathbf{y})\mathbf{x}+g(\mathbf{w},\mathbf{x})\mathbf{y}-g(\mathbf{x},\mathbf{y})\mathbf{w},\]
+
+\end_inset 
+
+where 
+\begin_inset Formula $\mathbf{w}\equiv g^{-1}\textrm{d}\Omega$
+\end_inset 
+
+, 
+\begin_inset Formula $g(\mathbf{w},\mathbf{x})\equiv\mathbf{x}\circ\Omega$
+\end_inset 
+
+
+\begin_inset Formula \[
+\tilde{\textrm{Ric}}(\mathbf{a},\mathbf{c})=\tilde{\textrm{Tr}}_{\mathbf{b}}\tilde{g}(\hat{\tilde{R}}(\mathbf{a},\mathbf{b})\mathbf{c},\mathbf{b})=\textrm{Tr}_{\mathbf{b}}g(\hat{\tilde{R}}(\mathbf{a},\mathbf{b})\mathbf{c},\mathbf{b})\]
+
+\end_inset 
+
+For calculation of 
+\begin_inset Formula $\hat{\tilde{R}}(\mathbf{a},\mathbf{b})\mathbf{c}$
+\end_inset 
+
+, assume that 
+\begin_inset Formula $\nabla_{\mathbf{a}},\nabla_{\mathbf{b}}$
+\end_inset 
+
+ of 
+\begin_inset Formula $\mathbf{a},\mathbf{b},\mathbf{c}$
+\end_inset 
+
+ 
+\size normal 
+all vanish: 
+\begin_inset Formula $\hat{\tilde{R}}(\mathbf{a},\mathbf{b})\mathbf{c}=\tilde{\nabla}_{\mathbf{a}}\tilde{\nabla}_{\mathbf{b}}\mathbf{c}-\tilde{\nabla}_{\mathbf{b}}\tilde{\nabla}_{\mathbf{a}}\mathbf{c}=\nabla_{\mathbf{a}}\left(\nabla_{\mathbf{b}}\mathbf{c}+\boldsymbol{\Gamma}(\mathbf{b},\mathbf{c})\right)+\boldsymbol{\Gamma}(\mathbf{a},\nabla_{\mathbf{b}}\mathbf{c}+\boldsymbol{\Gamma}(\mathbf{b},\mathbf{c})-\left[...\mathbf{b}\leftrightarrow\mathbf{a}...\right]$
+\end_inset 
+
+ 
+\begin_inset Formula $=\hat{R}(\mathbf{a},\mathbf{b})\mathbf{c}+\nabla_{\mathbf{a}}\boldsymbol{\Gamma}(\mathbf{b},\mathbf{c})+\boldsymbol{\Gamma}(\mathbf{a},\boldsymbol{\Gamma}(\mathbf{b},\mathbf{c}))-\left[...\mathbf{b}\leftrightarrow\mathbf{a}...\right]$
+\end_inset 
+
+
+\layout Standard
+
+Need to express 
+\begin_inset Formula $\nabla_{\mathbf{x}}\mathbf{w}$
+\end_inset 
+
+; note that 
+\begin_inset Formula $g(\nabla_{\bullet}\mathbf{w},\bullet)=\frac{1}{2}\left(\textrm{d}\hat{g}\mathbf{w}+\mathcal{L}_{\mathbf{w}}g\right)$
+\end_inset 
+
+ but 
+\begin_inset Formula $\textrm{d}\hat{g}\mathbf{w}=\textrm{dd}\Omega=0$
+\end_inset 
+
+; define a symmetric bilinear form 
+\begin_inset Formula $H_{\Omega}(\mathbf{x},\mathbf{y})\equiv g(\nabla_{\mathbf{x}}\mathbf{w},\mathbf{y})\equiv\iota_{\mathbf{y}}\nabla_{\mathbf{x}}\textrm{d}\Omega$
+\end_inset 
+
+.
+ (In the index notation, this is 
+\begin_inset Formula $\Omega_{;\alpha\beta}$
+\end_inset 
+
+) 
+\begin_inset Formula \[
+\nabla_{\mathbf{a}}\boldsymbol{\Gamma}(\mathbf{b},\mathbf{c})=\nabla_{\mathbf{a}}\left(g(\mathbf{w},\mathbf{b})\mathbf{c}+g(\mathbf{w},\mathbf{c})\mathbf{b}-g(\mathbf{b},\mathbf{c})\mathbf{w}\right)\]
+
+\end_inset 
+
+
+\begin_inset Formula $=H_{\Omega}(\mathbf{a},\mathbf{b})\mathbf{c}+H_{\Omega}(\mathbf{a},\mathbf{c})\mathbf{b}-g(\mathbf{b},\mathbf{c})\nabla_{\mathbf{a}}\mathbf{w}$
+\end_inset 
+
+; antisymmetrize 
+\begin_inset Formula $\left[\mathbf{b}\leftrightarrow\mathbf{a}\right]$
+\end_inset 
+
+ and take 
+\begin_inset Formula $g(...,\mathbf{b})$
+\end_inset 
+
+: 
+\begin_inset Formula $H_{\Omega}(\mathbf{a},\mathbf{c})g(\mathbf{b},\mathbf{b})-H_{\Omega}(\mathbf{b},\mathbf{c})g(\mathbf{a},\mathbf{b})-g(\mathbf{b},\mathbf{c})H_{\Omega}(\mathbf{a},\mathbf{b})+g(\mathbf{a},\mathbf{c})H_{\Omega}(\mathbf{b},\mathbf{b})$
+\end_inset 
+
+.
+ Now take trace: 
+\begin_inset Formula \[
+\textrm{Tr}_{\mathbf{b}}(1\textrm{st term})=\left(N-2\right)H_{\Omega}(\mathbf{a},\mathbf{c})+g(\mathbf{a},\mathbf{c})\square\Omega\]
+
+\end_inset 
+
+
+\layout Slide
+
+
+\size normal 
+Continuation
+\layout Standard
+
+
+\series bold 
+Conformal transformation of Ricci tensor
+\layout Standard
+
+
+\size normal 
+2nd term: let's write 
+\begin_inset Formula $\left\langle \mathbf{xy}\right\rangle $
+\end_inset 
+
+ instead of 
+\begin_inset Formula $g(\mathbf{x},\mathbf{y})$
+\end_inset 
+
+, then 
+\begin_inset Formula $\boldsymbol{\Gamma}(\mathbf{a},\boldsymbol{\Gamma}(\mathbf{b},\mathbf{c}))=\left\langle \mathbf{wa}\right\rangle \boldsymbol{\Gamma}(\mathbf{b},\mathbf{c})+\left\langle \mathbf{w}\boldsymbol{\Gamma}(\mathbf{b},\mathbf{c})\right\rangle \mathbf{a}$
+\end_inset 
+
+ 
+\begin_inset Formula $-\left\langle \mathbf{a}\boldsymbol{\Gamma}(\mathbf{b},\mathbf{c})\right\rangle \mathbf{w}=\left\langle \mathbf{wa}\right\rangle \left(\left\langle \mathbf{wc}\right\rangle \mathbf{b}+\left\langle \mathbf{wb}\right\rangle \mathbf{c}-\left\langle \mathbf{bc}\right\rangle \mathbf{w}\right)+(\left\langle \mathbf{wb}\right\rangle \left\langle \mathbf{wc}\right\rangle +\left\langle \mathbf{wc}\right\rangle \left\langle \mathbf{wb}\right\rangle -\left\langle \mathbf{ww}\right\rangle \left\langle \mathbf{bc}\right\rangle )\mathbf{a}-(\left\langle \mathbf{ab}\right\rangle \left\langle \mathbf{wc}\right\rangle +\left\langle \mathbf{ac}\right\rangle \left\langle \mathbf{wb}\right\rangle -\left\langle \mathbf{aw}\right\rangle \left\langle \mathbf{bc}\right\rangle )\mathbf{w}$
+\end_inset 
+
+.
+ Antisymmetrizing 
+\begin_inset Formula $\left[\mathbf{b}\leftrightarrow\mathbf{a}\right]$
+\end_inset 
+
+, only terms 5,6,8 remain: 
+\begin_inset Formula $\boldsymbol{\Gamma}(\mathbf{a},\boldsymbol{\Gamma}(\mathbf{b},\mathbf{c}))-\boldsymbol{\Gamma}(\mathbf{b},\boldsymbol{\Gamma}(\mathbf{a},\mathbf{c}))$
+\end_inset 
+
+ 
+\begin_inset Formula $=\left\langle \mathbf{wc}\right\rangle (\left\langle \mathbf{wb}\right\rangle \mathbf{a}-\left\langle \mathbf{wa}\right\rangle \mathbf{b})+\left\langle \mathbf{ww}\right\rangle (-\left\langle \mathbf{bc}\right\rangle \mathbf{a}+\left\langle \mathbf{ac}\right\rangle \mathbf{b})+(-\left\langle \mathbf{ac}\right\rangle \left\langle \mathbf{wb}\right\rangle +\left\langle \mathbf{bc}\right\rangle \left\langle \mathbf{aw}\right\rangle )\mathbf{w}$
+\end_inset 
+
+.
+ Compute 
+\begin_inset Formula $g(\mathbf{b},...)=\left\langle \mathbf{wc}\right\rangle (\left\langle \mathbf{wb}\right\rangle \left\langle \mathbf{ab}\right\rangle -\left\langle \mathbf{wa}\right\rangle \left\langle \mathbf{bb}\right\rangle )+\left\langle \mathbf{ww}\right\rangle (-\left\langle \mathbf{bc}\right\rangle \left\langle \mathbf{ab}\right\rangle +\left\langle \mathbf{ac}\right\rangle \left\langle \mathbf{bb}\right\rangle )+(-\left\langle \mathbf{ac}\right\rangle \left\langle \mathbf{wb}\right\rangle +\left\langle \mathbf{bc}\right\rangle \left\langle \mathbf{aw}\right\rangle )\left\langle \mathbf{wb}\right\rangle $
+\end_inset 
+
+.
+ Trace:
+\begin_inset Formula \[
+\textrm{Tr}_{\mathbf{b}}(2\textrm{nd term})=\left(N-2\right)\left(\left\langle \mathbf{ac}\right\rangle \left\langle \mathbf{ww}\right\rangle -\left\langle \mathbf{aw}\right\rangle \left\langle \mathbf{cw}\right\rangle \right)\]
+
+\end_inset 
+
+
+\size default 
+Finally, 
+\begin_inset Formula $\tilde{\textrm{Ric}}=\textrm{Ric}+\left(N-2\right)(H_{\Omega}+\left\langle \mathbf{ww}\right\rangle g-\textrm{d}\Omega\otimes\textrm{d}\Omega)+\left(\square\Omega\right)g$
+\end_inset 
+
+
+\layout Standard
+
+Ricci scalar: 
+\begin_inset Formula $\tilde{R}=\tilde{\textrm{Tr}}_{\mathbf{x}}\tilde{\textrm{Ric}}(\mathbf{x},\mathbf{x})=e^{-2\Omega}\textrm{Tr}_{\mathbf{x}}\tilde{\textrm{Ric}}(\mathbf{x},\mathbf{x})\:\Rightarrow$
+\end_inset 
+
+ 
+\begin_inset Formula \[
+\tilde{R}=e^{-2\Omega}\left[R+2\left(N-1\right)\square\Omega+\left(N-1\right)\left(N-2\right)\left\langle \mathbf{ww}\right\rangle \right]\]
+
+\end_inset 
+
+Note that 
+\begin_inset Formula $\left\langle \mathbf{ww}\right\rangle \equiv g(\mathbf{w},\mathbf{w})=g^{-1}(\textrm{d}\Omega,\textrm{d}\Omega)$
+\end_inset 
+
+.
+\layout Standard
+
+
+\size normal 
+Einstein tensor: 
+\begin_inset Formula $\tilde{\textrm{Ric}}-\frac{1}{2}\tilde{R}\tilde{g}=\textrm{Ric}-\frac{1}{2}Rg+\left(N-2\right)[H_{\Omega}-\textrm{d}\Omega\otimes\textrm{d}\Omega-\left(\square\Omega+\frac{1}{2}\left(N-3\right)\left\langle \mathbf{ww}\right\rangle \right)g\,]$
+\end_inset 
+
+
+\newline 
+Einstein tensor does not change in 2D! 
+\newline 
+A conformal transformation can make 
+\begin_inset Formula $\tilde{R}=0$
+\end_inset 
+
+ in 2D - any 2D space is conformally flat.
+\layout Slide
+
+EOM for f(R)
+\layout Standard
+
+
+\series bold 
+Equations of motion for 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ gravity
+\layout Standard
+
+After introducing Lagrange multiplier 
+\begin_inset Formula $\lambda$
+\end_inset 
+
+:
+\begin_inset Formula \begin{align*}
+S[\tilde{g}]+S_{\text{m}} & =\int d^{4}x\sqrt{-\tilde{g}}\left(\frac{\lambda\tilde{R}+U(\lambda)}{16\pi G}+L_{\text{m}}\right),\\
+U(\lambda) & \equiv\left.f(r)-rf'(r)\right|_{r=r(\lambda)},\quad\lambda=1+f'(r)\end{align*}
+
+\end_inset 
+
+ Now conformal transformation: 
+\begin_inset Formula $\tilde{g}\equiv e^{2\Omega}g$
+\end_inset 
+
+; note: 
+\begin_inset Formula $\sqrt{-\tilde{g}}=e^{4\Omega}\sqrt{-g}$
+\end_inset 
+
+ and 
+\begin_inset Formula $\tilde{R}=e^{-2\Omega}\left(R+6\square\Omega+6\left|\textrm{d}\Omega\right|^{2}\right)$
+\end_inset 
+
+
+\newline 
+Note: ``
+\begin_inset Formula $\square$
+\end_inset 
+
+'' is with respect to 
+\begin_inset Formula $g$
+\end_inset 
+
+ now! 
+\layout Standard
+
+Choose 
+\begin_inset Formula $\Omega$
+\end_inset 
+
+ such that 
+\begin_inset Formula $\lambda\tilde{R}\sqrt{-\tilde{g}}$
+\end_inset 
+
+ equals 
+\begin_inset Formula $R\sqrt{-g}$
+\end_inset 
+
+ plus some terms: 
+\begin_inset Formula $\sqrt{-\tilde{g}}\left(\frac{\lambda\tilde{R}+U(\lambda)}{16\pi G}+L_{\text{m}}\right)=e^{4\Omega}\sqrt{-g}$
+\end_inset 
+
+ 
+\begin_inset Formula $\left(\frac{1}{16\pi G}\left[\lambda e^{-2\Omega}\left(R+6\square\Omega+6\left|\textrm{d}\Omega\right|^{2}\right)+U(\lambda)\right]+L_{\text{m}}\right)$
+\end_inset 
+
+.
+ 
+\layout Standard
+
+Set 
+\begin_inset Formula $\lambda=e^{-2\Omega}$
+\end_inset 
+
+ and omit 
+\begin_inset Formula $\square\Omega$
+\end_inset 
+
+ (total divergence):
+\begin_inset Formula \[
+S=\int d^{4}x\sqrt{-g}\left(\frac{R+6\left|\textrm{d}\Omega\right|^{2}+e^{4\Omega}U(e^{-2\Omega})}{16\pi G}+e^{4\Omega}L_{\text{m}}\right)\]
+
+\end_inset 
+
+Standard action for Einstein gravity (but with weird matter coupling) 
+\begin_inset Formula $\leftarrow$
+\end_inset 
+
+ 
+\begin_inset Quotes eld
+\end_inset 
+
+Einstein frame
+\begin_inset Quotes erd
+\end_inset 
+
+, i.e.\SpecialChar ~
+the variables 
+\begin_inset Formula $\left\{ g,\Omega\right\} $
+\end_inset 
+
+ with 2nd order EOM 
+\layout Standard
+
+The variables 
+\begin_inset Formula $\left\{ \tilde{g}\right\} $
+\end_inset 
+
+ are 
+\begin_inset Quotes eld
+\end_inset 
+
+Jordan frame
+\begin_inset Quotes erd
+\end_inset 
+
+ (have 4th order EOM)
+\layout Slide
+
+Inflation
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 9. Cosmology with f(R) gravity}{2007-11-14}
+\end_inset 
+
+Lecture 9, 2007-11-14.
+ Cosmology with 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ gravity
+\layout Standard
+
+Define canonical scalar field: 
+\begin_inset Formula $\phi\equiv\Omega\sqrt{\frac{3}{4\pi G}}\equiv\frac{\Omega}{s}$
+\end_inset 
+
+
+\newline 
+Assume 
+\begin_inset Formula $f(R)=\frac{1}{2}\alpha R^{2}$
+\end_inset 
+
+; 
+\emph on 
+neglect
+\emph default 
+ 
+\begin_inset Formula $L_{\text{m}}$
+\end_inset 
+
+; then 
+\begin_inset Formula $\lambda=1+\alpha R$
+\end_inset 
+
+, 
+\begin_inset Formula $U(\lambda)=-\frac{\left(\lambda-1\right)^{2}}{2\alpha}$
+\end_inset 
+
+, so (in Einstein frame)
+\begin_inset Formula \begin{align*}
+S & =\int d^{4}x\sqrt{-g}\left(\frac{R}{16\pi G}+\frac{1}{2}\left|\textrm{d}\phi\right|^{2}-V(\phi)\right),\\
+V(\phi) & =\frac{1}{32\pi G\alpha}\left(\exp\left[2s\phi\right]-1\right)^{2}=\frac{\left(e^{2s\phi}-1\right)^{2}}{24s^{2}\alpha}.\end{align*}
+
+\end_inset 
+
+Trick: Write EOM for 
+\begin_inset Formula $\phi$
+\end_inset 
+
+ through 
+\begin_inset Formula $x(\phi)\equiv\frac{E_{\text{kin}}}{E_{\text{pot}}}$
+\end_inset 
+
+, so 
+\begin_inset Formula $\frac{d\phi}{dt}\equiv-\sqrt{2x(\phi)V(\phi)}$
+\end_inset 
+
+ (assumed 
+\begin_inset Formula $\dot{\phi}<0$
+\end_inset 
+
+, 
+\begin_inset Formula $\alpha>0!$
+\end_inset 
+
+)
+\begin_inset Note
+collapsed true
+
+\layout Standard
+
+Get 
+\begin_inset Formula $\ddot{\phi}=\left(-\frac{u}{2\sqrt{V}}V'-u'\sqrt{V}\right)\left(-u\sqrt{V}\right)=uV\left(\frac{1}{2}\frac{V'}{V}u+u'\right)$
+\end_inset 
+
+, 
+\begin_inset Formula $H=\sqrt{V}\sqrt{\frac{8\pi G}{3}\left(1+\frac{u^{2}}{2}\right)}$
+\end_inset 
+
+, finally 
+\begin_inset Formula $uu'+\frac{V'}{V}\left(1+\frac{u^{2}}{2}\right)-3u\sqrt{\frac{8\pi G}{3}\left(1+\frac{u^{2}}{2}\right)}=0$
+\end_inset 
+
+.
+ Introduce 
+\begin_inset Formula $x=\frac{1}{2}u^{2}$
+\end_inset 
+
+.
+ Note: 
+\begin_inset Formula $x=\frac{\dot{\phi}^{2}}{2V}$
+\end_inset 
+
+, but this is true 
+\emph on 
+only
+\emph default 
+ for the exponential potential! In general we would have to set 
+\begin_inset Formula $\dot{\phi}=-u\left(\sqrt{V}\right)^{\prime}$
+\end_inset 
+
+.
+\end_inset 
+
+
+\begin_inset Formula \[
+\frac{dx}{d\phi}+\frac{V'}{V}\left(1+x\right)-6s\sqrt{x\left(1+x\right)}=0\]
+
+\end_inset 
+
+Set 
+\begin_inset Formula $V(\phi)\approx V_{0}e^{2ns\phi}$
+\end_inset 
+
+ (we will have 
+\begin_inset Formula $n=2$
+\end_inset 
+
+), then 
+\begin_inset Formula $x'=2s\sqrt{x+1}\left(3\sqrt{x}-n\sqrt{x+1}\right)$
+\end_inset 
+
+.
+ Assume 
+\begin_inset Formula $x\rightarrow x_{0}$
+\end_inset 
+
+ at 
+\begin_inset Formula $\phi\rightarrow\infty$
+\end_inset 
+
+: 
+\begin_inset Formula $x_{0}=\frac{n^{2}}{9-n^{2}}$
+\end_inset 
+
+; 
+\begin_inset Formula $\dot{\phi}\approx-\sqrt{2x_{0}V(\phi)}$
+\end_inset 
+
+; so 
+\begin_inset Formula $\phi(t)\approx-\frac{1}{ns}\ln\frac{\left(t-t_{0}\right)n^{2}}{\sqrt{12\alpha\left(9-n^{2}\right)}}$
+\end_inset 
+
+
+\newline 
+
+\emph on 
+Stable attractor
+\emph default 
+: 
+\begin_inset Formula $x=x_{0}+\delta x$
+\end_inset 
+
+, then 
+\begin_inset Formula $\delta x'\approx C\delta x$
+\end_inset 
+
+, 
+\begin_inset Formula $C=\frac{s}{n}\left(9-n^{2}\right)>0$
+\end_inset 
+
+ as long as 
+\begin_inset Formula $n<3$
+\end_inset 
+
+.
+ 
+\layout Slide
+
+Have inflation?
+\layout Standard
+
+
+\series bold 
+Do we have inflation?
+\layout Standard
+
+Note: slow-roll conditions are 
+\emph on 
+not
+\emph default 
+ 
+\emph on 
+valid
+\emph default 
+,
+\begin_inset Formula \[
+\frac{V'}{V}\frac{1}{\sqrt{48\pi G}}=\frac{2}{3}\not\ll1!\]
+
+\end_inset 
+
+
+\layout Standard
+
+Compute 
+\begin_inset Formula \begin{align*}
+H(t) & \approx s\sqrt{2\left(1+x_{0}\right)V(\phi)}=3n^{-2}\left(t-t_{0}\right)^{-1}\\
+a(t) & =\exp\int H(t)dt=\left(t-t_{0}\right)^{3n^{-2}}\end{align*}
+
+\end_inset 
+
+Conformal transformation: 
+\begin_inset Formula \[
+\tilde{g}=e^{2\Omega}g=\frac{\textrm{const}}{\left(t-t_{0}\right)^{2/n}}\left(dt^{2}-a^{2}(t)d\mathbf{x}^{2}\right)\]
+
+\end_inset 
+
+ Define physical time: want 
+\begin_inset Formula $\tilde{g}=d\tilde{t}^{2}-\tilde{a}^{2}(\tilde{t})d\mathbf{x}^{2}$
+\end_inset 
+
+; so define 
+\begin_inset Formula $\tilde{t}=\left(t-t_{0}\right)^{1-1/n}$
+\end_inset 
+
+, then 
+\begin_inset Formula \[
+\tilde{a}(\tilde{t})=\left(t-t_{0}\right)^{3n^{-2}-n^{-1}}=\tilde{t}^{\frac{3-n}{n\left(n-1\right)}}\]
+
+\end_inset 
+
+With 
+\begin_inset Formula $n=2$
+\end_inset 
+
+ we have radiation-dominated era, 
+\begin_inset Formula $\tilde{a}\propto t^{1/2}$
+\end_inset 
+
+
+\layout Standard
+
+Note: inflation will be with 
+\begin_inset Formula $\phi<0$
+\end_inset 
+
+ and 
+\begin_inset Formula $\dot{\phi}>0$
+\end_inset 
+
+! (Slow roll approximation is then valid)
+\layout Standard
+
+
+\series bold 
+Practice problem
+\series default 
+: Determine (approximately) the potential 
+\begin_inset Formula $V(\phi)$
+\end_inset 
+
+ for 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ gravity with 
+\begin_inset Formula $f(R)=R-\frac{\alpha}{2}R^{2}+\beta R^{-n}$
+\end_inset 
+
+, 
+\begin_inset Formula $n>0$
+\end_inset 
+
+, in the regimes of large 
+\begin_inset Formula $R$
+\end_inset 
+
+ and small 
+\begin_inset Formula $R$
+\end_inset 
+
+
+\layout Slide
+
+viable 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Conditions for viable 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ theory
+\layout Standard
+
+If 
+\begin_inset Formula $f'(R)<0$
+\end_inset 
+
+ then wrong sign of the action in Einstein frame: 
+\begin_inset Formula $\int\frac{-\boldsymbol{R}}{16\pi G}$
+\end_inset 
+
+, so graviton is a 
+\emph on 
+ghost
+\layout Standard
+
+In Einstein frame, have scalar field with 
+\begin_inset Formula \[
+V(\phi)=\frac{1}{16\pi G}\left.\frac{rf'-f}{f^{\prime2}}\right|_{f'+1=\exp\left(-2s\phi\right)}\]
+
+\end_inset 
+
+If 
+\begin_inset Formula $f''(R)<0$
+\end_inset 
+
+ at Solar system scales then 
+\begin_inset Formula \begin{align*}
+\frac{M_{\phi}^{2}}{M_{\text{Pl}}^{2}} & \equiv16\pi G\frac{d^{2}V(\phi)}{d\phi^{2}}\\
+ & =\frac{1}{3f^{\prime\prime}}+\frac{Rf'-4\left(R+f\right)}{\left(1+f'\right)^{2}}\approx\frac{1}{3f^{\prime\prime}}<0,\end{align*}
+
+\end_inset 
+
+which gives 
+\emph on 
+tachyonic
+\emph default 
+ instability (small-scale)
+\layout Standard
+
+At high 
+\begin_inset Formula $R$
+\end_inset 
+
+ we must have 
+\begin_inset Formula $f(R)\ll R$
+\end_inset 
+
+ at observed scales (
+\begin_inset Formula $M_{\phi}L\gg1$
+\end_inset 
+
+); 
+\begin_inset Formula $f^{\prime\prime}\rightarrow0$
+\end_inset 
+
+
+\layout Standard
+
+Hence 
+\begin_inset Formula $f(R)$
+\end_inset 
+
+ must be negative, monotonically growing in 
+\begin_inset Formula $R$
+\end_inset 
+
+
+\layout Standard
+
+
+\series bold 
+Practice exercise:
+\series default 
+ Derive the formula for 
+\begin_inset Formula $M_{\phi}^{2}$
+\end_inset 
+
+.
+\layout Slide
+
+Matter-dominated era
+\layout Standard
+
+
+\series bold 
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 10. Matter-dominated era in f(R) gravity. Attractors}{2007-11-16}
+\end_inset 
+
+Lecture 10, 2007-11-16.
+ Matter-dominated era
+\layout Standard
+
+The full action in Einstein frame is
+\begin_inset Formula \[
+S=\int d^{4}x\sqrt{-g}\left[\frac{R}{16\pi G}+\frac{\left|\textrm{d}\phi\right|^{2}}{2}-V(\phi)+L_{\text{m}}e^{4s\phi}\right]\]
+
+\end_inset 
+
+where 
+\begin_inset Formula $s\equiv\sqrt{\frac{4\pi G}{3}}$
+\end_inset 
+
+, 
+\begin_inset Formula $V=\frac{1}{24\alpha s^{2}}\left(e^{2s\phi}-1\right)^{2}$
+\end_inset 
+
+
+\layout Standard
+
+Mock-up Lagrangian for matter:
+\begin_inset Formula \[
+L_{\text{m}}(\psi,\dot{\psi})=p_{\text{m}},\quad\rho_{\text{m}}=\dot{\psi}L_{\text{m},\dot{\psi}}-L_{\text{m}},\]
+
+\end_inset 
+
+and we assume 
+\begin_inset Formula $p_{\text{m}}=w_{\text{m}}\rho_{\text{m}}$
+\end_inset 
+
+ (
+\emph on 
+nondynamical
+\emph default 
+ matter with 
+\begin_inset Formula $w_{\text{m}}=\textrm{const}$
+\end_inset 
+
+) in 
+\emph on 
+Jordan
+\emph default 
+ frame
+\layout Standard
+
+Also assume homogeneous 
+\begin_inset Formula $\phi=\phi(t)$
+\end_inset 
+
+, 
+\begin_inset Formula $\psi=\psi(t)$
+\end_inset 
+
+
+\layout Standard
+
+Evolution equations for 
+\begin_inset Formula $\phi,\psi$
+\end_inset 
+
+:
+\begin_inset Formula \begin{align*}
+\frac{d}{dt}\left[\dot{\phi}\sqrt{-g}\right] & =-\sqrt{-g}V_{,\phi}+4s\sqrt{-g}e^{4s\phi}p_{\text{m}}\\
+\frac{d}{dt}\left[e^{4s\phi}L_{\text{m},\dot{\psi}}\sqrt{-g}\right] & =-\sqrt{-g}e^{4s\phi}L_{\text{m},\psi}\end{align*}
+
+\end_inset 
+
+With 
+\begin_inset Formula $\sqrt{-g}=a^{3}(t)$
+\end_inset 
+
+ we get
+\begin_inset Formula \begin{align*}
+\ddot{\psi}L_{\text{m},\dot{\psi}\dot{\psi}}+\dot{\psi}L_{\text{m},\dot{\psi}\psi}+3HL_{\text{m},\dot{\psi}}+4s\dot{\phi}L_{\text{m},\dot{\psi}}-L_{\text{m},\psi} & =0;\\
+\frac{d}{dt}\rho_{\text{m}}=\left(\ddot{\psi}L_{\text{m},\dot{\psi}\dot{\psi}}+\dot{\psi}L_{\text{m},\dot{\psi}\psi}-L_{\text{m},\psi}\right) & \dot{\psi}\end{align*}
+
+\end_inset 
+
+Finally, using 
+\begin_inset Formula $p_{\text{m}}=w_{\text{m}}\rho_{\text{m}}$
+\end_inset 
+
+, we get
+\begin_inset Formula \begin{align*}
+\frac{d}{dt}\rho_{\text{m}} & =-\left(3H+4s\dot{\phi}\right)\rho_{\text{m}}\left(1+w_{\text{m}}\right);\\
+\ddot{\phi} & =-3H\dot{\phi}-V_{,\phi}+4se^{4s\phi}w_{\text{m}}\rho_{\text{m}}\end{align*}
+
+\end_inset 
+
+ 
+\layout Standard
+
+Friedmann equation (Einstein frame):
+\begin_inset Formula \begin{align*}
+\frac{\dot{a}^{2}}{a^{2}} & \equiv H^{2}(t)=\frac{8\pi G}{3}\left(\rho_{\phi}+e^{4s\phi}\rho_{\text{m}}\right)\\
+ & =2s^{2}\left[\frac{\dot{\phi}^{2}}{2}+V(\phi)+e^{4s\phi}\rho_{\text{m}}\right]\end{align*}
+
+\end_inset 
+
+ 
+\layout Standard
+
+Obtained a closed system for 
+\begin_inset Formula $\phi,\rho_{\text{m}},H$
+\end_inset 
+
+
+\layout Slide
+
+Attractor
+\layout Standard
+
+
+\series bold 
+How to analyze attractor behavior?
+\layout Standard
+
+1.
+ Use energy conservation equation
+\begin_inset Formula \[
+\frac{d}{dt}\rho_{\phi}=-3H\left(\rho_{\phi}+p_{\phi}\right)+4se^{4s\phi}\dot{\phi}w_{\text{m}}p_{\text{m}}\]
+
+\end_inset 
+
+
+\layout Standard
+
+2.
+ Use the energy quotient
+\begin_inset Formula \[
+q(t)\equiv\frac{e^{4s\phi}\rho_{\text{m}}}{e^{4s\phi}\rho_{\text{m}}+\rho_{\phi}},\quad0\leq q\leq1\]
+
+\end_inset 
+
+ 
+\layout Standard
+
+3.
+ Assume that 
+\begin_inset Formula $q(t)\rightarrow\textrm{const}$
+\end_inset 
+
+ and 
+\begin_inset Formula $w_{\phi}\rightarrow\textrm{const}$
+\end_inset 
+
+ on the attractor
+\layout Standard
+
+4.
+ Derive closed equations for 
+\begin_inset Formula $q(t),\phi(t)$
+\end_inset 
+
+
+\begin_inset Formula \[
+\frac{dq}{dt}=-3Hq\left[\left(w_{\text{m}}-w_{\phi}\right)\left(1-q\right)+\frac{4s}{3}w_{\text{m}}\frac{\dot{\phi}}{H}\right]\]
+
+\end_inset 
+
+(Complete analysis of dynamics is in Amendola 
+\emph on 
+et al
+\emph default 
+., 
+\family typewriter 
+\size normal 
+gr-qc/0612180
+\family default 
+\size default 
+ --- using Jordan frame)
+\layout Slide
+
+Matter era
+\layout Standard
+
+
+\series bold 
+Attractor for dust-dominated era (
+\begin_inset Formula $w_{\text{m}}=0$
+\end_inset 
+
+)
+\layout Standard
+
+Integrate the equations for 
+\begin_inset Formula $\rho_{\text{m}}$
+\end_inset 
+
+, 
+\begin_inset Formula $\rho_{\phi}$
+\end_inset 
+
+:
+\begin_inset Formula \begin{align*}
+\rho_{\text{m}} & =\rho_{\text{m}}^{(0)}a^{-3\left(1+w_{\text{m}}\right)}e^{-4s\left(1+w_{\text{m}}\phi\right)}\\
+\rho_{\phi} & =\rho_{\phi}^{(0)}a^{-3\left(1+w_{\phi}\right)}\end{align*}
+
+\end_inset 
+
+where we assumed 
+\begin_inset Formula $p_{\phi}=w_{\phi}\rho_{\phi}$
+\end_inset 
+
+ with 
+\begin_inset Formula $w_{\phi}\approx\textrm{const }$
+\end_inset 
+
+
+\layout Standard
+
+Now assume 
+\begin_inset Formula $w_{\text{m}}=0$
+\end_inset 
+
+, derive equation for 
+\begin_inset Formula $q(t)$
+\end_inset 
+
+:
+\begin_inset Formula \[
+\dot{q}=3Hq\left(1-q\right)w_{\phi}\]
+
+\end_inset 
+
+Fixed point if 
+\begin_inset Formula $w_{\phi}\rightarrow0$
+\end_inset 
+
+ or 
+\begin_inset Formula $q\rightarrow1$
+\end_inset 
+
+ (not if 
+\begin_inset Formula $q\rightarrow0$
+\end_inset 
+
+)
+\newline 
+If 
+\begin_inset Formula $q\rightarrow1$
+\end_inset 
+
+ then need 
+\begin_inset Formula $w_{\phi}>0$
+\end_inset 
+
+ so that 
+\begin_inset Formula $\dot{q}>0$
+\end_inset 
+
+.
+\newline 
+Since 
+\begin_inset Formula $w_{\phi}\geq0$
+\end_inset 
+
+ then at late times 
+\begin_inset Formula $\rho_{\text{m}}(t)\gg\rho_{\phi}(t)$
+\end_inset 
+
+ or at most 
+\begin_inset Formula $\rho_{\text{m}}(t)\approx C_{0}\rho_{\phi}(t)$
+\end_inset 
+
+, hence 
+\begin_inset Formula \[
+H=s\sqrt{2}\sqrt{\rho_{\phi}+\rho_{\text{m}}e^{4s\phi}}\approx C_{1}a^{-3/2}\]
+
+\end_inset 
+
+and then 
+\begin_inset Formula $a(t)\propto t^{2/3}$
+\end_inset 
+
+, 
+\begin_inset Formula $H(t)\approx\frac{2}{3}t^{-1}$
+\end_inset 
+
+ in any case.
+ 
+\newline 
+So 
+\begin_inset Formula $\rho_{\phi}=\rho_{\phi}^{(0)}t^{-2\left(1+w_{\phi}\right)}$
+\end_inset 
+
+ and 
+\begin_inset Formula $\dot{\phi}=C_{2}t^{-1-w_{\phi}}$
+\end_inset 
+
+.
+\newline 
+If 
+\begin_inset Formula $w_{\phi}>0$
+\end_inset 
+
+ then 
+\begin_inset Formula $\phi\rightarrow\textrm{const}$
+\end_inset 
+
+ at late times, but this contradicts EOM for 
+\begin_inset Formula $\phi$
+\end_inset 
+
+ with 
+\begin_inset Formula $V_{,\phi}\neq0$
+\end_inset 
+
+ (or else we must require a fine-tuned value of 
+\begin_inset Formula $\phi$
+\end_inset 
+
+)
+\layout Slide
+
+Dust tracker
+\layout Standard
+
+
+\series bold 
+Dust tracker solution (
+\begin_inset Formula $w_{\phi}=0$
+\end_inset 
+
+)
+\layout Standard
+
+Consider 
+\begin_inset Formula $w_{\phi}\rightarrow0$
+\end_inset 
+
+, 
+\begin_inset Formula $q\rightarrow q_{0}\neq1$
+\end_inset 
+
+ (the value 
+\begin_inset Formula $q_{0}$
+\end_inset 
+
+ is determined by the EOM for 
+\begin_inset Formula $\phi$
+\end_inset 
+
+) then
+\begin_inset Formula \begin{align*}
+H^{2} & =\left(\frac{2}{3}t^{-1}\right)^{2}=2s^{2}\left(\rho_{\phi}+e^{4s\phi}\rho_{\text{m}}\right),\\
+\phi(t) & =\frac{\sqrt{2\left(1-q_{0}\right)}}{3s}\ln t,\; e^{s\phi}=t^{\frac{\sqrt{2\left(1-q_{0}\right)}}{3}}\equiv t^{\nu},\;\nu>0\end{align*}
+
+\end_inset 
+
+Transforming back to Jordan frame:
+\begin_inset Formula \begin{align*}
+\tilde{g} & =t^{2\nu}\left(dt^{2}-a^{2}d\mathbf{x}^{2}\right)\equiv d\tau^{2}-\tilde{a}^{2}(\tau)d\mathbf{x}^{2}\\
+\tau & =t^{1+\nu},\quad\tilde{a}(\tau)=\tau^{\left(\frac{2}{3}+\nu\right)/\left(1+\nu\right)}\neq\tau^{2/3}\end{align*}
+
+\end_inset 
+
+To have a dust-dominated era with 
+\begin_inset Formula $\tilde{a}(\tau)\propto\tau^{2/3}$
+\end_inset 
+
+ we need 
+\begin_inset Formula $\nu\ll1$
+\end_inset 
+
+
+\newline 
+(This is a constraint on 
+\begin_inset Formula $V(\phi)$
+\end_inset 
+
+ after 
+\begin_inset Formula $q_{0}$
+\end_inset 
+
+ is determined)
+\layout Standard
+
+(See Amendola 
+\emph on 
+et al
+\emph default 
+.\SpecialChar ~
+for precise conditions)
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+How to derive the Starobinsky instability: 
+\layout Standard
+
+Consider the EOM for 
+\begin_inset Formula $\phi(t)$
+\end_inset 
+
+ and linearize wrt.
+ 
+\begin_inset Formula $\delta\phi(t)$
+\end_inset 
+
+ .
+ This corresponds to considering only long-wavelength perturbations where
+ spatial gradients can be disregarded.
+ Then consider only the homogeneous part of this equation:
+\begin_inset Formula \[
+\delta\ddot{\phi}+3H\delta\dot{\phi}+V_{,\phi\phi}\delta\phi=0\]
+
+\end_inset 
+
+Note the relationship between 
+\begin_inset Formula $\delta\phi$
+\end_inset 
+
+ and 
+\begin_inset Formula $\delta R$
+\end_inset 
+
+:
+\begin_inset Formula \[
+\phi=-\frac{1}{2s}\ln\left(1+f'(R)\right),\quad\delta\phi=-\frac{f^{\prime\prime}}{2s\left(1+f'\right)}\delta R\]
+
+\end_inset 
+
+Substitute the formula for 
+\begin_inset Formula $V_{,\phi\phi}$
+\end_inset 
+
+ and finally get
+\begin_inset Formula \[
+\delta\ddot{R}+3H\delta\dot{R}+\frac{1}{3f^{\prime\prime}(R)}\delta R=0\]
+
+\end_inset 
+
+Then use WKB approximation on this equation, in the regime 
+\begin_inset Formula $f^{\prime\prime}\rightarrow0$
+\end_inset 
+
+, 
+\begin_inset Formula $a\rightarrow0$
+\end_inset 
+
+
+\end_inset 
+
+
+\layout Slide
+
+Perturbations 1
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 11. Perturbation theory for gravity. 3+1/SVT decomposition}{2007-11-21}
+\end_inset 
+
+
+\series bold 
+Lecture 11, 2007-11-21.
+ Introduction to perturbation theory for gravity
+\layout Standard
+
+What is the metric resulting from a small perturbation in the matter source?
+\layout Standard
+
+
+\begin_inset Formula $\bullet$
+\end_inset 
+
+ Compute 
+\begin_inset Formula $\tilde{\textrm{Ric}}(\mathbf{x},\mathbf{y})$
+\end_inset 
+
+ for 
+\begin_inset Formula $\tilde{g}=g+h$
+\end_inset 
+
+ to 1st order in 
+\begin_inset Formula $h$
+\end_inset 
+
+ (treating 
+\begin_inset Formula $h$
+\end_inset 
+
+ as a small perturbation)
+\layout Standard
+
+Change in the LC connection is a tensor,
+\begin_inset Formula \[
+\boldsymbol{\Gamma}(\mathbf{x},\mathbf{y})\equiv\tilde{\nabla}_{\mathbf{x}}\mathbf{y}-\nabla_{\mathbf{x}}\mathbf{y}=\boldsymbol{\Gamma}(\mathbf{y},\mathbf{x})\]
+
+\end_inset 
+
+
+\family typewriter 
+\size normal 
+
+\begin_inset Formula $\tilde{g}(\boldsymbol{\Gamma}(\mathbf{x},\mathbf{y}),\mathbf{z})=\tilde{g}(\tilde{\nabla}_{\mathbf{x}}\mathbf{y},\mathbf{z})-g(\nabla_{\mathbf{x}}\mathbf{y},\mathbf{z})-h(\nabla_{\mathbf{x}}\mathbf{y},\mathbf{z})=\frac{1}{2}\left(\textrm{d}\hat{h}\mathbf{y}+\mathcal{L}_{\mathbf{y}}h\right)\circ\left(\mathbf{x},\mathbf{z}\right)-h(\nabla_{\mathbf{x}}\mathbf{y},\mathbf{z})=\frac{1}{2}\left(\nabla_{\mathbf{x}}h\right)(\mathbf{y},\mathbf{z})-\frac{1}{2}\left(\nabla_{\mathbf{z}}h\right)(\mathbf{x},\mathbf{y})+\frac{1}{2}\left(\nabla_{\mathbf{y}}h\right)(\mathbf{x},\mathbf{z})$
+\end_inset 
+
+.
+\layout Standard
+
+Since we are computing to 1st order, we may set 
+\begin_inset Formula $\tilde{g}(\boldsymbol{\Gamma},\cdot)\approx g(\boldsymbol{\Gamma},\cdot)$
+\end_inset 
+
+ and disregard 
+\begin_inset Formula $\boldsymbol{\Gamma}\boldsymbol{\Gamma}$
+\end_inset 
+
+.
+\layout Standard
+
+Assuming 
+\begin_inset Formula $\nabla_{\mathbf{x},\mathbf{y}}\left\{ \mathbf{x},\mathbf{y},\mathbf{z}\right\} =0$
+\end_inset 
+
+, write the Riemann tensor 
+\begin_inset Formula $\hat{\tilde{R}}$
+\end_inset 
+
+ for 
+\begin_inset Formula $\tilde{g}$
+\end_inset 
+
+ through 
+\begin_inset Formula $\hat{R}$
+\end_inset 
+
+ for 
+\begin_inset Formula $g$
+\end_inset 
+
+: 
+\begin_inset Formula \begin{align*}
+\hat{\tilde{R}}(\mathbf{x},\mathbf{y})\mathbf{z} & =\tilde{\nabla}_{\mathbf{x}}\tilde{\nabla}_{\mathbf{y}}\mathbf{z}-\tilde{\nabla}_{\mathbf{y}}\tilde{\nabla}_{\mathbf{x}}\mathbf{z}\approx\hat{R}(\mathbf{x},\mathbf{y})\mathbf{z}\\
+ & +\nabla_{\mathbf{x}}\boldsymbol{\Gamma}(\mathbf{y},\mathbf{z})-\nabla_{\mathbf{y}}\boldsymbol{\Gamma}(\mathbf{x},\mathbf{z})\end{align*}
+
+\end_inset 
+
+ 
+\layout Slide
+
+Ricci perturbation
+\layout Standard
+
+
+\series bold 
+Compute the Ricci tensor
+\series default 
+: to 1st order, 
+\begin_inset Formula $\tilde{\textrm{Ric}}(\mathbf{x},\mathbf{z})=\tilde{\textrm{Tr}}_{\mathbf{y}}\tilde{R}(\mathbf{x},\mathbf{y},\mathbf{z},\mathbf{y})\approx\textrm{Tr}_{\mathbf{y}}g(\hat{\tilde{R}}(\mathbf{x},\mathbf{y})\mathbf{z},\mathbf{y})$
+\end_inset 
+
+
+\newline 
+Covariant Riemann tensor: to first order,
+\size normal 
+ 
+\newline 
+
+\size default 
+
+\begin_inset Formula $\tilde{R}(\mathbf{x},\mathbf{y},\mathbf{z},\mathbf{y})\approx R(\mathbf{x},\mathbf{y},\mathbf{z},\mathbf{y})+g(\nabla_{\mathbf{x}}\boldsymbol{\Gamma}(\mathbf{y},\mathbf{z})-\nabla_{\mathbf{y}}\boldsymbol{\Gamma}(\mathbf{x},\mathbf{z}),\mathbf{y})$
+\end_inset 
+
+ 
+\begin_inset Formula $=R(\mathbf{x},\mathbf{y},\mathbf{z},\mathbf{y})+\nabla_{\mathbf{x}}g(\boldsymbol{\Gamma}(\mathbf{y},\mathbf{z}),\mathbf{y})-\nabla_{\mathbf{y}}g(\boldsymbol{\Gamma}(\mathbf{x},\mathbf{z}),\mathbf{y})$
+\end_inset 
+
+ 
+\layout Standard
+
+Change in the Ricci tensor: 
+\begin_inset Formula $\tilde{\textrm{Ric}}(\mathbf{x},\mathbf{z})\approx\textrm{Ric}(\mathbf{x},\mathbf{z})+\nabla_{\mathbf{x}}\textrm{Tr}_{\mathbf{y}}g(\boldsymbol{\Gamma}(\mathbf{y},\mathbf{z}),\mathbf{y})-\textrm{Tr}_{\mathbf{y}}\nabla_{\mathbf{y}}g(\boldsymbol{\Gamma}(\mathbf{x},\mathbf{z}),\mathbf{y})$
+\end_inset 
+
+
+\begin_inset Formula $=\textrm{Ric}(\mathbf{x},\mathbf{z})+\frac{1}{2}\nabla_{\mathbf{x}}\textrm{Tr}_{\mathbf{y}}(\nabla_{\mathbf{y}}h(\mathbf{y},\mathbf{z})+\nabla_{\mathbf{z}}h(\mathbf{y},\mathbf{y})-\nabla_{\mathbf{y}}h(\mathbf{y},\mathbf{z}))$
+\end_inset 
+
+ 
+\newline 
+
+\begin_inset Formula $-\frac{1}{2}\textrm{Tr}_{\mathbf{y}}\nabla_{\mathbf{y}}(\nabla_{\mathbf{x}}h(\mathbf{y},\mathbf{z})+\nabla_{\mathbf{z}}h(\mathbf{x},\mathbf{y})-\nabla_{\mathbf{y}}h(\mathbf{x},\mathbf{z}))$
+\end_inset 
+
+
+\begin_inset Formula $=\textrm{Ric}(\mathbf{x},\mathbf{z})+\frac{1}{2}\nabla_{\mathbf{x}}\nabla_{\mathbf{z}}\textrm{Tr}h+\frac{1}{2}\square h(\mathbf{x},\mathbf{z})-\frac{1}{2}\nabla_{\mathbf{x}}\left(\textrm{div}h\right)(\mathbf{z})-\frac{1}{2}\nabla_{\mathbf{z}}\left(\textrm{div}h\right)(\mathbf{x})$
+\end_inset 
+
+, where 
+\begin_inset Formula $\left(\textrm{div}h\right)(\mathbf{x})\equiv\textrm{Tr}_{\mathbf{y}}(\nabla_{\mathbf{y}}h)(\mathbf{y},\mathbf{x})$
+\end_inset 
+
+.
+\newline 
+
+\series bold 
+Practice problem:
+\series default 
+ Show that 
+\begin_inset Formula $\textrm{div}\left(\lambda g\right)=\textrm{d}\lambda$
+\end_inset 
+
+
+\layout Standard
+
+By taking trace of the Einstein equation, find 
+\begin_inset Formula $R=8\pi G\,\textrm{Tr}T$
+\end_inset 
+
+, hence 
+\begin_inset Formula $\textrm{Ric}=-8\pi G\left(T-\frac{1}{2}g\,\textrm{Tr}T\right)$
+\end_inset 
+
+
+\newline 
+Assume that a background spacetime 
+\begin_inset Formula $\left(\textrm{Ric},T\right)$
+\end_inset 
+
+ is given and we have a small perturbation 
+\begin_inset Formula $\delta T$
+\end_inset 
+
+ of the EMT.
+ We need to solve the equation 
+\begin_inset Formula \begin{align*}
+\frac{1}{2}\nabla_{\mathbf{x}}\nabla_{\mathbf{z}}\textrm{Tr}h+\frac{1}{2}\square h(\mathbf{x},\mathbf{z}) & -\frac{1}{2}\nabla_{\mathbf{x}}\left(\textrm{div}h\right)(\mathbf{z})\\
+-\frac{1}{2}\nabla_{\mathbf{z}}\left(\textrm{div}h\right)(\mathbf{x}) & =-8\pi G(\delta T-\frac{1}{2}g\,\textrm{Tr}\delta T)\end{align*}
+
+\end_inset 
+
+to first order in 
+\begin_inset Formula $\delta T$
+\end_inset 
+
+.
+ Complicated!
+\layout Slide
+
+3+1 decomposition
+\layout Standard
+
+
+\series bold 
+The 3+1/SVT decomposition
+\layout Standard
+
+Questions: 1.
+ What is the metric 
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset 
+
+ generated by a small 
+\begin_inset Formula $\delta T_{\mu\nu}$
+\end_inset 
+
+ in 
+\emph on 
+flat
+\emph default 
+ spacetime? 
+\newline 
+2.
+ What is the metric 
+\begin_inset Formula $\tilde{g}$
+\end_inset 
+
+ generated by a small 
+\begin_inset Formula $\delta T_{\mu\nu}$
+\end_inset 
+
+ superimposed onto the cosmological 
+\begin_inset Formula $T_{\mu\nu}$
+\end_inset 
+
+ in FRW spacetime (
+\begin_inset Formula $g=dt^{2}-a^{2}d\mathbf{x}^{2}$
+\end_inset 
+
+)?
+\layout Standard
+
+To solve the difficult tensor equation, use tricks:
+\newline 
+1.
+ Compute time components separately from spatial components; 
+\begin_inset Formula $h=\left\{ h_{00},h_{0j},h_{ij}\right\} $
+\end_inset 
+
+
+\newline 
+2.
+ Use scalar-vector-tensor (
+\series bold 
+SVT
+\series default 
+) decomposition for 
+\begin_inset Formula $h$
+\end_inset 
+
+ and 
+\begin_inset Formula $T$
+\end_inset 
+
+ 
+\layout Standard
+
+Helmholz decomposition: 
+\begin_inset Formula $\boldsymbol{\omega}=\textrm{d}\lambda+\boldsymbol{\nu}$
+\end_inset 
+
+, 
+\begin_inset Formula $\textrm{div}\boldsymbol{\nu}=0$
+\end_inset 
+
+ 
+\newline 
+(we define 
+\begin_inset Formula $\textrm{div}\,\boldsymbol{\nu}\equiv\textrm{div}\left(\hat{g}\right.{}^{-1}\boldsymbol{\nu})$
+\end_inset 
+
+ for 1-forms)
+\newline 
+Determine 
+\begin_inset Formula $\lambda$
+\end_inset 
+
+: 
+\begin_inset Formula $\textrm{div}\,\boldsymbol{\omega}=\textrm{div}\,\textrm{d}\lambda=\Delta\lambda$
+\end_inset 
+
+, then 
+\begin_inset Formula $\lambda=\frac{1}{\Delta}\textrm{div}\,\boldsymbol{\omega}$
+\end_inset 
+
+ if the BVP (
+\begin_inset Formula $\lambda\rightarrow0$
+\end_inset 
+
+ at 
+\begin_inset Formula $\left|\mathbf{x}\right|\rightarrow\infty$
+\end_inset 
+
+) has a unique solution (true in Euclidean signature!) 
+\layout Standard
+
+Motivation for the 3+1 split:
+\newline 
+- background will depend on 
+\begin_inset Formula $t$
+\end_inset 
+
+ via 
+\begin_inset Formula $a(t)$
+\end_inset 
+
+, can use Fourier transform only in 3D but not in time
+\newline 
+- cannot use SVT decomposition with Lorentzian metric signature (no unique
+ solution to BVP)!
+\layout Standard
+
+Motivation for the SVT decomposition:
+\newline 
+- equations for S,V,T sectors are decoupled
+\newline 
+- different physical sources contribute to S,V,T in 
+\begin_inset Formula $\delta T$
+\end_inset 
+
+ (usually have only scalar sources)
+\layout Slide
+
+Perturbations in flat spacetime
+\layout Standard
+
+
+\series bold 
+\color green
+Plan:
+\layout Standard
+
+
+\color green
+1.
+ Perform 3+1/SVT decomposition 
+\newline 
+2.
+ Compute 
+\begin_inset Formula $\tilde{\textrm{Ric}}$
+\end_inset 
+
+ in flat background
+\newline 
+3.
+ Resolve gauge issues using 3+1/SVT
+\newline 
+4.
+ Solve Einstein equation, determine 
+\begin_inset Formula $h$
+\end_inset 
+
+
+\newline 
+5.
+ 
+\begin_inset Formula $dt^{2}-a^{2}d\mathbf{x}^{2}=a^{2}(\eta)\left(d\eta^{2}-d\mathbf{x}^{2}\right)$
+\end_inset 
+
+; make conformal transformation to FRW background with fixed 
+\begin_inset Formula $a(t)$
+\end_inset 
+
+ to compute 
+\begin_inset Formula $\tilde{\textrm{Ric}}$
+\end_inset 
+
+ for perturbed FRW
+\layout Standard
+
+
+\series bold 
+3+1/SVT decomposition of vectors
+\layout Standard
+
+Decompose 4-vectors as 
+\begin_inset Formula $\mathbf{u}=A\mathbf{e}_{0}+\mathbf{v}$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathbf{e}_{0}\equiv\partial_{t}$
+\end_inset 
+
+; 
+\begin_inset Formula $g(\mathbf{e}_{0},\mathbf{v})=0$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathbf{u}\equiv\left\{ A,v^{j}\right\} $
+\end_inset 
+
+.
+ Further, decompose 
+\begin_inset Formula $\mathbf{v}$
+\end_inset 
+
+ as gradient + divergence-free, 
+\begin_inset Formula $v^{j}=B^{,j}+C^{j}$
+\end_inset 
+
+, 
+\begin_inset Formula $C^{j}{}_{,j}=0$
+\end_inset 
+
+.
+ In 3-dim.\SpecialChar ~
+Fourier space: 
+\begin_inset Formula $\mathbf{v}(\mathbf{k})=\textrm{i}B\mathbf{k}+\mathbf{C}$
+\end_inset 
+
+, 
+\begin_inset Formula $\mathbf{k}\cdot\mathbf{C}=0$
+\end_inset 
+
+.
+ So 
+\begin_inset Formula $B:=\frac{1}{\textrm{i}}\frac{\mathbf{v}\cdot\mathbf{k}}{\mathbf{k}\cdot\mathbf{k}}$
+\end_inset 
+
+, 
+\begin_inset Formula $\mathbf{C}:=\mathbf{v}-\textrm{i}B\mathbf{k}$
+\end_inset 
+
+.
+ In real space: 
+\begin_inset Formula $B=\frac{1}{\Delta}\textrm{div}\,\mathbf{v}$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathbf{C}=\mathbf{v}-\hat{g}^{-1}\textrm{d}B$
+\end_inset 
+
+.
+ Note: 
+\begin_inset Formula $\left(\frac{1}{\Delta}f\right)(\mathbf{x})=-\int\frac{f(\tilde{x},\tilde{y},\tilde{z})d^{3}\tilde{x}}{4\pi\left|\mathbf{x}-\tilde{\mathbf{x}}\right|}$
+\end_inset 
+
+, where 
+\begin_inset Formula $\mathbf{x}\in\mathbb{R}^{3}$
+\end_inset 
+
+
+\layout Standard
+
+Remarks on the SVT decomposition:
+\newline 
+1.
+ The decomposition is 
+\emph on 
+nonlocal in space
+\newline 
+
+\emph default 
+2.
+ Only defined when 
+\begin_inset Formula $\textrm{div}\,\mathbf{v}\rightarrow0$
+\end_inset 
+
+ sufficiently quickly at spatial infinity (at least 
+\begin_inset Formula $\propto\left|\mathbf{x}\right|^{-2}$
+\end_inset 
+
+)
+\newline 
+3.
+ Defined also without Fourier transform!
+\newline 
+4.
+ Useful only because perturbation equations are algebraic in 
+\emph on 
+Fourier
+\emph default 
+ space
+\layout Slide
+
+3+1/SVT decomposition of (0,2) tensor
+\layout Standard
+
+
+\series bold 
+3+1/SVT decomposition of (0,2) tensors
+\layout Standard
+
+Consider a symmetric tensor 
+\begin_inset Formula $T_{ij}$
+\end_inset 
+
+ in 3-dimensional Euclidean space with metric 
+\begin_inset Formula $\delta_{ij}$
+\end_inset 
+
+
+\layout Standard
+
+Algebraic decomposition: trace + traceless part: 
+\begin_inset Formula $T_{ij}=A\delta_{ij}+T_{ij}^{(1)}$
+\end_inset 
+
+, 
+\begin_inset Formula $T_{aa}^{(1)}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $A:=\frac{1}{3}T_{aa}$
+\end_inset 
+
+
+\layout Standard
+
+Fourier decomposition: project along tensors made out of 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+
+\newline 
+Component parallel to 
+\begin_inset Formula $k_{i}k_{j}-\frac{1}{3}k^{2}\delta_{ij}$
+\end_inset 
+
+: 
+\newline 
+
+\begin_inset Formula $T_{ij}^{(1)}=\left(k_{i}k_{j}-\frac{1}{3}k^{2}\delta_{ij}\right)B+T_{ij}^{(2)}$
+\end_inset 
+
+, 
+\begin_inset Formula $T_{ij}^{(2)}k^{i}k^{j}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $T_{aa}^{(2)}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $B:=\frac{3}{2}\frac{k_{i}k_{j}T_{ij}^{(1)}}{k^{4}}$
+\end_inset 
+
+
+\newline 
+Component parallel to 
+\begin_inset Formula $k_{i}$
+\end_inset 
+
+ & orthogonal to 
+\begin_inset Formula $k_{j}$
+\end_inset 
+
+: 
+\begin_inset Formula $T_{ij}^{(2)}=\textrm{i}\left(k_{i}C_{j}+k_{j}C_{i}\right)+T_{ij}^{(3)}$
+\end_inset 
+
+, 
+\begin_inset Formula $T_{ij}^{(3)}k_{j}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $T_{aa}^{(3)}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $C_{a}k_{a}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $C_{j}:=\frac{1}{\textrm{i}}\frac{k_{a}T_{aj}^{(2)}}{k^{2}}$
+\end_inset 
+
+; relabel 
+\begin_inset Formula $D_{ij}\equiv T_{ij}^{(3)}$
+\end_inset 
+
+
+\layout Standard
+
+Final decomposition in real space: 
+\begin_inset Formula $T_{ij}=A\delta_{ij}-\left(\partial_{i}\partial_{j}-\frac{1}{3}\delta_{ij}\Delta\right)B+C_{i,j}+C_{j,i}+D_{ij}$
+\end_inset 
+
+
+\layout Standard
+
+Remarks:
+\newline 
+1.
+ 
+\begin_inset Formula $T_{ij}$
+\end_inset 
+
+ must decay at least as 
+\begin_inset Formula $\left|\mathbf{x}\right|^{-2}$
+\end_inset 
+
+ at infinity
+\newline 
+2.
+ Terms proportional to 
+\begin_inset Formula $\delta_{ij}$
+\end_inset 
+
+ can be gathered because we cannot have 
+\begin_inset Formula $B_{,ij}=A\delta_{ij}$
+\end_inset 
+
+ (check!)
+\layout Slide
+
+SVT decomposition
+\layout Standard
+
+
+\series bold 
+Properties of SVT decomposition
+\layout Standard
+
+SVT decomposition can be applied to arbitrary (Euclidean) tensors.
+ It is useful because:
+\newline 
+1.
+ Tensor equations split into simpler eqs.
+\newline 
+2.
+ Eqs.\SpecialChar ~
+for S/V/T components decouple
+\newline 
+3.
+ Often get algebraic eqs.\SpecialChar ~
+in Fourier space
+\layout Standard
+
+
+\series bold 
+Theorem 1
+\series default 
+: If 
+\begin_inset Formula $A\delta_{ij}+B_{,ij}+C_{i,j}+C_{j,i}+D_{ij}=0$
+\end_inset 
+
+ and 
+\begin_inset Formula $A,B,C_{i},D_{ij}\rightarrow0$
+\end_inset 
+
+ at least as 
+\begin_inset Formula $\left|\mathbf{x}\right|^{-2}$
+\end_inset 
+
+ at infinity, then each of 
+\begin_inset Formula $A,B,C_{i},D_{ij}=0$
+\end_inset 
+
+ everywhere.
+\newline 
+(Not true in spaces with Lorentzian signature!)
+\layout Standard
+
+
+\series bold 
+Theorem 2
+\series default 
+: EOM for perturbations of a tensor 
+\begin_inset Formula $X$
+\end_inset 
+
+ in the presence of (several) background tensors will decouple after using
+ a complete decomposition of 
+\begin_inset Formula $X$
+\end_inset 
+
+ with respect to projections on the background tensors and SVT.
+ (In our case, the background tensors are 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ and 
+\begin_inset Formula $\delta_{ij}$
+\end_inset 
+
+)
+\layout Standard
+
+
+\series bold 
+Lemma
+\series default 
+: If a linear function of 
+\begin_inset Formula $\mathbf{k}$
+\end_inset 
+
+ is invariant under 3D rotations, it is equal to zero.
+\layout Slide
+
+Four-dimensional
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 12. Explicit solution for metric perturbations in flat background}{2007-11-23}
+\end_inset 
+
+
+\series bold 
+Lecture 12, 2007-11-23.
+ Why 4D/SVT does not work; gauge issues
+\layout Standard
+
+Try avoiding 3+1 decomposition (only SVT): 
+\begin_inset Formula \[
+h_{\mu\nu}=Ag_{\mu\nu}+B_{;\mu\nu}+C_{\mu;\nu}+C_{\nu;\mu}+D_{\mu\nu}\]
+
+\end_inset 
+
+where 
+\begin_inset Formula $\textrm{div}\boldsymbol{C}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $\textrm{div}\boldsymbol{D}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $\textrm{Tr}\boldsymbol{D}=0$
+\end_inset 
+
+.
+ (Index-free notation is more bulky now!)
+\layout Standard
+
+Gauge transformation: 
+\begin_inset Formula $h\rightarrow h+\delta h$
+\end_inset 
+
+, where 
+\begin_inset Formula $\delta h\equiv\mathcal{L}_{\mathbf{u}}g$
+\end_inset 
+
+; so 
+\begin_inset Formula $\delta h(\mathbf{x},\mathbf{y})=g(\nabla_{\mathbf{x}}\mathbf{u},\mathbf{y})+g(\nabla_{\mathbf{y}}\mathbf{u},\mathbf{x})$
+\end_inset 
+
+; in index notation: 
+\begin_inset Formula $\delta h_{\mu\nu}=u_{\mu;\nu}+u_{\nu;\mu}$
+\end_inset 
+
+; decompose 
+\begin_inset Formula $u^{\mu}=b^{,\mu}+c^{\mu}$
+\end_inset 
+
+ with 
+\begin_inset Formula $\textrm{div}\,\mathbf{c}\equiv c^{\mu}{}_{;\mu}=0$
+\end_inset 
+
+; then 
+\begin_inset Formula $\delta h_{\mu\nu}=2b_{;\mu\nu}+c_{\mu;\nu}+c_{\nu;\mu}$
+\end_inset 
+
+.
+ This removes 
+\begin_inset Formula $B$
+\end_inset 
+
+, 
+\begin_inset Formula $\boldsymbol{C}$
+\end_inset 
+
+ terms!
+\layout Standard
+
+Compute: 
+\begin_inset Formula $\textrm{Tr}h=4A$
+\end_inset 
+
+; 
+\begin_inset Formula $\textrm{div}\, h=\textrm{d}A$
+\end_inset 
+
+; so 
+\begin_inset Formula $\delta\textrm{Ric}_{\mu\nu}=A_{;\mu\nu}+\frac{1}{2}g_{\mu\nu}\square A+\frac{1}{2}\square D_{\mu\nu}$
+\end_inset 
+
+; Einstein equation will set 
+\begin_inset Formula $A=...$
+\end_inset 
+
+, 
+\begin_inset Formula $\square D_{\mu\nu}=...$
+\end_inset 
+
+ Note: 
+\begin_inset Formula $D_{\mu\nu}$
+\end_inset 
+
+ has 5 d.o.f.
+\layout Standard
+
+It appears that we have 5 d.o.f.\SpecialChar ~
+in 
+\begin_inset Formula $D_{\mu\nu}$
+\end_inset 
+
+, but this is 
+\emph on 
+wrong
+\emph default 
+: the gauge has not been fixed (have 3 free solutions of 
+\begin_inset Formula $\square\mathbf{u}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $\textrm{div}\,\mathbf{u}=0$
+\end_inset 
+
+).
+ But these 
+\begin_inset Quotes eld
+\end_inset 
+
+gauge
+\begin_inset Quotes erd
+\end_inset 
+
+ solutions are not explicit.
+\layout Standard
+
+
+\begin_inset Formula $\bullet$
+\end_inset 
+
+ 3+1/SVT will make the d.o.f.\SpecialChar ~
+explicit.
+ Also we will avoid having to solve 
+\begin_inset Formula $\square\mathbf{u}=0$
+\end_inset 
+
+ in FRW background!
+\begin_inset Note
+collapsed false
+
+\layout Standard
+
+Note: gauge-invariant variables are equivalent to variables in a completely
+ fixed gauge (because fixing that gauge is gauge-invariant operation).
+ The Newtonian gauge is suitable as a completely fixed gauge, therefore
+ the free variables in the Newtonian gauge (
+\begin_inset Formula $\Phi,\Psi,S_{i},t_{ij}$
+\end_inset 
+
+) are suitable as gauge-invariant variables.
+ Explicit equations can be derived for these variables in terms of variables
+ 
+\begin_inset Formula $\Phi,\Psi,E,B,F_{i},S_{i},t_{ij}$
+\end_inset 
+
+ defined in an arbitrary gauge.
+ The resulting formulas 
+\emph on 
+are the same as
+\emph default 
+ the formulas for gauge-invariant variables that would be otherwise cumbersome
+ to manipulate.
+\end_inset 
+
+
+\layout Slide
+
+Perturbations in flat spacetime
+\layout Standard
+
+
+\series bold 
+Perturbations in flat spacetime
+\layout Standard
+
+Use ordinary derivative instead of 
+\begin_inset Formula $\nabla$
+\end_inset 
+
+
+\newline 
+Use 3+1/SVT decomposition for 
+\begin_inset Formula $h$
+\end_inset 
+
+ (notation from V.
+ F.
+ Mukhanov, 
+\emph on 
+Physical Foundations of Cosmology
+\emph default 
+, chapter 7):
+\begin_inset Formula \[
+\begin{cases}
+h_{00}=2\Phi;\quad h_{0j}=B_{,j}+S_{j};\quad S_{j}{}^{,j}=0\\
+h_{ij}=2\Psi\delta_{ij}+2E_{,ij}+F_{i,j}+F_{j,i}+t_{ij}\end{cases}\]
+
+\end_inset 
+
+Gauge transformations: 
+\begin_inset Formula $h_{\mu\nu}\rightarrow h_{\mu\nu}+\delta h_{\mu\nu}$
+\end_inset 
+
+ where 
+\begin_inset Formula $\delta h_{\mu\nu}=u_{\mu,\nu}+u_{\nu,\mu}$
+\end_inset 
+
+.
+ Apply 3+1/SVT to 
+\begin_inset Formula $u_{\mu}$
+\end_inset 
+
+: 
+\begin_inset Formula $u_{\mu}\rightarrow\left\{ a;b_{,j}+c_{j}\right\} $
+\end_inset 
+
+, 
+\begin_inset Formula $c^{j}{}_{,j}=0$
+\end_inset 
+
+.
+ Now compute:
+\begin_inset Formula \begin{align*}
+\delta h_{00} & =2a_{,0};\quad\delta h_{0j}=a_{0,j}+b_{,0j}+c_{j,0};\\
+\delta h_{ij} & =2b_{,ij}+c_{i,j}+c_{j,i}\end{align*}
+
+\end_inset 
+
+By the SVT theorem 1, we have
+\begin_inset Formula \begin{align*}
+\delta\Phi & =\dot{a},\quad\delta B=a+\dot{b},\quad\delta S_{j}=\dot{c}_{j},\\
+\delta\Psi & =0,\quad\delta E=b,\quad\delta F_{j}=c_{j},\quad\delta t_{ij}=0\end{align*}
+
+\end_inset 
+
+Hence we can set 
+\begin_inset Formula $E=B=0$
+\end_inset 
+
+, 
+\begin_inset Formula $F_{j}=0$
+\end_inset 
+
+ (this is called 
+\series bold 
+longitudinal
+\series default 
+ or 
+\series bold 
+Newtonian
+\series default 
+ 
+\series bold 
+gauge
+\series default 
+)
+\layout Standard
+
+Remarks: 1.
+ Scalar parts of 
+\begin_inset Formula $\mathbf{u}$
+\end_inset 
+
+ contribute to scalar parts of 
+\begin_inset Formula $h$
+\end_inset 
+
+, vector parts of 
+\begin_inset Formula $\mathbf{u}$
+\end_inset 
+
+ to vector parts of 
+\begin_inset Formula $h$
+\end_inset 
+
+ (cf.\SpecialChar ~
+SVT theorem 2)
+\newline 
+2.
+ The source 
+\begin_inset Formula $T_{\mu\nu}$
+\end_inset 
+
+ will, in general, change under a gauge transformation as 
+\begin_inset Formula $T_{\mu\nu}\rightarrow T_{\mu\nu}+\mathcal{L}_{\mathbf{u}}T_{\mu\nu}$
+\end_inset 
+
+, but in flat space 
+\begin_inset Formula $T_{\mu\nu}=0$
+\end_inset 
+
+.
+ Will have to take care with FRW background!
+\layout Slide
+
+Einstein equations
+\layout Standard
+
+
+\series bold 
+Einstein equations in almost flat space
+\layout Standard
+
+Compute 
+\begin_inset Formula $\textrm{Ric}_{\mu\nu}$
+\end_inset 
+
+ to first order in Newtonian gauge:
+\begin_inset Formula \[
+\begin{cases}
+h_{00}=2\Phi;\quad h_{0j}=S_{j};\quad S_{j}{}^{,j}=0\\
+h_{ij}=2\Psi\delta_{ij}+t_{ij},\quad t_{aa}=0,\; t_{ij}{}^{,j}=0\end{cases}\]
+
+\end_inset 
+
+Need to compute 
+\begin_inset Formula \begin{align*}
+\textrm{Ric}_{\mu\nu} & =\frac{\left(\textrm{Tr}h\right)_{,\mu\nu}+\square h_{\mu\nu}-\partial_{\mu}\left(\textrm{div}h\right)_{\nu}-\partial_{\nu}\left(\textrm{div}h\right)_{\mu}}{2}\\
+\textrm{Tr}\, h & =2\Phi-6\Psi\\
+\left(\textrm{div}h\right)_{0} & =g^{\mu\nu}h_{0\mu,\nu}=h_{00,0}-h_{0j,j}=2\dot{\Phi}\\
+\left(\textrm{div}h\right)_{j} & =h_{j0,0}-h_{ji,i}=\dot{S}_{j}-2\Psi_{,j}\end{align*}
+
+\end_inset 
+
+
+\layout Standard
+
+Hence (in the SVT decomposition):
+\begin_inset Formula \begin{align*}
+\textrm{Ric}_{00} & =-3\ddot{\Psi}-\Delta\Phi,\quad\textrm{Ric}_{0j}=-2\dot{\Psi}_{,j}-\frac{1}{2}\Delta S_{j}\\
+\textrm{Ric}_{ij} & =\left(\Phi-\Psi\right)_{,ij}+\frac{1}{2}\square t_{ij}+\delta_{ij}\square\Psi-\frac{1}{2}\left(\dot{S}_{j,i}+\dot{S}_{i,j}\right)\\
+R & =\textrm{Ric}_{00}-\textrm{Ric}_{jj}=-6\ddot{\Psi}-2\Delta\Phi+4\Delta\Psi\end{align*}
+
+\end_inset 
+
+
+\layout Standard
+
+Need to decompose the EMT in 3+1/SVT:
+\begin_inset Formula \begin{align*}
+T_{0j} & =\alpha_{,j}+\beta_{j};\qquad\beta_{j}{}^{,j}=0\\
+T_{ij} & =\mu\delta_{ij}+\lambda_{,ij}+\sigma_{i,j}+\sigma_{j,i}+q_{ij}\\
+\sigma_{j}{}^{,j} & =0,\quad q_{jj}=0,\quad q_{ij}{}^{,j}=0\end{align*}
+
+\end_inset 
+
+ 
+\layout Slide
+
+Explicit solutions
+\layout Standard
+
+
+\series bold 
+Explicit solutions
+\layout Standard
+
+Explicit expressions for 3+1/SVT components:
+\begin_inset Formula \begin{align*}
+\alpha=\frac{1}{\Delta}T_{0i,i}\quad\lambda & =\frac{1}{\Delta}\left[\frac{3}{2}\frac{1}{\Delta}T_{ik,ik}-\frac{1}{2}T_{ii}\right]\\
+\mu=\frac{1}{2}\left[T_{ii}-\frac{1}{\Delta}T_{ik,ik}\right]\quad\sigma_{j} & =\frac{1}{\Delta}\left[T_{ji,i}-\left(\frac{1}{\Delta}T_{ik,ik}\right)_{,j}\right]\end{align*}
+
+\end_inset 
+
+ Einstein equations in 3+1 decomposition are
+\begin_inset Formula \begin{align*}
+-2\Delta\Psi & =-8\pi GT_{00}\\
+-2\dot{\Psi}_{,j}-\frac{1}{2}\Delta S_{j} & =-8\pi G\left(\alpha_{,j}+\beta_{j}\right)\\
+\left(\Phi-\Psi\right)_{,ij}+\frac{1}{2}\square t_{ij} & -\frac{1}{2}\left(\dot{S}_{j,i}+\dot{S}_{i,j}\right)\\
+-\left[2\ddot{\Psi}+\Delta\left(\Phi-\Psi\right)\right]\delta_{ij} & =-8\pi G(\mu\delta_{ij}+\lambda_{,ij}\\
+ & +\sigma_{i,j}+\sigma_{j,i}+q_{ij})\end{align*}
+
+\end_inset 
+
+Explicit solution using SVT theorem 1:
+\begin_inset Formula \begin{align*}
+\Psi & =\frac{1}{\Delta}4\pi GT_{00},\quad\Phi-\Psi=-8\pi G\lambda,\\
+S_{j} & =\frac{1}{\Delta}16\pi G\beta_{j},\quad t_{ij}=\frac{1}{\square}16\pi Gq_{ij}\end{align*}
+
+\end_inset 
+
+Remarks: 1.
+ Other equations are consequences of 
+\begin_inset Formula $T_{ij}{}^{,j}=0$
+\end_inset 
+
+, do not need to solve them!
+\newline 
+2.
+ 
+\begin_inset Formula $\Phi,\Psi,S_{j}$
+\end_inset 
+
+ are constrained and not free d.o.f.
+\newline 
+3.
+ A free wave solution can be added to 
+\begin_inset Formula $t_{ij}$
+\end_inset 
+
+ (this gives 2 vacuum d.o.f.)
+\newline 
+4.
+ For 
+\begin_inset Formula $T_{\mu\nu}=\left(\rho+p\right)u_{\mu}u_{\nu}-pg_{\mu\nu}$
+\end_inset 
+
+ we have 
+\begin_inset Formula $\alpha=0$
+\end_inset 
+
+, 
+\begin_inset Formula $\lambda=0$
+\end_inset 
+
+, 
+\begin_inset Formula $\mu=p$
+\end_inset 
+
+, 
+\begin_inset Formula $\sigma_{j}=\beta_{j}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $q_{ij}=0$
+\end_inset 
+
+, 
+\begin_inset Formula $T_{00}=\rho+p$
+\end_inset 
+
+
+\layout Slide
+
+FRW perturbations
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 13. Einstein tensor for perturbations in FRW spacetime}{2007-11-28}
+\end_inset 
+
+
+\series bold 
+Lecture 13, 2007-11-28.
+ Perturbations of gravity and matter in FRW spacetime 
+\newline 
+
+\series default 
+(see 
+\noun on 
+Mukhanov
+\noun default 
+ 2005, chapters 7 and 8)
+\layout Standard
+
+Perturbations due to a single, ideal comoving fluid (if 
+\emph on 
+one
+\emph default 
+ matter component dominates 
+\emph on 
+and 
+\emph default 
+if vector perturbations are absent, e.g.\SpecialChar ~
+scalar field/dust/radiation but no
+ cosmic strings):
+\begin_inset Formula \[
+T_{\mu\nu}=\left(\rho+p\right)u_{\mu}u_{\nu}-pg_{\mu\nu}\]
+
+\end_inset 
+
+In 
+\emph on 
+flat
+\emph default 
+ spacetime it follows that 
+\begin_inset Formula $\Phi=\Psi$
+\end_inset 
+
+ and 
+\begin_inset Formula $S_{j}=0$
+\end_inset 
+
+, so the perturbed metric is simply
+\begin_inset Formula \[
+\tilde{g}_{\mu\nu}=\left(\begin{array}{cc}
+1+2\Phi & 0\\
+0 & -\delta_{ij}+2\Phi\delta_{ij}+t_{ij}\end{array}\right),\; u^{\mu}=\left(\begin{array}{c}
+1\\
+0\\
+0\\
+0\end{array}\right)\]
+
+\end_inset 
+
+To pass to FRW spacetime, note that any FRW spacetime is conformally flat:
+\begin_inset Formula \[
+g=d\tilde{t}^{2}-\tilde{a}^{2}(\tilde{t})d\mathbf{x}^{2}=a^{2}(t)\left[dt^{2}-d\mathbf{x}^{2}\right]\]
+
+\end_inset 
+
+ Note: 
+\begin_inset Formula $t$
+\end_inset 
+
+ is the 
+\series bold 
+conformal time
+\series default 
+, 
+\begin_inset Formula $\tilde{t}$
+\end_inset 
+
+ is the proper time, 
+\begin_inset Formula $t=\int\frac{d\tilde{t}}{\tilde{a}(\tilde{t})}$
+\end_inset 
+
+
+\newline 
+Example: de Sitter, 
+\begin_inset Formula $\tilde{a}(\tilde{t})=e^{H\tilde{t}}$
+\end_inset 
+
+, 
+\begin_inset Formula $t=-H^{-1}e^{-H\tilde{t}}$
+\end_inset 
+
+, 
+\begin_inset Formula $a(t)=\left|Ht\right|^{-1}$
+\end_inset 
+
+ 
+\newline 
+Note that 
+\begin_inset Formula $-\infty<t<0$
+\end_inset 
+
+ for de Sitter; 
+\begin_inset Formula $t\rightarrow0$
+\end_inset 
+
+ is 
+\begin_inset Quotes eld
+\end_inset 
+
+late times
+\begin_inset Quotes erd
+\end_inset 
+
+
+\newline 
+In matter-dominated FRW, 
+\begin_inset Formula $\tilde{a}(\tilde{t})\propto\tilde{t}^{p}$
+\end_inset 
+
+ where usually 
+\begin_inset Formula $0<p<1$
+\end_inset 
+
+ and so 
+\begin_inset Formula $0<t<\infty$
+\end_inset 
+
+
+\layout Slide
+
+Ricci
+\layout Standard
+
+
+\series bold 
+Ricci tensor for perturbed metric in FRW
+\layout Standard
+
+Ansatz for metric perturbations: 
+\begin_inset Formula $\tilde{g}=a^{2}g$
+\end_inset 
+
+, so
+\begin_inset Formula \[
+\tilde{g}_{\mu\nu}=a^{2}(t)\left(\begin{array}{cc}
+1+2\Phi & 0\\
+0 & -\delta_{ij}\left(1-2\Phi\right)+t_{ij}\end{array}\right)\]
+
+\end_inset 
+
+Now need to compute the Einstein tensor\SpecialChar ~
+of\SpecialChar ~
+
+\begin_inset Formula $\tilde{g}$
+\end_inset 
+
+.
+ 
+\newline 
+Use linear approximation in 
+\begin_inset Formula $\Phi,t_{ij}$
+\end_inset 
+
+.
+ Note: 
+\begin_inset Formula $a(t)$
+\end_inset 
+
+ is fixed and has 
+\emph on 
+no
+\emph default 
+ perturbations! 
+\newline 
+Use the conformal transformation formula with 
+\begin_inset Formula $\tilde{g}=e^{2\Omega}g$
+\end_inset 
+
+, 
+\begin_inset Formula $\Omega\equiv\ln a(t)$
+\end_inset 
+
+:
+\begin_inset Formula \[
+\tilde{\textrm{Ein}}=\textrm{Ein}+2H_{\Omega}-2\textrm{d}\Omega\otimes\textrm{d}\Omega-(2\square\Omega+\left|\mathbf{w}\right|^{2})g\]
+
+\end_inset 
+
+where 
+\begin_inset Formula $\mathbf{w}=\hat{g}^{-1}\textrm{d}\Omega$
+\end_inset 
+
+.
+ Need the Hessian: 
+\begin_inset Formula $H_{\Omega}(\mathbf{x},\mathbf{y})=\left(\nabla_{\mathbf{.}}\nabla_{\mathbf{.}}\Omega\right)(\mathbf{x},\mathbf{y})=\left(\nabla_{\mathbf{x}}\textrm{d}\Omega\right)(\mathbf{y})=g(\nabla_{\mathbf{x}}\mathbf{w},\mathbf{y})$
+\end_inset 
+
+.
+ 
+\newline 
+
+\series bold 
+Compute
+\series default 
+: 
+\begin_inset Formula $\textrm{d}\Omega=\left(\partial_{t}\ln a\right)\textrm{d}t$
+\end_inset 
+
+, 
+\series bold 
+denote
+\series default 
+ 
+\begin_inset Formula $b(t)\equiv\partial_{t}\ln a=\partial_{\tilde{t}}\tilde{a}$
+\end_inset 
+
+; 
+\series bold 
+then
+\series default 
+ 
+\begin_inset Formula $\textrm{d}\Omega=b\textrm{d}t$
+\end_inset 
+
+; 
+\begin_inset Formula $\mathbf{w}\approx\left(1-2\Phi\right)b\partial_{t}$
+\end_inset 
+
+; 
+\begin_inset Formula $\left|\mathbf{w}\right|^{2}\approx\left(1-2\Phi\right)b^{2}$
+\end_inset 
+
+ to first order in 
+\begin_inset Formula $\Phi$
+\end_inset 
+
+.
+\newline 
+Covariant derivative 
+\begin_inset Formula $\nabla$
+\end_inset 
+
+ is computed w.r.t.\SpecialChar ~
+
+\begin_inset Formula $g$
+\end_inset 
+
+ and contains perturbations:
+\newline 
+
+\begin_inset Formula $H_{\Omega}(\mathbf{x},\mathbf{y})=g(\nabla_{\mathbf{x}}\mathbf{w},\mathbf{y})=b\left(1-2\Phi\right)g(\nabla_{\mathbf{x}}\partial_{t},\mathbf{y})+g(\partial_{t},\mathbf{y})\nabla_{\mathbf{x}}b\left(1-2\Phi\right)$
+\end_inset 
+
+
+\newline 
+
+\begin_inset Formula $g(\nabla_{\mathbf{.}}\partial_{t},\mathbf{\cdot})=\frac{1}{2}\left(\textrm{d}\hat{g}\partial_{t}+\mathcal{L}_{\partial_{t}}g\right)=\textrm{d}\Phi\wedge\textrm{d}t+\frac{1}{2}\dot{g}$
+\end_inset 
+
+
+\newline 
+
+\series bold 
+So
+\series default 
+ 
+\begin_inset Formula $H_{\Omega}(\mathbf{x},\mathbf{y})=-[\left(\mathbf{x}\circ\Phi\right)\left(\mathbf{y}\circ t\right)+\left(\mathbf{y}\circ\Phi\right)\left(\mathbf{x}\circ t\right)]b+\frac{b}{2}\dot{g}(\mathbf{x},\mathbf{y})+(\mathbf{y}\circ t)(\mathbf{x}\circ t)\dot{b}$
+\end_inset 
+
+; 
+\series bold 
+and
+\series default 
+ 
+\begin_inset Formula $\square\Omega=\textrm{Tr}_{\mathbf{x}}H_{\Omega}(\mathbf{x},\mathbf{x})=-4b\dot{\Phi}+\left(1-2\Phi\right)\dot{b}$
+\end_inset 
+
+ because 
+\begin_inset Formula $\textrm{Tr}_{\mathbf{x}}h(\mathbf{x},\mathbf{x})=-4\Phi$
+\end_inset 
+
+
+\layout Slide
+
+Hessian
+\layout Standard
+
+
+\series bold 
+Use 3+1/SVT decomposition
+\series default 
+ to compute 
+\begin_inset Formula $H_{\Omega}$
+\end_inset 
+
+ and the Einstein tensor: 
+\layout Standard
+
+
+\begin_inset Formula $\textrm{d}\Omega=b\textrm{d}t$
+\end_inset 
+
+; 
+\begin_inset Formula $H_{\Omega\,00}=\dot{b}-b\dot{\Phi}$
+\end_inset 
+
+; 
+\begin_inset Formula $H_{\Omega\,0j}=-b\Phi_{,j}$
+\end_inset 
+
+; 
+\begin_inset Formula $H_{\Omega\, ij}=b\dot{\Phi}\delta_{ij}+\frac{1}{2}b\dot{t}_{ij}$
+\end_inset 
+
+; 
+\begin_inset Formula $w_{0}=\left(1-2\Phi\right)b$
+\end_inset 
+
+; 
+\begin_inset Formula $\left|\mathbf{w}\right|^{2}=\left(1-2\Phi\right)b^{2}$
+\end_inset 
+
+
+\begin_inset Formula \[
+\mathbf{use}\quad\tilde{\textrm{Ein}}=\textrm{Ein}+2H_{\Omega}-2\textrm{d}\Omega\otimes\textrm{d}\Omega-(2\square\Omega+\left|\mathbf{w}\right|^{2})g\]
+
+\end_inset 
+
+
+\begin_inset Formula $\tilde{\textrm{Ein}}_{00}\equiv\tilde{\textrm{Ein}}\left(\partial_{t},\partial_{t}\right)=-2\Delta\Phi-3b^{2}+6b\dot{\Phi}$
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Formula $\tilde{\textrm{Ein}}_{0j}\equiv\tilde{\textrm{Ein}}\left(\partial_{t},\partial_{x^{j}}\right)=-2\left(\dot{\Phi}+b\Phi\right)_{,j}$
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Formula $\tilde{\textrm{Ein}}_{ij}=\frac{1}{2}\square t_{ij}+b\dot{t}_{ij}-\left(b^{2}+2\dot{b}\right)t_{ij}+[\left(b^{2}+2\dot{b}\right)-2\ddot{\Phi}-4\left(b^{2}+2\dot{b}\right)\Phi-6b\dot{\Phi}]\delta_{ij}$
+\end_inset 
+
+
+\layout Standard
+
+Einstein equations: 
+\begin_inset Formula \[
+\textrm{Ein}^{(0)}+\textrm{Ein}^{(1)}=-8\pi G\left(T^{(0)}+T^{(1)}\right)\]
+
+\end_inset 
+
+Background Friedmann equ.
+\begin_inset Formula \[
+b^{2}=\frac{8\pi G}{3}T_{00}^{(0)}\]
+
+\end_inset 
+
+Perturbations in 00, 
+\begin_inset Formula $0j$
+\end_inset 
+
+, 
+\begin_inset Formula $ij$
+\end_inset 
+
+:
+\begin_inset Formula \begin{align*}
+\Delta\Phi-3b\dot{\Phi} & =4\pi GT_{00}^{(1)}\\
+\dot{\Phi}+b\Phi & =4\pi G\alpha^{(1)}\\
+\square t_{ij}+2b\dot{t}_{ij}-2\left(b^{2}+2\dot{b}\right)t_{ij} & =4\pi Gq_{ij}^{(1)}\end{align*}
+
+\end_inset 
+
+In usual scenarios 
+\begin_inset Formula $q_{ij}^{(1)}=0$
+\end_inset 
+
+ and only scalar perturbations are sourced
+\layout Slide
+
+Scalar field perturbations
+\layout Standard
+
+
+\begin_inset ERT
+status Open
+
+\layout Standard
+
+\backslash 
+pdfbookmark[0]{Lecture 14. Perturbations in scalar field cosmology}{2007-11-30}
+\end_inset 
+
+
+\series bold 
+Lecture 14, 2007-11-30.
+ Perturbations of gravity and scalar field in FRW spacetime 
+\layout Standard
+
+Cosmology with scalar field:
+\begin_inset Formula \[
+S[g,f]=\int d^{4}x\sqrt{-g}\left[\frac{R}{16\pi G}+\frac{1}{2}\left|\textrm{d}\phi\right|^{2}-V(\phi)\right]\]
+
+\end_inset 
+
+Perturbations in scalar field: 
+\begin_inset Formula $\phi=f_{0}(t)+f(t,\mathbf{x})$
+\end_inset 
+
+
+\newline 
+Metric perturbations (only scalar): 
+\begin_inset Formula \[
+g=a^{2}\textrm{diag}\left(\begin{array}{cc}
+1+2\Phi & 0\\
+0 & -\left(1-2\Phi\right)\delta_{ij}\end{array}\right)\]
+
+\end_inset 
+
+ Energy-momentum tensor of 
+\begin_inset Formula $\phi$
+\end_inset 
+
+: 
+\begin_inset Formula \begin{align*}
+T_{\mu\nu} & =\phi_{,\mu}\phi_{,\nu}-g_{\mu\nu}p,\quad p\equiv{\textstyle \frac{1}{2}}\left|\textrm{d}\phi\right|^{2}-V(\phi)\\
+p & =\frac{1-2\Phi}{a^{2}}\left({\textstyle \frac{1}{2}}\dot{f}_{0}^{2}+\dot{f}_{0}\dot{f}\right)-V(f_{0})-fV'(f_{0})\\
+T_{00} & =\dot{f}_{0}^{2}+2\dot{f}_{0}\dot{f}-a^{2}\left(1+2\Phi\right)p\\
+ & =\left({\textstyle \frac{1}{2}}\dot{f}_{0}^{2}+a^{2}V_{0}\right)+\left(\dot{f}_{0}\dot{f}+a^{2}V_{0}^{\prime}f+2a^{2}V_{0}\Phi\right)\\
+T_{0j} & =\dot{f}_{0}f_{,j}\\
+T_{ij} & =\left(1-2\Phi\right)a^{2}p\delta_{ij}=\left({\textstyle \frac{1}{2}}\dot{f}_{0}^{2}-V_{0}\right)\delta_{ij}+...\end{align*}
+
+\end_inset 
+
+
+\layout Standard
+
+Einstein equations in 3+1/SVT:
+\begin_inset Formula \begin{align*}
+\textrm{(background) }\:3b^{2} & =8\pi G\left({\textstyle \frac{1}{2}}\dot{f}_{0}^{2}+a^{2}V_{0}\right)\\
+\Delta\Phi-3b\dot{\Phi} & =4\pi G\left(\dot{f}_{0}\dot{f}+a^{2}V_{0}^{\prime}f+2a^{2}V_{0}\Phi\right)\\
+\dot{\Phi}+b\Phi & =4\pi G\dot{f}_{0}f\end{align*}
+
+\end_inset 
+
+ Equations of motion for the field 
+\begin_inset Formula $\phi=f_{0}(t)+f$
+\end_inset 
+
+:
+\begin_inset Formula \[
+\partial_{\mu}\left(\sqrt{-g}g^{\mu\nu}\phi_{,\nu}\right)+\sqrt{-g}V^{\prime}(\phi)=0\]
+
+\end_inset 
+
+Compute: 
+\begin_inset Formula $\sqrt{-g}=a^{4}\left(1-2\Phi\right)$
+\end_inset 
+
+;
+\newline 
+
+\begin_inset Formula $\sqrt{-g}g^{0\nu}\phi_{,\nu}=a^{4}\left(1-2\Phi\right)a^{-2}\left(1-2\Phi\right)\left(\dot{f}_{0}+\dot{f}\right)=a^{2}\left(\dot{f}_{0}+\dot{f}-4\Phi\dot{f}_{0}\right)$
+\end_inset 
+
+;
+\newline 
+
+\begin_inset Formula $\sqrt{-g}g^{j\nu}\phi_{,\nu}=-a^{2}\left(1-2\Phi\right)\left(1-2\Phi\right)f_{,j}=-a^{2}f_{,j}$
+\end_inset 
+
+;
+\newline 
+
+\begin_inset Formula $V'(\phi)=V_{0}^{\prime}+fV_{0}^{\prime\prime}$
+\end_inset 
+
+; so EOM for 
+\begin_inset Formula $\phi$
+\end_inset 
+
+ is 
+\begin_inset Formula $a^{-2}[a^{2}(\dot{f}_{0}+\dot{f}-4\Phi\dot{f}_{0})]^{\cdot}-\Delta f+a^{2}\left[\left(1-2\Phi\right)V_{0}^{\prime}+V_{0}^{\prime\prime}f\right]=0$
+\end_inset 
+
+.
+ 
+\newline 
+Background EOM: 
+\begin_inset Formula $a^{-2}\left[a^{2}\dot{f}_{0}\right]^{\cdot}+a^{2}V_{0}^{\prime}=0$
+\end_inset 
+
+ 
+\newline 
+Perturbation EOM: 
+\begin_inset Formula \[
+a^{-2}\left[a^{2}\dot{f}-4\Phi a^{2}\dot{f}_{0}\right]^{\cdot}-\Delta f-2\Phi a^{2}V_{0}^{\prime}+a^{2}V_{0}^{\prime\prime}f=0\]
+
+\end_inset 
+
+ Collect terms with 
+\begin_inset Formula $\Phi$
+\end_inset 
+
+ using background EOM: 
+\begin_inset Formula \[
+a^{-2}\left(a^{2}\dot{f}\right)^{\cdot}-4\dot{\Phi}\dot{f}_{0}-\Delta f+2\Phi a^{2}V_{0}^{\prime}+a^{2}V_{0}^{\prime\prime}f=0\]
+
+\end_inset 
+
+Change variables 
+\begin_inset Formula $\Phi=a^{-1}h$
+\end_inset 
+
+, 
+\begin_inset Formula $f=a^{-1}x$
+\end_inset 
+
+ in the 00 and 
+\begin_inset Formula $0j$
+\end_inset 
+
+ Einstein equations; use background EOM (
+\begin_inset Formula $3b^{2}\Phi=...$
+\end_inset 
+
+; 
+\begin_inset Formula $a^{2}V_{0}^{\prime}f=...$
+\end_inset 
+
+) and simplify:
+\begin_inset Formula \begin{align*}
+\Delta h-3b\dot{h} & =4\pi G\left[-\dot{f}_{0}^{2}h+\dot{f}_{0}\dot{x}-3b\dot{f}_{0}x-\ddot{f}_{0}x\right]\\
+\dot{h} & =4\pi G\dot{f}_{0}x\end{align*}
+
+\end_inset 
+
+Make Fourier transform in (flat) 3-space:
+\begin_inset Formula \[
+\left[\dot{f}_{0}^{2}-\frac{k^{2}}{4\pi G}\right]h=\dot{f}_{0}\dot{x}-\ddot{f}_{0}x;\quad\frac{\dot{h}}{4\pi G}=\dot{f}_{0}x\]
+
+\end_inset 
+
+EOM for perturbations (
+\begin_inset Formula $\ddot{f}=...$
+\end_inset 
+
+) is a consequence of this 1st order system
+\layout Slide
+
+Mukhanov-Sasaki variable
+\layout Standard
+
+
+\series bold 
+The Mukhanov-Sasaki variable
+\layout Standard
+
+Would like to have a closed 2nd order equation
+\layout Standard
+
+For quantization, expect 
+\begin_inset Formula $x$
+\end_inset 
+
+ to be fundamental
+\layout Standard
+
+Look for a combination 
+\begin_inset Formula $v=x+B(t)h$
+\end_inset 
+
+ such that 
+\begin_inset Formula $v$
+\end_inset 
+
+ satisfies an equation of the form 
+\begin_inset Formula $\ddot{v}+k^{2}v=Cv$
+\end_inset 
+
+
+\layout Standard
+
+Substitute 
+\begin_inset Formula $x=v-Bh$
+\end_inset 
+
+ into 2nd Einstein equ.:
+\begin_inset Formula \[
+\frac{\dot{h}}{4\pi G}=\dot{f}_{0}\left(v-Bh\right)\]
+
+\end_inset 
+
+Expect relationships of the form
+\begin_inset Formula \[
+v=A_{1}h+A_{2}\dot{h},\quad k^{2}h=A_{3}v+A_{4}\dot{v}+0\cdot h\]
+
+\end_inset 
+
+because then we will have 
+\begin_inset Formula \[
+k^{2}v=A_{1}\left(A_{3}v+A_{4}\dot{v}\right)+A_{2}\left(A_{3}v+A_{4}\dot{v}\right)^{\cdot}\]
+
+\end_inset 
+
+Compute 
+\begin_inset Formula $k^{2}h$
+\end_inset 
+
+ from 1st Einstein equ.:
+\begin_inset Formula \[
+\left[\dot{f}_{0}^{2}-\frac{k^{2}}{4\pi G}\right]h=\dot{f}_{0}\left(\dot{v}-\dot{B}h-B\dot{h}\right)-\ddot{f}_{0}\left(v-Bh\right)\]
+
+\end_inset 
+
+then substitute 
+\begin_inset Formula $\dot{h}=4\pi G\dot{f}_{0}\left(v-Bh\right)$
+\end_inset 
+
+ and find
+\begin_inset Formula \begin{align*}
+-\frac{k^{2}}{4\pi G}h & =\dot{f}_{0}\dot{v}-\left(4\pi GB\dot{f}_{0}^{2}+\ddot{f}_{0}\right)v\\
+ & +h\left(-\dot{f}_{0}\dot{B}+4\pi G\dot{f}_{0}^{2}B^{2}+\ddot{f}_{0}B-\dot{f}_{0}^{2}\right)\end{align*}
+
+\end_inset 
+
+Now we need to cancel the last term:
+\begin_inset Formula \[
+\dot{f}_{0}\dot{B}=\dot{f}_{0}^{2}\left(4\pi GB^{2}-1\right)+\ddot{f}_{0}B\]
+
+\end_inset 
+
+This is a Riccati equation; convert to linear:
+\begin_inset Formula \[
+B=-\dot{f}_{0}\frac{Q}{\dot{Q}};\quad\ddot{Q}=4\pi G\dot{f}_{0}^{2}Q;\]
+
+\end_inset 
+
+A suitable solution is 
+\begin_inset Formula $Q=a^{-1}$
+\end_inset 
+
+ due to the background equation 
+\begin_inset Formula $4\pi G\dot{f}_{0}^{2}=b^{2}-\dot{b}$
+\end_inset 
+
+ (found by subtracting 
+\begin_inset Formula $b^{2}+2\dot{b}=-8\pi Gp$
+\end_inset 
+
+ from 
+\begin_inset Formula $3b^{2}=...$
+\end_inset 
+
+); so
+\begin_inset Formula \begin{align*}
+B & =\frac{\dot{f}_{0}}{b},\quad v=x+\frac{\dot{f}_{0}}{b}h;\quad v=\frac{\dot{f}_{0}}{b}h+\frac{1}{4\pi G\dot{f}_{0}}\dot{h}\\
+-\frac{k^{2}}{4\pi G}h & =\dot{f}_{0}\dot{v}-\left(\frac{4\pi G}{b}\dot{f}_{0}^{3}+\ddot{f}_{0}\right)v\end{align*}
+
+\end_inset 
+
+Equation for 
+\begin_inset Formula $v$
+\end_inset 
+
+: define 
+\begin_inset Formula $z\equiv a\dot{f}_{0}H^{-1}$
+\end_inset 
+
+, then 
+\begin_inset Formula \begin{align*}
+v & =z^{-1}\left(\frac{zh}{\dot{f}_{0}}\right)^{\cdot},\quad-\frac{k^{2}h}{4\pi G}=\dot{f}_{0}z\left(\frac{v}{z}\right)^{\cdot}\\
+-\frac{k^{2}v}{4\pi G} & =z^{-1}\left(-\frac{k^{2}h}{4\pi G}\,\frac{z}{\dot{f}_{0}}\right)^{\cdot}=z^{-1}\left(\frac{\dot{f}_{0}z^{2}}{\dot{f}_{0}}\left(\frac{v}{z}\right)^{\cdot}\right)^{\cdot}\\
+ & =\ddot{v}-\frac{\ddot{z}}{z}v\end{align*}
+
+\end_inset 
+
+Expressing 
+\begin_inset Formula $x$
+\end_inset 
+
+ through 
+\begin_inset Formula $v$
+\end_inset 
+
+:
+\begin_inset Formula \[
+x=v-\frac{\dot{f}_{0}}{b}h;\quad h=4\pi G\dot{f}_{0}z\frac{1}{\Delta}\left(\frac{v}{z}\right)^{\cdot}\]
+
+\end_inset 
+
+Action for 
+\begin_inset Formula $v$
+\end_inset 
+
+ that reproduces the EOM:
+\begin_inset Formula \[
+S={\textstyle \frac{1}{2}}\int d^{4}x\left(\dot{v}^{2}-v_{,j}v_{,j}+\frac{\ddot{z}}{z}v^{2}\right)\]
+
+\end_inset 
+
+
+\the_end
