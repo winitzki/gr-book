@@ -10,14 +10,14 @@ The LyX source file and the resulting TeX file are provided.
 The commands used to create the PDF file are:
 
 Using LyX 1.4.3 or later:
-
+```
 lyx --export pdf GR_course.lyx
-
+```
 without LyX:
-
+```
 latex GR_course.tex (3 times)
 makeindex GR_course.idx -o GR_course.ind
 latex GR_course.tex
 dvips GR_course.dvi
 ps2pdf GR_course.ps
-
+```
